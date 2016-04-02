@@ -1,0 +1,15 @@
+.form-box{
+  background: #fff;
+  margin: 30px auto;
+  max-width: 700px;
+  box-shadow: 0 20px 20px 0px rgba(0,0,0,0.16), 0 10px 20px 0px rgba(0,0,0,0.23);
+}
+.head {
+  color: #fff;
+  font-size: 34px;
+  font-weight: lighter;
+  padding: 50px 0;
+  text-align: center;
+  text-transform: uppercase;
+  background: #6498fe;
+}
