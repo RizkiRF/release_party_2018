@@ -128,6 +128,10 @@
 </head>
 <body style="margin: 0; padding: 0;">
 
+
+
+
+
 <!-- HEADER -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
@@ -139,11 +143,11 @@
                         <td style="padding: 20px 0px 30px 0px;" class="logo">
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
-                                    <td bgcolor="#ffffff" width="100" align="left"><a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank"><img alt="Logo" src="https://s3.amazonaws.com/media-p.slid.es/uploads/203585/images/1622999/photo_2015-08-06_11-39-49.jpg" width="52" height="78" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 16px;" border="0"></a></td>
+                                    <td bgcolor="#ffffff" width="100" align="left"><a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank"><img alt="Logo" src="https://s3.amazonaws.com/media-p.slid.es/uploads/203585/images/1622999/photo_2015-08-06_11-39-49.jpg" width="78" height="78" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 16px;" border="0"></a></td>
                                     <td bgcolor="#ffffff" width="400" align="right" class="mobile-hide">
                                         <table border="0" cellpadding="0" cellspacing="0">
                                             <tr>
-                                                <td align="right" style="padding: 0 0 5px 0; font-size: 14px; font-family: Arial, sans-serif; color: #666666; text-decoration: none;"><span style="color: #666666; text-decoration: none;">Detail pendaftaran mu, {{ $nama }}.</span></td>
+                                                <td align="right" style="padding: 0 0 5px 0; font-size: 14px; font-family: Arial, sans-serif; color: #666666; text-decoration: none;"><span style="color: #666666; text-decoration: none;">Detail pendaftaran mu, {{ $nama }}</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -165,6 +169,40 @@
                 <tr>
                     <td>
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                              <td>
+                                  <!-- COPY -->
+                                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td align="center" style="font-size: 30px; font-family: Helvetica, Arial, sans-serif; color: #333333; padding-top: 30px;" class="padding-copy">Terimakasih!</td>
+                                    </tr>
+                                      <tr>
+                                          <td align="center" style="font-size: 22px; font-family: Helvetica, Arial, sans-serif; color: #333333; padding-top: 30px;" class="padding-copy">Telah mendaftar Seminar Nasional dan Release Party TeaLinuxOS 8</td>
+                                      </tr>
+                                      <tr>
+                                          <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Berikut detail informasi mu :</td>
+                                      </tr>
+                                      <tr>
+                                          <td align="left" style="padding: 5px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Nama : <b>{{ $nama }}</b></td>
+                                      </tr>
+                                      <tr>
+                                          <td align="left" style="padding: 5px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Nomor HP : <b> {{ $no_hp }} </b></td>
+                                      </tr>
+                                      <tr>
+                                          <td align="left" style="padding: 5px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Email : <b> {{ $email }} </b></td>
+                                      </tr>
+                                      <tr>
+                                          <td align="left" style="padding: 5px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Status : <b> {{ $status }} </b></td>
+                                      </tr>
+                                      <tr>
+                                          <td align="left" style="padding: 5px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">DVD : <b> {{ $dvd }} Bit</b></td>
+                                      </tr>
+                                      <tr>
+                                          <td align="center" style="padding: 20px 0 0 0; font-size: 14px; line-height: 20px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Pastikan informasi tersebut benar, terutama nama, karena akan kami cetak di sertifika. Jika ingin mengganti silahkan klik link ini, atau langsung hubungi kami via sms / email sekretariat.</td>
+                                      </tr>
+                                  </table>
+                              </td>
+                          </tr>
                             <tr>
                                 <td>
                                     <!-- HERO IMAGE -->
@@ -175,7 +213,10 @@
                                                       <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                           <tr>
                                                               <td>
-                                                                  <a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/203585/images/1946018/photo_2015-11-13_21-22-20.jpg" width="500" height="200" border="0" alt="Can an email really be responsive?" style="display: block; padding: 0; color: #666666; text-decoration: none; font-family: Helvetica, arial, sans-serif; font-size: 16px; width: 500px; height: 200px;" class="img-max"></a>
+
+
+
+
                                                               </td>
                                                             </tr>
                                                         </table>
@@ -190,10 +231,10 @@
                                     <!-- COPY -->
                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
-                                            <td align="center" style="font-size: 25px; font-family: Helvetica, Arial, sans-serif; color: #333333; padding-top: 30px;" class="padding-copy">Yes. Email can be responsive, too.</td>
+                                            <td align="center" style="font-size: 25px; font-family: Helvetica, Arial, sans-serif; color: #333333; padding-top: 30px;" class="padding-copy">{{$kode_tiket}}</td>
                                         </tr>
                                         <tr>
-                                            <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Using fluid structures, fluid images, and media queries, we can make email (nearly) as responsive as modern websites.</td>
+                                            <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Kode Tiketmu</td>
                                         </tr>
                                     </table>
                                 </td>

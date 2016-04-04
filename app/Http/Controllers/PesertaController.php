@@ -10,6 +10,7 @@ use App\Jobs\SendThanksEmail;
 use App\Peserta;
 use Mail;
 use Log;
+use QrCode;
 
 class PesertaController extends Controller
 {
@@ -43,6 +44,9 @@ class PesertaController extends Controller
     {
       // acak kode tiket, 5 kali repeat, di ambil 3 karakter dari index 0 sampai 3
       $kode_tiket = substr(str_shuffle(str_repeat("0123456789abcdefghijklmnopqrstuvwxyz", 5)), 0, 3);
+
+      // kunci rahasia
+      $kunci_rahasia = substr(str_shuffle(str_repeat("0123456789abcdefghijklmnopqrstuvwxyz", 5)), 0, 3);
       // cek apakah kode_tiket sudah pernah dipakai ?
       if(Peserta::where('kode_tiket', '=', $kode_tiket)->exists())
       {
@@ -53,6 +57,7 @@ class PesertaController extends Controller
       $peserta = new Peserta();
 
       $peserta->kode_tiket = $kode_tiket ;
+      $peserta->kunci_rahasia = $kunci_rahasia;
       $peserta->nama = $request->get('nama');
       $peserta->email = $request->get('email');
       $peserta->no_hp = $request->get('no_hp');
@@ -73,7 +78,10 @@ class PesertaController extends Controller
       Mail::queue('emails.test', $data, function($message) use ($data){
          $message->to($data['email'])
                  ->subject('Pendaftaran Release Party TeaLinux OS 8 - ' . $data['nama']);
+                 Log::info('email terkirim ke ' . $data['email'] . ' dengan nama peserta : ' . $data['nama']);
        });
+
+       //QrCode::generate($kode_tiket, '../public/qrcode.svg');
 
       return view('terimakasih')->withNamapeserta($peserta->nama);
     }

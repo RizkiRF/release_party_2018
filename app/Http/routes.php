@@ -23,13 +23,19 @@ Route::get('send-email', function(){
   Mail::send('emails.test',
    ['testVar' => 'Namamu, iya kamu'],
    function($message) {
-     $message->to('sekretariat@doscom.org')
-             ->subject('Test email dari Laravel');
+             $message->to('sekretariat@doscom.org')
+                     ->subject('Test email dari Laravel');
    });
 });
 
 Route::get('test-view-email', function(){
-  return view('emails.test');
+  $nama = "diky arga";
+  $email = "dikyarga.id@gmail.com";
+  $kode_tiket = "code";
+  $no_hp = "08317373617";
+  $status = "mahasiswa";
+  $dvd = "64";
+  return view('emails.test')->withNama($nama)->withKode_tiket($kode_tiket)->withNo_hp($no_hp)->withEmail($email)->withStatus($status)->withDvd($dvd);
 });
 
 Route::get('contact', 'ContactController@showForm');
