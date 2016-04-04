@@ -1,39 +1,65 @@
 @extends('app')
 
 @section('title')
-{{$title}}
+
 @endsection
 
 @section('content')
 
-@if ( !$posts->count() )
-There is no post till now. Login and write a new post now!!!
-@else
-<div class="">
-	@foreach( $posts as $post )
-	<div class="list-group">
-		<div class="list-group-item">
-			<h3><a href="{{ url('/'.$post->slug) }}">{{ $post->title }}</a>
-				@if(!Auth::guest() && ($post->author_id == Auth::user()->id || Auth::user()->is_admin()))
-					@if($post->active == '1')
-					<a class="btn" style="float: right" href="{{ url('edit/'.$post->slug)}}">Edit Post</a>
-					@else
-					<button class="btn" style="float: right"><a href="{{ url('edit/'.$post->slug)}}">Edit Draft</a></button>
-					@endif
-				@endif
-			</h3>
-			<p>{{ $post->created_at->format('M d,Y \a\t h:i a') }} By <a href="{{ url('/user/'.$post->author_id)}}">{{ $post->author->name }}</a></p>
-			
-		</div>
-		<div class="list-group-item">
-			<article>
-				{!! str_limit($post->body, $limit = 1500, $end = '....... <a href='.url("/".$post->slug).'>Read More</a>') !!}
-			</article>
-		</div>
-	</div>
-	@endforeach
-	{!! $posts->render() !!}
-</div>
-@endif
+Homepage RP
+<br/>
+
+
+<form class="form-horizontal" action="{{ url('terimakasih')}}" method="post">
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+    <div class="form-group has-info">
+        <label for="inputEmail" class="col-md-2 control-label"><i class="glyphicon glyphicon-user"></i> Nama</label>
+        <div class="col-md-9">
+            <input  name="nama" class="form-control" placeholder="Nama" type="text" value="{{ old('nama') }}" required="required">
+        </div>
+    </div>
+
+    <div class="form-group has-info">
+        <label for="inputEmail" class="col-md-2 control-label"><i class=" glyphicon glyphicon-earphone"></i> No. Hp</label>
+        <div class="col-md-9">
+            <input class="form-control" name="no_hp" placeholder="No. Hp" type="text" value="{{ old('no_hp') }}" required="required">
+        </div>
+    </div>
+    <div class="form-group has-info">
+        <label for="inputEmail" class="col-md-2 control-label"><i class="glyphicon glyphicon-envelope"></i> Email</label>
+        <div class="col-md-9">
+            <input  name="email" class="form-control" placeholder="Email" type="email" value="{{ old('email') }}" required="required">
+        </div>
+    </div>
+    <div class="form-group has-info">
+        <label class="col-md-2 control-label"><i class="glyphicon glyphicon-user"></i> Status</label>
+        <div class="col-md-9">
+            <select class="form-control" name="status_peserta" required="required">
+                <option >--Pilih--</option>
+                <option value="mahasiswa">Mahasiswa</option>
+                <option value="pelajar">Pelajar</option>
+                <option value="umum">Umum</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group has-info">
+        <label class="col-md-2 control-label"><i class="glyphicon glyphicon-user"></i> DVD</label>
+        <div class="col-md-9">
+            <select class="form-control" name="dvd" required="required">
+                <option >--Pilih--</option>
+                <option value="32">32 Bit</option>
+                <option value="64">64 Bit</option>
+
+            </select>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-10 col-md-offset-5">
+            <button type="submit" class="btn btn-raised btn-info"><i class="glyphicon glyphicon-ok"></i> Submit</button>
+        </div>
+    </div>
+</form>
 
 @endsection

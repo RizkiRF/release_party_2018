@@ -53,8 +53,8 @@ return [
     | used globally for all e-mails that are sent by your application.
     |
     */
-
-    'from' => ['address' => null, 'name' => null],
+    'from' => ['address' => env('MAIL_FROM'), 'name' => env('MAIL_NAME')],
+    // bawaan 'from' => ['address' => null, 'name' => null],
 
     /*
     |--------------------------------------------------------------------------

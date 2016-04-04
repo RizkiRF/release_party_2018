@@ -9,7 +9,32 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::get('/','PostController@index');
+
+
+
+Route::get('/', function(){
+  return view('home');
+});
+
+Route::post('terimakasih','PesertaController@store');
+
+
+Route::get('send-email', function(){
+  Mail::send('emails.test',
+   ['testVar' => 'Namamu, iya kamu'],
+   function($message) {
+     $message->to('sekretariat@doscom.org')
+             ->subject('Test email dari Laravel');
+   });
+});
+
+Route::get('test-view-email', function(){
+  return view('emails.test');
+});
+
+Route::get('contact', 'ContactController@showForm');
+Route::post('contact', 'ContactController@sendContactInfo');
+//Route::get('/','PostController@index');
 Route::get('/home',['as' => 'home', 'uses' => 'PostController@index']);
 //authentication
 Route::controllers([
@@ -40,7 +65,7 @@ Route::group(['middleware' => ['auth']], function()
 
 
     //peserta----------------------------
-    Route::get('/home','PesertaController@create');
+
 
 
 
@@ -60,4 +85,3 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 // Daftar
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 Route::get('auth/register', 'Auth\AuthController@getRegister');
-
