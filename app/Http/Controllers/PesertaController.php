@@ -6,8 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Jobs\SendThanksEmail;
 use App\Peserta;
 use Mail;
+use Log;
 
 class PesertaController extends Controller
 {
@@ -61,16 +63,16 @@ class PesertaController extends Controller
       $peserta->email_terkirim = 0;
       $peserta->sms_terkirim = 0;
 
+      $data = $peserta->toArray();
 
       $peserta->save();
 
-      $email = $peserta->email;
+      Log::info('akan kirim email ke ' . $peserta->email);
+      //$this->dispatch(new SendThanksEmail($data));
 
-      Mail::send('emails.test',
-       ['peserta' => $peserta],
-       function($message) {
-         $message->to('sekretariat@doscom.org')
-                 ->subject('Pendaftaran Release Party TeaLinux OS 8');
+      Mail::queue('emails.test', $data, function($message) use ($data){
+         $message->to($data['email'])
+                 ->subject('Pendaftaran Release Party TeaLinux OS 8 - ' . $data['nama']);
        });
 
       return view('terimakasih')->withNamapeserta($peserta->nama);
