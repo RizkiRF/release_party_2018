@@ -24,7 +24,8 @@ class PesertaController extends Controller
      */
     public function index()
     {
-        return view('peserta.all');
+        $pesertas = Peserta::all();
+        return view('peserta.all')->withPesertas($pesertas);
     }
 
     /**
@@ -65,7 +66,7 @@ class PesertaController extends Controller
       $peserta->email = $request->get('email');
       $peserta->no_hp = $request->get('no_hp');
       $peserta->dvd = $request->get('dvd');
-      $peserta->status = $request->get('status_peserta');
+      $peserta->status = $request->get('status');
 
       $peserta->status_bayar = 0;
       $peserta->email_terkirim = 0;
@@ -185,7 +186,8 @@ class PesertaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $peserta = Peserta::find($id);
+        return view('peserta.edit')->withPeserta($peserta);
     }
 
     /**
@@ -195,9 +197,23 @@ class PesertaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+
+        $peserta = Peserta::find($request->peserta_id);
+        $peserta->nama = $request->input('nama');
+        $peserta->email = $request->input('email');
+        $peserta->no_hp = $request->input('no_hp');
+        $peserta->dvd = $request->input('dvd');
+        $peserta->status = $request->input('status');
+        $peserta->status_bayar = $request->input('status_bayar');
+        $peserta->email_terkirim = $request->input('email_terkirim');
+        $peserta->sms_terkirim = $request->input('sms_terkirim');
+
+        $peserta->save();
+        $data['massage']= 'Data Berhasil Diupdate';
+        return redirect('peserta/edit/'.$peserta->id)->with($data);
+
     }
 
     /**
@@ -208,6 +224,14 @@ class PesertaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $peserta = Peserta::find($id);
+
+
+            $peserta->delete();
+            $data['massage'] = 'Data berhasil dihapus';
+
+            return redirect("peserta/all")->with($data);
+
+
     }
 }
