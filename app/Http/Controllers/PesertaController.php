@@ -10,7 +10,10 @@ use App\Jobs\SendThanksEmail;
 use App\Peserta;
 use Mail;
 use Log;
-use QrCode;
+use Input;
+use Session;
+//use Request;
+// use QrCode;
 
 class PesertaController extends Controller
 {
@@ -85,6 +88,83 @@ class PesertaController extends Controller
 
       return view('terimakasih')->withNamapeserta($peserta->nama);
     }
+
+    public function show_konfirmasi()
+    {
+      return view('peserta.konfirmasi');
+    }
+
+    public function konfirmasi(Request $request)
+    {
+
+      $kode_tiket = $request->kode_tiket;
+      if (Peserta::where('kode_tiket', '=', $kode_tiket)->exists()) {
+        // buar object pesertanya yang bakal di tambahin
+        $peserta = Peserta::where('kode_tiket', '=', $kode_tiket)->firstOrFail();
+          // acak kode tiket, 5 kali repeat, di ambil 3 karakter dari index 0 sampai 3
+        $penamaan_gambar = substr(str_shuffle(str_repeat("0123456789abcdefghijklmnopqrstuvwxyz", 5)), 0, 3);
+
+        $peserta->atas_nama_pengirim = $request->atas_nama;
+        $imageName = $penamaan_gambar. '.' . $request->file('image')->getClientOriginalExtension();
+        $peserta->upload_bukti = $imageName;
+
+        $peserta->save();
+        $request->file('image')->move(
+            base_path() . '/public/images/uploads/', $imageName
+        );
+
+        return view('peserta.sesudah_konfirmasi');
+
+      }
+
+
+    }
+
+    public function cek_kode(Request $request)
+    {
+
+      if (Peserta::where('kode_tiket', '=', $request['kode'])->exists()) {
+
+        $peserta = Peserta::where('kode_tiket', '=', $request['kode'])->firstOrFail();
+        $nama = $peserta->nama;
+
+        $pesan = 'Kode cocok, benarkah nama anda adalah : ';
+
+        return response()->json(['sukses' => 1, 'nama' => $nama, 'pesan' => $pesan]);
+      }
+      else
+      {
+          return response()->json(['sukses' => 0, 'pesan' => 'Maaf, kode salah. Silahkan coba kembali.']);
+      }
+
+      //$input = $request->data;
+
+    }
+
+    public function tiket()
+    {
+      return view('peserta.tiket');
+    }
+    public function get_tiket(Request $request)
+    {
+      $kode_tiket = $request->kode_tiket;
+      if (Peserta::where('kode_tiket', '=', $kode_tiket)->exists()) {
+        // buar object pesertanya yang bakal di tambahin
+        $peserta = Peserta::where('kode_tiket', '=', $kode_tiket)->firstOrFail();
+
+        $kode_tiket_qr_code = $peserta->kode_tiket . $peserta->kunci_rahasia;
+        //Session::flash('sukses','Kode cocok, cukup tunjukan QR-code ini untuk saat masuk acara nanti.'); //<--FLASH MESSAGE
+        return view('peserta.tiket-cocok')->withKode_tiket_qr_code($kode_tiket_qr_code);
+
+      } else {
+
+        Session::flash('gagal','Gagal maning son.'); //<--FLASH MESSAGE
+        return view('peserta.tiket');
+      }
+
+
+    }
+
 
     /**
      * Display the specified resource.

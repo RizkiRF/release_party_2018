@@ -18,6 +18,18 @@ Route::get('/', function(){
 
 Route::post('terimakasih','PesertaController@store');
 
+// konfirmasi
+Route::get('konfirmasi', 'PesertaController@show_konfirmasi');
+
+Route::post('konfirmasi', 'PesertaController@konfirmasi');
+
+Route::post('cek-kode', 'PesertaController@cek_kode');
+
+Route::get('tiket', 'PesertaController@tiket');
+
+Route::post('tiket', 'PesertaController@get_tiket');
+
+
 
 Route::get('send-email', function(){
   Mail::send('emails.test',
@@ -71,9 +83,6 @@ Route::group(['middleware' => ['auth']], function()
 
 
     //peserta----------------------------
-
-
-
 
 });
 //users profile

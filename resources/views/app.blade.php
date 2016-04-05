@@ -4,10 +4,13 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		@yield('meta')
+
 		<title>Blog Demo | Find All Together</title>
 
 		<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-		
+
 
 		<!-- Fonts -->
 		<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -37,6 +40,12 @@
 					<ul class="nav navbar-nav">
 						<li>
 							<a href="{{ url('/') }}">Home</a>
+						</li>
+						<li>
+							<a href="{{ url('/konfirmasi') }}">Konfirmasi</a>
+						</li>
+						<li>
+							<a href="{{ url('/tiket') }}">Tiket</a>
 						</li>
 					</ul>
 
@@ -114,8 +123,11 @@
 		</div>
 
 		<!-- Scripts -->
-		<script src="{{ asset('/jquery.min.js') }}}"></script>
+		 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<!-- <script src="{{ asset('/jquery.min.js') }}"></script> -->
 		<script src="{{ asset('/js/jquery.min-2.1.3.js') }}"></script>
 		<script src="{{ asset('/js/bootstrap.min-3.3.1.js') }}"></script>
+
+		@yield('footer')
 	</body>
 </html>
