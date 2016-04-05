@@ -44,6 +44,11 @@ Route::controllers([
 // check for logged in user
 Route::group(['middleware' => ['auth']], function()
 {
+    //peserta all
+    Route::get('/peserta/all','PesertaController@index');
+    Route::get('/peserta/delete/{id}','PesertaController@destroy');
+    Route::get('/peserta/edit/{id}','PesertaController@edit');
+    Route::post('/peserta/edit','PesertaController@update');
     // show new post form
     Route::get('new-post','PostController@create');
     // save new post
