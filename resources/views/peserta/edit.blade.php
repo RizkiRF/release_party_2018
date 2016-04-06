@@ -8,6 +8,11 @@
 
     Homepage RP
     <br/>
+    @if(Session::has('pesan'))
+        <div class="alert alert-success alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <span class="glyphicon glyphicon-ok"></span><em> {!! session('pesan') !!}</em></div>
+    @endif
 
 
     <form class="form-horizontal" action="{{ url('/peserta/edit')}}" method="post">

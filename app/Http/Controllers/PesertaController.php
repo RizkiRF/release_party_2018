@@ -66,7 +66,9 @@ class PesertaController extends Controller
       $peserta->email = $request->get('email');
       $peserta->no_hp = $request->get('no_hp');
       $peserta->dvd = $request->get('dvd');
-      $peserta->status = $request->get('status');
+      $peserta->status = $request->get('status_peserta');
+
+      $peserta->instansi = $request->get('instansi');
 
       $peserta->status_bayar = 0;
       $peserta->email_terkirim = 0;
@@ -79,7 +81,7 @@ class PesertaController extends Controller
       Log::info('akan kirim email ke ' . $peserta->email);
       //$this->dispatch(new SendThanksEmail($data));
 
-      Mail::queue('emails.test', $data, function($message) use ($data){
+      Mail::queue('emails.after-register', $data, function($message) use ($data){
          $message->to($data['email'])
                  ->subject('Pendaftaran Release Party TeaLinux OS 8 - ' . $data['nama']);
                  Log::info('email terkirim ke ' . $data['email'] . ' dengan nama peserta : ' . $data['nama']);
@@ -152,10 +154,14 @@ class PesertaController extends Controller
       if (Peserta::where('kode_tiket', '=', $kode_tiket)->exists()) {
         // buar object pesertanya yang bakal di tambahin
         $peserta = Peserta::where('kode_tiket', '=', $kode_tiket)->firstOrFail();
+        if($peserta->status_bayar == 1){
+          $kode_tiket_qr_code = $peserta->kode_tiket . $peserta->kunci_rahasia;
+          //Session::flash('sukses','Kode cocok, cukup tunjukan QR-code ini untuk saat masuk acara nanti.'); //<--FLASH MESSAGE
+          return view('peserta.tiket-cocok')->withKode_tiket_qr_code($kode_tiket_qr_code)->withStatus(1);
 
-        $kode_tiket_qr_code = $peserta->kode_tiket . $peserta->kunci_rahasia;
-        //Session::flash('sukses','Kode cocok, cukup tunjukan QR-code ini untuk saat masuk acara nanti.'); //<--FLASH MESSAGE
-        return view('peserta.tiket-cocok')->withKode_tiket_qr_code($kode_tiket_qr_code);
+        } else {
+          return view('peserta.tiket-cocok')->withKode_tiket_qr_code('belum-bayar')->withStatus(0);
+        }
 
       } else {
 
@@ -209,10 +215,10 @@ class PesertaController extends Controller
         $peserta->status_bayar = $request->input('status_bayar');
         $peserta->email_terkirim = $request->input('email_terkirim');
         $peserta->sms_terkirim = $request->input('sms_terkirim');
+        Session::flash('pesan', $peserta->nama . ' Berhasi update data'); //<--FLASH MESSAGE
 
         $peserta->save();
-        $data['massage']= 'Data Berhasil Diupdate';
-        return redirect('peserta/edit/'.$peserta->id)->with($data);
+        return redirect('peserta/edit/'.$peserta->id);
 
     }
 
@@ -226,11 +232,11 @@ class PesertaController extends Controller
     {
         $peserta = Peserta::find($id);
 
+        Session::flash('pesan','Peserta ' . $peserta->nama . ' dengan email ' . $peserta->email . ' telah di hapus.'); //<--FLASH MESSAGE
 
             $peserta->delete();
-            $data['massage'] = 'Data berhasil dihapus';
 
-            return redirect("peserta/all")->with($data);
+            return redirect("peserta/all");
 
 
     }

@@ -16,6 +16,17 @@ Route::get('/', function(){
   return view('home');
 });
 
+$api = app('Dingo\Api\Routing\Router');
+
+$api->version('v1', function ($api) {
+    $api->get('/', function() {
+        return ['test' => true];
+    });
+    $api->get('/peserta', 'App\Http\Controllers\api\cekController@index');
+    $api->get('/peserta/{id}', 'App\Http\Controllers\api\cekController@show');
+    $api->post('/peserta/cek', 'App\Http\Controllers\api\cekController@store');
+});
+
 Route::post('terimakasih','PesertaController@store');
 
 // konfirmasi
