@@ -126,7 +126,7 @@
 <script src="{{asset ('js/plugins/countdown.js')}}"></script>
 <script src="{{asset ('js/plugins/wow.js')}}"></script>
 <script src="{{asset ('js/plugins/slick.js')}}"></script>
-<script src="{{asset ('js/plugins/magnific-popup.js')}}"></script>
+{{--<script src="{{asset ('js/plugins/magnific-popup.js')}}"></script>--}}
 <script src="{{asset ('js/plugins/validate.js')}}"></script>
 <script src="{{asset ('js/plugins/appear.js')}}"></script>
 <script src="{{asset ('js/plugins/count-to.js')}}"></script>
@@ -140,7 +140,11 @@
 
 
 
+<<<<<<< HEAD
 <script src="{{ asset('js/includes/contact_form.js')}}"></script>
+=======
+{{--<script src="{{asset ('js/includes/contact_form.js')}}"></script>--}}
+>>>>>>> 8a46d72217d145a2cc1faa2850c8e3c1c2b1cb73
 
 <script src="{{ asset('js/main.js') }}"></script>
 

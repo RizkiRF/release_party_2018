@@ -16,45 +16,13 @@ $(function() {
             format: "on"
         });
     }
-    $('#schedule-tabs a').on("click", function(e) {
-        e.preventDefault()
-        $(this).tab('show')
-    });
+
     $('#stats-counter').appear(function() {
         $('.count').countTo({
             refreshInterval: 50
         });
     });
-    if ($('.slick-slider').length) {
-        $('.slick-slider').slick({
-            slidesToShow: 6,
-            slidesToScroll: 6,
-            infinite: true,
-            autoplay: false,
-            arrows: true,
-            dots: true,
-            responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    arrows: true,
-                    slidesToShow: 5,
-                    slidesToScroll: 5
-                }
-            }, {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                }
-            }, {
-                breakpoint: 520,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }]
-        });
-    }
+
     if ($('.sponsor-slider').length) {
         $('.sponsor-slider').slick({
             centerMode: true,
@@ -129,81 +97,8 @@ if ($('.popup-gallery').length) {
         }
     });
 }
-$.validator.setDefaults({
-    highlight: function(element) {
-        $(element).closest('.form-group').addClass('has-error');
-    },
-    unhighlight: function(element) {
-        $(element).closest('.form-group').removeClass('has-error');
-    },
-    errorElement: 'small',
-    errorClass: 'help-block',
-    errorPlacement: function(error, element) {
-        if (element.parent('.input-group').length) {
-            error.insertAfter(element.parent());
-        }
-        if (element.parent('label').length) {
-            error.insertAfter(element.parent());
-        } else {
-            error.insertAfter(element);
-        }
-    }
-});
-(function() {
-    if (window.addtocalendar)
-        if (typeof window.addtocalendar.start == "function") return;
-    if (window.ifaddtocalendar == undefined) {
-        window.ifaddtocalendar = 1;
-        var d = document,
-            s = d.createElement('script'),
-            g = 'getElementsByTagName';
-        s.type = 'text/javascript';
-        s.charset = 'UTF-8';
-        s.async = true;
-        s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
-        var h = d[g]('body')[0];
-        h.appendChild(s);
-    }
-})();
-window.twttr = (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-    if (d.getElementById(id)) return t;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://platform.twitter.com/widgets.js";
-    fjs.parentNode.insertBefore(js, fjs);
-    t._e = [];
-    t.ready = function(f) {
-        t._e.push(f);
-    };
-    return t;
-}(document, "script", "twitter-wjs"));
-$("#paypal-regn").validate({
-    rules: {
-        first_name: "required",
-        last_name: "required",
-        email: {
-            required: true,
-            email: true
-        },
-        os0: "required",
-        quantity: "required",
-        agree: "required"
-    },
-    messages: {
-        first_name: "Your first name",
-        last_name: "Your last name",
-        email: "We need your email address",
-        os0: "Choose your Pass",
-        quantity: "How many seats",
-        agree: "Please accept our terms and privacy policy"
-    },
-    submitHandler: function(form) {
-        $("#reserve-btn").attr("disabled", true);
-        form.submit();
-    }
-});
+
+
 $(function() {
     if ($('body').hasClass('animate-page')) {
         wow = new WOW({

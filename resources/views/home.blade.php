@@ -357,21 +357,22 @@
             <p>Jadi saksi perayaan di rilisnya TeaLinuxOS versi baru - 8.</p>
         </div>
         <div class="contact-form bottom-space-xl wow fadeInUp">
-            <form action="{{asset ('php/contact.php')}}" id="phpcontactform" method="POST">
+            <form action="{{ url('terimakasih')}}" id="" method="POST">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
 
                         <div class="form-group">
                             <label>Nama</label>
-                            <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap Anda ( karena akan kami cetak di sertifikat )" required>
+                            <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap Anda ( karena akan kami cetak di sertifikat )"  value="{{ old('nama') }}"required>
                         </div>
                         <div class="form-group">
                             <label>Nomor HP</label>
-                            <input type="text" class="form-control" name="phone" placeholder="Nomor HP yang dapat dihubungi" required>
+                            <input type="text" class="form-control" name="no_hp" value="{{ old('no_hp') }}" placeholder="Nomor HP yang dapat dihubungi" required>
                         </div>
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" class="form-control" name="email" placeholder="Alamat Email" required>
+                            <input type="email" class="form-control" name="email" value="{{old('email')}}" placeholder="Alamat Email" required>
                         </div>
 
                         <div class="form-group has-info">
@@ -384,6 +385,9 @@
                                 <option value="umum">Umum</option>
                             </select>
 
+
+                        </div>
+                        <div class="instansi">
 
                         </div>
 
@@ -400,8 +404,8 @@
                         </div>
 
                         <div class="text-center top-space">
-                            <button type="submit" class="btn btn-success btn-block btn-lg" id="js-contact-btn">Daftar</button>
-                            <div id="js-contact-result" data-success-msg="Form submitted successfully." data-error-msg="Oops. Something went wrong."></div>
+                            <button type="submit" class="btn btn-success btn-block btn-lg" >Daftar</button>
+
                         </div>
                     </div>
                 </div>
@@ -477,7 +481,7 @@
                 <div class="col-md-6 wow fadeInRight" data-wow-duration="2s">
                     <h6 class="faq-title">Siapa penyelenggara acara ini ?</h6>
                     <p>Acara ini di selenggarakan oleh<a href="http://doscom.org"> Doscom - Dinus Open Source Community</a> . Kami adalah komunitas open source di bidang perangkat lunak yang memilik visi untuk " Memasyarakatkan Open Source dan Meng-Open Source-kan Masyrakat " melalui berbagai kegitan seperti workshop, seminar dan sharing session, Kami juga meracik sebuah sistem operasi bernama TeaLinuxOS. </p>
-                    <h6 class="faq-title">Bagaimana alur pendaftaran acara ini ?</h6>
+                        <h6 class="faq-title">Bagaimana alur pendaftaran acara ini ?</h6>
                     <p>Pendaftaran acara ini dapat di lakukan melalui dua cara :
                     <ul>
                         <li>Datang langsung ke stand / camp kami di Gedung D Lantai 1 Universitas Dian Nuswantoro</li>
@@ -498,11 +502,12 @@
             <h4 class="headline-support wow fadeInDown">Ayo gabung dalam perayaan rilis produk anak bangsa</h4>
             <h2 class="headline wow fadeInDown" data-wow-delay="0.1s">TeaLinuxOS 8</h2>
             <div class="footer_bottom-bg">
-                <a class="btn btn-success btn-xl wow zoomIn" data-wow-delay="0.3s" href="#daftar">DAFTAR SEKARANG</a>
+                <><a class="btn btn-success btn-xl wow zoomIn" data-wow-delay="0.3s" href="#daftar">DAFTAR SEKARANG</a>
             </div>
         </div>
     </section>
 
+<<<<<<< HEAD
 
     <form class="form-horizontal" action="{{ url('terimakasih')}}" method="post">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -667,6 +672,8 @@
     </div>
 
 
+=======
+>>>>>>> 8a46d72217d145a2cc1faa2850c8e3c1c2b1cb73
 @endsection
 
 @section('footer')
@@ -685,7 +692,7 @@
 
 
     $('#instansi').remove();
-    $('.instansi').append('<div class="col-md-9 col-md-offset-2"><input id="instansi" class="form-control" name="instansi" type="text" placeholder=" ' + instansi + '"  /></div>');
+    $('.instansi').append('<div class="form-group"><input id="instansi" class="form-control" name="instansi" type="text" placeholder=" ' + instansi + '"  /></div>');
   });
 </script>
 @endsection
