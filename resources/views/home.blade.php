@@ -34,14 +34,19 @@ Homepage RP
     <div class="form-group has-info">
         <label class="col-md-2 control-label"><i class="glyphicon glyphicon-user"></i> Status</label>
         <div class="col-md-9">
-            <select class="form-control" name="status_peserta" required="required">
-                <option >--Pilih--</option>
+            <select id="opsi-status" class="form-control" name="status_peserta" required="required">
+                <option >-- Pilih --</option>
                 <option value="mahasiswa">Mahasiswa</option>
                 <option value="pelajar">Pelajar</option>
                 <option value="umum">Umum</option>
             </select>
         </div>
+
     </div>
+    <div class="form-group has-info instansi">
+
+    </div>
+
     <div class="form-group has-info">
         <label class="col-md-2 control-label"><i class="glyphicon glyphicon-user"></i> DVD</label>
         <div class="col-md-9">
@@ -62,4 +67,25 @@ Homepage RP
     </div>
 </form>
 
+@endsection
+
+@section('footer')
+<script type="text/javascript">
+  $('#opsi-status').change(function(){
+
+    if( $(this).val() == 'mahasiswa'){
+        var instansi = "Apa nama kampus mu ?";
+    } else if($(this).val() == 'pelajar'){
+      var instansi = "Apa nama sekolah mu ?";
+    } else if($(this).val() == 'umum') {
+      var instansi = "Apa nama instansi mu ?";
+    } else {
+      $('#instansi').remove();
+    }
+
+
+    $('#instansi').remove();
+    $('.instansi').append('<div class="col-md-9 col-md-offset-2"><input id="instansi" class="form-control" name="instansi" type="text" placeholder=" ' + instansi + '"  /></div>');
+  });
+</script>
 @endsection

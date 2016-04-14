@@ -16,20 +16,49 @@ Route::get('/', function(){
   return view('home');
 });
 
+$api = app('Dingo\Api\Routing\Router');
+
+$api->version('v1', function ($api) {
+    $api->get('/', function() {
+        return ['test' => true];
+    });
+    $api->get('/peserta', 'App\Http\Controllers\api\cekController@index');
+    $api->get('/peserta/{id}', 'App\Http\Controllers\api\cekController@show');
+    $api->post('/peserta/cek', 'App\Http\Controllers\api\cekController@store');
+});
+
 Route::post('terimakasih','PesertaController@store');
+
+// konfirmasi
+Route::get('konfirmasi', 'PesertaController@show_konfirmasi');
+
+Route::post('konfirmasi', 'PesertaController@konfirmasi');
+
+Route::post('cek-kode', 'PesertaController@cek_kode');
+
+Route::get('tiket', 'PesertaController@tiket');
+
+Route::post('tiket', 'PesertaController@get_tiket');
+
 
 
 Route::get('send-email', function(){
   Mail::send('emails.test',
    ['testVar' => 'Namamu, iya kamu'],
    function($message) {
-     $message->to('sekretariat@doscom.org')
-             ->subject('Test email dari Laravel');
+             $message->to('sekretariat@doscom.org')
+                     ->subject('Test email dari Laravel');
    });
 });
 
 Route::get('test-view-email', function(){
-  return view('emails.test');
+  $nama = "diky arga";
+  $email = "dikyarga.id@gmail.com";
+  $kode_tiket = "code";
+  $no_hp = "08317373617";
+  $status = "mahasiswa";
+  $dvd = "64";
+  return view('emails.test')->withNama($nama)->withKode_tiket($kode_tiket)->withNo_hp($no_hp)->withEmail($email)->withStatus($status)->withDvd($dvd);
 });
 
 Route::get('contact', 'ContactController@showForm');
@@ -71,9 +100,6 @@ Route::group(['middleware' => ['auth']], function()
 
 
     //peserta----------------------------
-
-
-
 
 });
 //users profile
