@@ -65,30 +65,30 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-    <link href="css/plugins/animate.css" rel="stylesheet">
-    <link href="css/plugins/slick.css" rel="stylesheet">
-    <link href="css/plugins/magnific-popup.css" rel="stylesheet">
-    <link href="css/plugins/font-awesome.css" rel="stylesheet">
-    <link href="css/plugins/streamline-icons.css" rel="stylesheet">
+    <link href="{{ asset('css/plugins/animate.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/plugins/slick.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/plugins/magnific-popup.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/plugins/font-awesome.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/plugins/streamline-icons.css')}}" rel="stylesheet">
 
-    <link href="css/style.css" rel="stylesheet">
-
-
-    <link href="css/themes/green.css" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
 
-    <link rel="stylesheet" title="green" media="screen" href="css/themes/green.css">
+    <link href="{{asset('css/themes/green.css')}}" rel="stylesheet">
 
-    <link href="css/demo.css" rel="stylesheet">
+
+    <link rel="stylesheet" title="green" media="screen" href="{{asset('css/themes/green.css')}}">
+
+    <link href="{{asset ('css/demo.css')}}" rel="stylesheet">
 
 
     <!--[if lt IE 9]>
-    <script src="js/ie/respond.min.js"></script>
+    <script src="{{asset('js/ie/respond.min.js')}}"></script>
     <![endif]-->
 
-    <script src="js/modernizr.min.js"></script>
+    <script src="{{asset ('js/modernizr.min.js')}}"></script>
 
-    <script src="js/plugins/pace.js"></script>
+    <script src="{{asset ('js/plugins/pace.js')}}"></script>
 
 </head>
 
@@ -106,7 +106,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="images/header-logo.png" alt="Gather"> </a>
+            <a class="navbar-brand" href="#"><img src="{{asset('images/header-logo.png')}}" alt="Gather"> </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -150,7 +150,7 @@
     <div class="container">
         <div class="header_top-bg">
             <div class="logo">
-                <a href="#"><img src="images/logo-cerah.png" alt="event-logo">
+                <a href="#"><img src="{{asset ('images/logo-cerah.png')}}" alt="event-logo">
                 </a>
             </div>
         </div>
@@ -202,7 +202,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="speaker-info wow fadeIn" data-wow-delay="0s">
-                        <img src="images/pakanjar.png" alt="avatar" class="img-responsive center-block">
+                        <img src="{{asset ('images/pakanjar.png')}}" alt="avatar" class="img-responsive center-block">
                         <p>Anjar Hardiena</p>
                         <span><b>CEO</b> CloudKilat.com</span>
                         <br/>
@@ -212,7 +212,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="speaker-info wow fadeIn" data-wow-delay="0.1s">
-                        <img src="images/masas.png" alt="avatar" class="img-responsive center-block">
+                        <img src="{{asset ('images/masas.png')}}" alt="avatar" class="img-responsive center-block">
                         <p>Masas Dani</p>
                         <span><b>CTO </b> Gnews.id</span>
                         <br>
@@ -222,7 +222,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="speaker-info wow fadeIn" data-wow-delay="0.2s">
-                        <img src="images/pakshokibi.png" alt="avatar" class="img-responsive center-block">
+                        <img src="{{asset ('images/pakshokibi.png')}}" alt="avatar" class="img-responsive center-block">
                         <p>Shokibi</p>
                         <span><b>Penulis</b> Buku Open Source</span>
                         <br/>
@@ -232,7 +232,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="speaker-info wow fadeIn" data-wow-delay="0.2s">
-                        <img src="images/doscom.png" alt="avatar" class="img-responsive center-block">
+                        <img src="{{asset ('images/doscom.png')}}" alt="avatar" class="img-responsive center-block">
                         <p>Team Doscom</p>
                         <span><b>Developer</b> TeaLinuxOS</span>
                         <br/>
@@ -393,28 +393,28 @@
                 <div class="popup-gallery">
                     <div class="row">
                         <div class="col-md-6">
-                            <a href="images/dokumentasi-release-party-tealinuxos-7-2.jpg" title=""><img src="images/dokumentasi-release-party-tealinuxos-7-2.jpg" alt="gallery image" class="img-responsive wow fadeIn">
+                            <a href="{{asset ('images/dokumentasi-release-party-tealinuxos-7-2.jpg')}}" title=""><img src="{{asset ('images/dokumentasi-release-party-tealinuxos-7-2.jpg')}}" alt="gallery image" class="img-responsive wow fadeIn">
                             </a>
                         </div>
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a href="images/dokumentasi-release-party-tealinuxos-7.jpg" title=""><img src="images/dokumentasi-release-party-tealinuxos-7.jpg" alt="gallery image" class="img-responsive wow fadeIn" data-wow-delay="0.2s">
+                                    <a href="{{asset ('images/dokumentasi-release-party-tealinuxos-7.jpg')}}" title=""><img src="{{asset ('images/dokumentasi-release-party-tealinuxos-7.jpg')}}" alt="gallery image" class="img-responsive wow fadeIn" data-wow-delay="0.2s">
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
-                                    <a href="images/dokumentasi-release-party-tealinuxos-7-3.jpg" title=""><img src="images/dokumentasi-release-party-tealinuxos-7-3.jpg" alt="gallery image" class="img-responsive wow fadeIn" data-wow-delay="0.2s">
+                                    <a href="{{asset('images/dokumentasi-release-party-tealinuxos-7-3.jpg')}}" title=""><img src="{{asset('images/dokumentasi-release-party-tealinuxos-7-3.jpg')}}" alt="gallery image" class="img-responsive wow fadeIn" data-wow-delay="0.2s">
                                     </a>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a href="images/dokumentasi-release-party-tealinuxos-7-4.jpg" title=""><img src="images/dokumentasi-release-party-tealinuxos-7-4.jpg" alt="gallery image" class="img-responsive wow fadeIn" data-wow-delay="0.4s">
+                                    <a href="{{asset('images/dokumentasi-release-party-tealinuxos-7-4.jpg')}}" title=""><img src="{{asset ('images/dokumentasi-release-party-tealinuxos-7-4.jpg')}}" alt="gallery image" class="img-responsive wow fadeIn" data-wow-delay="0.4s">
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
-                                    <a href="images/panitia-release-party-tealinuxos.jpg" title=""><img src="images/panitia-release-party-tealinuxos.jpg" alt="gallery image" class="img-responsive wow fadeIn" data-wow-delay="0.4s">
+                                    <a href="{{asset ('images/panitia-release-party-tealinuxos.jpg')}}" title=""><img src="{{asset ('images/panitia-release-party-tealinuxos.jpg')}}" alt="gallery image" class="img-responsive wow fadeIn" data-wow-delay="0.4s">
                                     </a>
                                 </div>
                             </div>
@@ -452,7 +452,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail wow fadeInUp">
-                    <img src="images/lokasi.png" alt="Lokasi Acara" style="margin: 30px auto;">
+                    <img src="{{asset('images/lokasi.png')}}" alt="Lokasi Acara" style="margin: 30px auto;">
                     <div class="caption">
                         <p class="caption-text">LOKASI</p>
                         <h6 class="caption-title">Aula Gedung E Lantai 3<br> Universitas Dian Nuswantoro</h6>
@@ -462,7 +462,7 @@
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail wow fadeInUp" data-wow-delay="0.3s">
-                    <img src="images/fasilitas.png" alt="Fasilitas" style="margin: 30px auto;">
+                    <img src="{{asset('images/fasilitas.png')}}" alt="Fasilitas" style="margin: 30px auto;">
                     <div class="caption">
                         <p class="caption-text">FASILITAS</p>
                         <h6 class="caption-title" style="text-align: left; ">
@@ -482,7 +482,7 @@
             </div>
             <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
                 <div class="thumbnail wow fadeInUp" data-wow-delay="0.6s">
-                    <img src="images/tiket.png" alt="The Gleneagles Hotel" style="margin: 30px auto;">
+                    <img src="{{asset ('images/tiket.png')}}" alt="The Gleneagles Hotel" style="margin: 30px auto;">
                     <div class="caption">
                         <p class="caption-text">HTM</p>
                         <h6 class="caption-title">Rp. 45.000,-</h6>
@@ -501,7 +501,7 @@
         <p>Jadi saksi perayaan di rilisnya TeaLinuxOS versi baru - 8.</p>
     </div>
     <div class="contact-form bottom-space-xl wow fadeInUp">
-        <form action="php/contact.php" id="phpcontactform" method="POST">
+        <form action="{{asset ('php/contact.php')}}" id="phpcontactform" method="POST">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
 
@@ -568,7 +568,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="contact-box">
-                    <img src="images/kontak.png" alt="email icon" class="wow zoomIn" data-wow-delay="0.3s">
+                    <img src="{{asset('images/kontak.png')}}" alt="email icon" class="wow zoomIn" data-wow-delay="0.3s">
                     <h5>KONTAK</h5>
                     <p>Salamuddin - <b>0896 7565 7864</b>
                         <br>Bona Deny - <b>0857 2910 0499</b>
@@ -593,11 +593,11 @@
             <p>Acara ini terselenggara berkat dukungan berbagai pihak, Terimakasih!</p>
         </div>
         <div class="sponsor-slider wow bounceIn">
-            <div><img src="images/sponsor/udinus.png" class="img-responsive center-block" alt="sponsor"> </div>
-            <div><img src="images/sponsor/dinustek.png" class="img-responsive center-block" alt="sponsor"> </div>
-            <div><img src="images/sponsor/sosro.png" class="img-responsive center-block" alt="sponsor"> </div>
-            <div><img src="images/sponsor/qwords.png" class="img-responsive center-block" alt="sponsor"> </div>
-            <div><img src="images/sponsor/tvku.png" class="img-responsive center-block" alt="sponsor"> </div>
+            <div><img src="{{asset ('images/sponsor/udinus.png')}}" class="img-responsive center-block" alt="sponsor"> </div>
+            <div><img src="{{asset ('images/sponsor/dinustek.png')}}" class="img-responsive center-block" alt="sponsor"> </div>
+            <div><img src="{{asset ('images/sponsor/sosro.png')}}" class="img-responsive center-block" alt="sponsor"> </div>
+            <div><img src="{{asset ('images/sponsor/qwords.png')}}" class="img-responsive center-block" alt="sponsor"> </div>
+            <div><img src="{{asset ('images/sponsor/tvku.png')}}" class="img-responsive center-block" alt="sponsor"> </div>
 
         </div>
     </div>
@@ -658,7 +658,7 @@
     <p> <small class="text-muted">@doscomedia 2016</small>
     </p>
 </footer>
-<a href="#top" class="back_to_top"><img src="images/back_to_top.png" alt="back to top">
+<a href="#top" class="back_to_top"><img src="{{asset ('images/back_to_top.png')}}" alt="back to top">
 </a>
 <!--modal-->
 <div id="pembicara1" class="modal fade" role="dialog">
@@ -881,28 +881,28 @@
 
 
 
-<script src="js/jquery.min.js"></script>
+<script src="{{asset ('js/jquery.min.js')}}"></script>
 
-<script src="js/bootstrap.min.js"></script>
+<script src="{{asset ('js/bootstrap.min.js')}}"></script>
 
-<script src="js/plugins/countdown.js"></script>
-<script src="js/plugins/wow.js"></script>
-<script src="js/plugins/slick.js"></script>
-<script src="js/plugins/magnific-popup.js"></script>
-<script src="js/plugins/validate.js"></script>
-<script src="js/plugins/appear.js"></script>
-<script src="js/plugins/count-to.js"></script>
-<script src="js/plugins/nicescroll.js"></script>
+<script src="{{asset ('js/plugins/countdown.js')}}"></script>
+<script src="{{asset ('js/plugins/wow.js')}}"></script>
+<script src="{{asset ('js/plugins/slick.js')}}"></script>
+<script src="{{asset ('js/plugins/magnific-popup.js')}}"></script>
+<script src="{{asset ('js/plugins/validate.js')}}"></script>
+<script src="{{asset ('js/plugins/appear.js')}}"></script>
+<script src="{{asset ('js/plugins/count-to.js')}}"></script>
+<script src="{{asset ('js/plugins/nicescroll.js')}}"></script>
 
 <!-- <script src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
-<script src="js/plugins/infobox.js"></script>
+<script src="{{asset ('js/plugins/infobox.js')}}"></script>
 <!-- <script src="js/plugins/google-map.js"></script>
 <script src="js/plugins/directions.js"></script> -->
 
 
 
 
-<script src="js/includes/contact_form.js"></script>
+<script src="{{asset ('js/includes/contact_form.js')}}"></script>
 
 <script src="{{ asset('js/main.js') }}"></script>
 
