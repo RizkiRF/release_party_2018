@@ -23,6 +23,31 @@ class PesertaController extends Controller
         $pesertas = Peserta::all();
         return view('peserta.all')->withPesertas($pesertas);
     }
+    public function report()
+    {
+        $pesertas = Peserta::all();
+
+        $jumlahpesertabayar=0;
+        $jumlahpesertabelumbayar=0;
+
+        foreach($pesertas as $peserta){
+
+            if($peserta->status_bayar == 1){    
+
+                $jumlahpesertabayar++;
+            }else{
+                $jumlahpesertabelumbayar++;
+            }
+
+        }
+            
+        $totalharga = $jumlahpesertabayar * 50000;
+
+        return view('peserta.report')->withPesertas($pesertas)
+                                     ->withJumlahpesertabayar($jumlahpesertabayar)
+                                     ->withJumlahpesertabelumbayar($jumlahpesertabelumbayar)
+                                     ->withTotalharga($totalharga);
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -121,7 +146,6 @@ class PesertaController extends Controller
         $peserta->status_bayar = $request->input('status_bayar');
         $peserta->email_terkirim = $request->input('email_terkirim');
         $peserta->sms_terkirim = $request->input('sms_terkirim');
-
         $peserta->save();
         $data['massage']= 'Data Berhasil Diupdate';
         return redirect('peserta/edit/'.$peserta->id)->with($data);
