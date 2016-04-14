@@ -1,5 +1,8 @@
 /vendor
 /node_modules
 .env
+<<<<<<< HEAD
 .idea
+=======
+>>>>>>> 035eaae816843014b53ed38a600425dd4fa71774
 .idea/
