@@ -1,13 +1,6 @@
 @extends('app')
 
-@section('title')
-
-@endsection
-
 @section('content')
-
-Homepage RP
-<br/>
 
 
 <form class="form-horizontal" action="{{ url('terimakasih')}}" method="post">
