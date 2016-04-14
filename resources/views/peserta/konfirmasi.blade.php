@@ -5,13 +5,8 @@
 
 @endsection
 
-@section('title')
-
-@endsection
-
 @section('content')
 
-Halaman konfirmasi
 <br/>
 
 {!! Form::open(
@@ -57,7 +52,7 @@ Halaman konfirmasi
 </div>
 {!! Form::close() !!}
 </div>
-
+@endsection
 @section('footer')
 <script type="text/javascript">
 $(document).ready(function(){
@@ -120,4 +115,4 @@ $(document).ready(function(){
 </script>
 
 @endsection
-@endsection
+

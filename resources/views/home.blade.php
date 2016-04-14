@@ -561,6 +561,112 @@
     </div>
 </form>
 
+    <!--modal-->
+    <div id="pembicara1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <center><h4 class="modal-title">Anjar Hardiena</h4></center>
+                </div>
+                <div class="modal-body">
+                    <p><b>Pengalaman Kerja :</b></p>
+                    <ul>
+                        <li>Chief Operating Officer CLOUDKILAT(2014 ~ sekarang)</li>
+                        <li>Chief Linux PT. INFINSYS SYSTEM INDONESIA(2011 ~ Sekarang)</li>
+                        <li>Staff Ahli Direktorat SIPLK bidang Open Source Software(2009 ~ 2011)</li>
+                        <li>Koordinator IGOS Center Bekasi Kementrian Riset dan Teknologi(2009 ~ Sekarang)</li>
+                    </ul>
+                    <br>
+                    <p><b>Penghargaan :</b></p>
+                    <ul>
+                        <li>Penghargaan oleh Pemerintah Indonesia dari MENKOMINFO 2008</li>
+                        <li>Komite Penggerak Indonesia Linux Conference(2014, 2015)</li>
+                        <li>Peserta Konfrensi Asia Afrika tentang Open Source 2008</li>
+                        <li>Wakil Ketua Divisi IT dari berbagai acara OpensourceNasional & internasional.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal-->
+    <div id="pembicara2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <center><h4 class="modal-title">Masas Dani</h4></center>
+                </div>
+                <div class="modal-body">
+                    <p><b>Pengalaman Kerja :</b></p>
+                    <ul>
+                        <li>Chief Technology Officer GNEWS - Social News Reader (2015 ~ sekarang)</li>
+                        <li>VP Engineering GDILab (2014 ~ Sekarang)</li>
+                        <li>Technical Director GDILAB (2013 ~ 2014)</li>
+                        <li>Chief Executive Officer Blung Studio (2012 ~ 2013)</li>
+                    </ul>
+                    <br>
+                    <p><b>Project :</b></p>
+                    <ul>
+                        <li>Olympiasel - Web Informasi Olimpiade Telkomsel 2013 (2013)</li>
+                        <li>E-Gamelan Android & Blackberry (2012 - 2013)</li>
+                        <li>Gnews IOs (2014)</li>
+                        <li>Tea Linux OS (2010 - 2012)</li>
+                    </ul>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal-->
+    <div id="pembicara3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <center><h4 class="modal-title">Shokibi</h4></center>
+                </div>
+                <div class="modal-body">
+                    <p><b>Kegiatan :</b></p>
+                    <ul>
+                        <li>Jual Beli Komputer Bekas</li>
+                        <li>Penulis Buku Panduan Aplikasi Open Source</li>
+                        <li>Penulis Buku Panduan Aplikasi Open Source</li>
+                        <li>Melayani Migrasi, Support Center dan Training Implementasi software open source</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal-->
+    <div id="pembicara4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <center><h4 class="modal-title">Team Doscom</h4></center>
+                </div>
+                <div class="modal-body">
+                    <p><center>Kami adalah komunitas open source di bidang perangkat lunak yang memilik visi untuk " Memasyarakatkan Open Source dan Meng-Open Source-kan Masyrakat " melalui berbagai kegitan seperti workshop,
+                        seminar dan sharing session, Kami juga meracik sebuah sistem operasi bernama TeaLinuxOS.</center> </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 @endsection
 
 @section('footer')
