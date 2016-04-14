@@ -387,7 +387,7 @@
 <script src="{{asset ('js/plugins/countdown.js')}}"></script>
 <script src="{{asset ('js/plugins/wow.js')}}"></script>
 <script src="{{asset ('js/plugins/slick.js')}}"></script>
-<script src="{{asset ('js/plugins/magnific-popup.js')}}"></script>
+{{--<script src="{{asset ('js/plugins/magnific-popup.js')}}"></script>--}}
 <script src="{{asset ('js/plugins/validate.js')}}"></script>
 <script src="{{asset ('js/plugins/appear.js')}}"></script>
 <script src="{{asset ('js/plugins/count-to.js')}}"></script>
@@ -401,10 +401,10 @@
 
 
 
-<script src="{{asset ('js/includes/contact_form.js')}}"></script>
+{{--<script src="{{asset ('js/includes/contact_form.js')}}"></script>--}}
 
 <script src="{{ asset('js/main.js') }}"></script>
 
 
-
+@yield('footer')
 </html>
