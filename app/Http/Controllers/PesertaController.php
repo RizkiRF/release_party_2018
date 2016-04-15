@@ -114,7 +114,7 @@ class PesertaController extends Controller
 
        //QrCode::generate($kode_tiket, '../public/qrcode.svg');
 
-      return view('terimakasih')->withNamapeserta($peserta->nama);
+      return view('terimakasih')->withNamapeserta($peserta->nama)->withEmail($peserta->email);
     }
 
     public function show_konfirmasi()
@@ -190,7 +190,7 @@ class PesertaController extends Controller
 
       } else {
 
-        Session::flash('gagal','Gagal maning son.'); //<--FLASH MESSAGE
+        Session::flash('gagal','Kode tiket yang kamu masukan salah, silahkan coba lagi ( : '); //<--FLASH MESSAGE
         return view('peserta.tiket');
       }
 

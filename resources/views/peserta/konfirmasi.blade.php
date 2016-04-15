@@ -4,9 +4,57 @@
 <meta name="csrf-token" content="{{ csrf_token() }}" />
 
 @endsection
+@section('header')
+    <style type="text/css">
+        .reveal-menu-hidden{
+            top: 0;
+        }
+        /* Custom, iPhone Retina */
+        @media only screen and (min-width : 320px) {
+
+        }
+
+        /* Extra Small Devices, Phones */
+        @media only screen and (min-width : 480px) {
+
+        }
+
+        /* Small Devices, Tablets */
+        @media only screen and (min-width : 768px) {
+
+        }
+        @media only screen and (max-width : 992px) {
+            .cek-kode{
+                margin-top: 20px;
+            }
+        }
+
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 768px) {
+            .cek-kode{
+                margin-top: 20px;
+            }
+        }
+
+        /* Extra Small Devices, Phones */
+        @media only screen and (max-width : 480px) {
+            .cek-kode{
+                margin-top: 20px;
+            }
+        }
+
+        /* Custom, iPhone Retina */
+        @media only screen and (max-width : 320px) {
+            .cek-kode{
+                margin-top: 20px;
+            }
+        }
+
+    </style>
+@endsection
 
 @section('content')
-
+    <div class="container" style="margin-top: 125px;">
 <br/>
 
 {!! Form::open(
@@ -47,12 +95,15 @@
 
 <div class="form-group">
   <div class="col-md-12 col-md-offset-3">
-    {!! Form::submit('Konfirmasi', array('class' => 'btn btn-raised btn-info')) !!}
+    {!! Form::submit('Konfirmasi', array('class' => 'btn btn btn-success')) !!}
   </div>
 </div>
 {!! Form::close() !!}
 </div>
+    </div>
 @endsection
+
+
 @section('footer')
 <script type="text/javascript">
 $(document).ready(function(){

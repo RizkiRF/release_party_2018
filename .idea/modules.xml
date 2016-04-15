@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/blog-tealinux.iml" filepath="$PROJECT_DIR$/.idea/blog-tealinux.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/rilis-party.iml" filepath="$PROJECT_DIR$/.idea/rilis-party.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/rp.iml" filepath="$PROJECT_DIR$/.idea/rp.iml" />
     </modules>
   </component>
 </project>

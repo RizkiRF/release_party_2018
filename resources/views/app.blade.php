@@ -48,6 +48,8 @@
 
     <script src="{{asset ('js/plugins/pace.js')}}"></script>
 
+    @yield('header')
+
 </head>
 
 <body class="animate-page" data-spy="scroll" data-target="#navbar" data-offset="100">
@@ -68,33 +70,33 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#top">Beranda</a>
+                <li class="active"><a href="{{{ (Request::is('/') ? '' : url('/')) }}}#top">Beranda</a>
                 </li>
-                <li><a href="#pembicara">Pembicara</a>
+                <li><a href="{{{ (Request::is('/') ? '' : url('/')) }}}#pembicara">Pembicara</a>
                 </li>
-                <li><a href="#agenda">Agenda</a>
+                <li><a href="{{{ (Request::is('/') ? '' : url('/')) }}}#agenda">Agenda</a>
                 </li>
-                <li><a href="#galeri">Galeri</a>
+                <li><a href="{{{ (Request::is('/') ? '' : url('/')) }}}#galeri">Galeri</a>
                 </li>
-                <li><a href="#detail">Detail</a>
+                <li><a href="{{{ (Request::is('/') ? '' : url('/')) }}}#detail">Detail</a>
                 </li>
-                <li><a href="#daftar">Daftar</a>
+                <li><a href="{{{ (Request::is('/') ? '' : url('/')) }}}#daftar">Daftar</a>
                 </li>
-                <li><a href="#kontak">Kontak</a>
+                <li><a href="{{{ (Request::is('/') ? '' : url('/')) }}}#kontak">Kontak</a>
                 </li>
-                <li><a href="#faq">FAQ</a>
+                <li><a href="{{{ (Request::is('/') ? '' : url('/')) }}}#faq">FAQ</a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pendaftaran <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Daftar</a>
+                        <li><a href="{{{ (Request::is('/') ? '' : url('/')) }}}#daftar">Daftar</a>
                         </li>
 
                         <li role="separator" class="divider"></li>
                         <li class="dropdown-header">Sesudah bayar</li>
-                        <li><a href="#">Konfirmasi Pembayaran</a>
+                        <li><a href="{{{ url('/konfirmasi') }}}">Konfirmasi Pembayaran</a>
                         </li>
-                        <li><a href="#">Cetak Tiket</a>
+                        <li><a href="{{{ url('/tiket') }}}">Cetak Tiket</a>
                         </li>
 
                         </li>
@@ -104,6 +106,8 @@
     </div>
 </nav>
 
+
+@yield('content-homepage')
 
 @yield('content')
 
@@ -140,11 +144,7 @@
 
 
 
-<<<<<<< HEAD
-<script src="{{ asset('js/includes/contact_form.js')}}"></script>
-=======
 {{--<script src="{{asset ('js/includes/contact_form.js')}}"></script>--}}
->>>>>>> 8a46d72217d145a2cc1faa2850c8e3c1c2b1cb73
 
 <script src="{{ asset('js/main.js') }}"></script>
 

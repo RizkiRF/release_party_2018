@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('content')
+@section('content-homepage')
 
     <header id="top" class="header">
         <div class="container">
@@ -364,7 +364,7 @@
 
                         <div class="form-group">
                             <label>Nama</label>
-                            <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap Anda ( karena akan kami cetak di sertifikat )"  value="{{ old('nama') }}"required>
+                            <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap Anda ( pastikan benar karena akan kami cetak di sertifikat )"  value="{{ old('nama') }}"required>
                         </div>
                         <div class="form-group">
                             <label>Nomor HP</label>
@@ -484,12 +484,12 @@
                         <h6 class="faq-title">Bagaimana alur pendaftaran acara ini ?</h6>
                     <p>Pendaftaran acara ini dapat di lakukan melalui dua cara :
                     <ul>
-                        <li>Datang langsung ke stand / camp kami di Gedung D Lantai 1 Universitas Dian Nuswantoro</li>
-                        <li>Melakukan peftaran secara Online lalu melakukan pembayaran via rekening bank. (Nomer rekening dan prosedur lengkap kami kirim via email setelah Anda mendaftar)</li>
+                        <li>Datang langsung ke stand / camp kami di Gedung D Lantai 1 Universitas Dian Nuswantoro. <a target="_blank" href="https://www.google.co.id/maps/place/Televisi+Kampus+Universitas+Dian+Nuswantoro+(TVKU)/@-6.9811275,110.4059704,17z/data=!4m5!1m2!2m1!1sTVKU!3m1!1s0x2e708b4eab7880ab:0x40622c0d71e2ddb5?hl=id" >Buka Google Maps</a></li>
+                        <li>Melakukan pefaftaran secara Online lalu melakukan pembayaran via rekening bank. (Nomer rekening dan prosedur lengkap kami kirim via email setelah Anda mendaftar)</li>
                         <ul>
                             <li>Lakukan pembayaran ke nomer rekening kami</li>
-                            <li>Konfirmasi pembayaran mu ke <a href="#">halaman konfirmasi </a> / kirim sms dengan format "Nama Peserta Nama bank pengirim Atas nama pengirim" </li>
-                            <li>Tunggu maximal 1 x 24 Jam, untuk kami akan melakukan pengecekan lalu kami menghubungimu ( :</li>
+                            <li>Konfirmasi pembayaran mu ke <a href="{{ url('/konfirmasi') }}">halaman konfirmasi </a> / kirim sms dengan format "Nama Peserta Nama bank pengirim Atas nama pengirim" </li>
+                            <li>Tunggu maximal 1 x 24 Jam, untuk kami melakukan pengecekan lalu kami akan menghubungimu ( :</li>
                         </ul>
                     </ul> </p>
                 </div>
@@ -502,69 +502,11 @@
             <h4 class="headline-support wow fadeInDown">Ayo gabung dalam perayaan rilis produk anak bangsa</h4>
             <h2 class="headline wow fadeInDown" data-wow-delay="0.1s">TeaLinuxOS 8</h2>
             <div class="footer_bottom-bg">
-                <><a class="btn btn-success btn-xl wow zoomIn" data-wow-delay="0.3s" href="#daftar">DAFTAR SEKARANG</a>
+                <a class="btn btn-success btn-xl wow zoomIn" data-wow-delay="0.3s" href="#daftar">DAFTAR SEKARANG</a>
             </div>
         </div>
     </section>
 
-<<<<<<< HEAD
-
-    <form class="form-horizontal" action="{{ url('terimakasih')}}" method="post">
-    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-    <div class="form-group has-info">
-        <label for="inputEmail" class="col-md-2 control-label"><i class="glyphicon glyphicon-user"></i> Nama</label>
-        <div class="col-md-9">
-            <input  name="nama" class="form-control" placeholder="Nama" type="text" value="{{ old('nama') }}" required="required">
-        </div>
-    </div>
-
-    <div class="form-group has-info">
-        <label for="inputEmail" class="col-md-2 control-label"><i class=" glyphicon glyphicon-earphone"></i> No. Hp</label>
-        <div class="col-md-9">
-            <input class="form-control" name="no_hp" placeholder="No. Hp" type="text" value="{{ old('no_hp') }}" required="required">
-        </div>
-    </div>
-    <div class="form-group has-info">
-        <label for="inputEmail" class="col-md-2 control-label"><i class="glyphicon glyphicon-envelope"></i> Email</label>
-        <div class="col-md-9">
-            <input  name="email" class="form-control" placeholder="Email" type="email" value="{{ old('email') }}" required="required">
-        </div>
-    </div>
-    <div class="form-group has-info">
-        <label class="col-md-2 control-label"><i class="glyphicon glyphicon-user"></i> Status</label>
-        <div class="col-md-9">
-            <select id="opsi-status" class="form-control" name="status_peserta" required="required">
-                <option >-- Pilih --</option>
-                <option value="mahasiswa">Mahasiswa</option>
-                <option value="pelajar">Pelajar</option>
-                <option value="umum">Umum</option>
-            </select>
-        </div>
-
-    </div>
-    <div class="form-group has-info instansi">
-
-    </div>
-
-    <div class="form-group has-info">
-        <label class="col-md-2 control-label"><i class="glyphicon glyphicon-user"></i> DVD</label>
-        <div class="col-md-9">
-            <select class="form-control" name="dvd" required="required">
-                <option >--Pilih--</option>
-                <option value="32">32 Bit</option>
-                <option value="64">64 Bit</option>
-
-            </select>
-        </div>
-    </div>
-
-
-    <div class="form-group">
-        <div class="col-md-10 col-md-offset-5">
-            <button type="submit" class="btn btn-raised btn-info"><i class="glyphicon glyphicon-ok"></i> Submit</button>
-        </div>
-    </div>
-</form>
 
     <!--modal-->
     <div id="pembicara1" class="modal fade" role="dialog">
@@ -671,9 +613,6 @@
         </div>
     </div>
 
-
-=======
->>>>>>> 8a46d72217d145a2cc1faa2850c8e3c1c2b1cb73
 @endsection
 
 @section('footer')

@@ -40,7 +40,11 @@ Route::get('tiket', 'PesertaController@tiket');
 
 Route::post('tiket', 'PesertaController@get_tiket');
 
-
+Route::get('test-terimakasih', function(){
+    $nama = 'Diky Test';
+    $email = "diky@test.com";
+   return view('terimakasih')->withNamapeserta($nama)->withEmail($email);
+});
 
 Route::get('send-email', function(){
   Mail::send('emails.test',
