@@ -23,6 +23,8 @@ class AuthController extends Controller
     protected $username = 'username';
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
+    protected $redirectPath = '/peserta/all';
+
     /**
      * Create a new authentication controller instance.
      *

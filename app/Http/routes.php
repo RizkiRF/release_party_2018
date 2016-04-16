@@ -65,9 +65,9 @@ Route::get('test-view-email', function(){
   $dvd = "64";
   return view('emails.after-register')->withNama($nama)->withKode_tiket($kode_tiket)->withNo_hp($no_hp)->withEmail($email)->withStatus($status)->withDvd($dvd);
 });
-
-Route::get('contact', 'ContactController@showForm');
-Route::post('contact', 'ContactController@sendContactInfo');
+//
+//Route::get('contact', 'ContactController@showForm');
+//Route::post('contact', 'ContactController@sendContactInfo');
 //Route::get('/','PostController@index');
 Route::get('/home',['as' => 'home', 'uses' => 'PostController@index']);
 //authentication
@@ -107,12 +107,12 @@ Route::group(['middleware' => ['auth']], function()
     //peserta----------------------------
 
 });
-//users profile
-Route::get('user/{id}','UserController@profile')->where('id', '[0-9]+');
-// display list of posts
-Route::get('user/{id}/posts','UserController@user_posts')->where('id', '[0-9]+');
-// display single post
-Route::get('/{slug}',['as' => 'post', 'uses' => 'PostController@show'])->where('slug', '[A-Za-z0-9-_]+');
+////users profile
+//Route::get('user/{id}','UserController@profile')->where('id', '[0-9]+');
+//// display list of posts
+//Route::get('user/{id}/posts','UserController@user_posts')->where('id', '[0-9]+');
+//// display single post
+//Route::get('/{slug}',['as' => 'post', 'uses' => 'PostController@show'])->where('slug', '[A-Za-z0-9-_]+');
 
 // Login dan Logut
 Route::get('auth/login', 'Auth\AuthController@getLogin');
@@ -120,5 +120,8 @@ Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
 // Daftar
-Route::post('auth/register', 'Auth\AuthController@postRegister');
-Route::get('auth/register', 'Auth\AuthController@getRegister');
+//Route::post('auth/register', 'Auth\AuthController@postRegister');
+//Route::get('auth/register', 'Auth\AuthController@getRegister');
+Route::get('auth/register', function(){
+    return ":P";
+});

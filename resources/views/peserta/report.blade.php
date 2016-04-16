@@ -1,51 +1,40 @@
-@extends('app')
+@extends('app-dashboard')
 
-@section('title')
-    Jumlah Peserta
+@section('header')
+    <style type="text/css">
+        .reveal-menu-hidden{
+            top: 0;
+        }
+    </style>
 @endsection
-
 @section('content')
-
-    <div class="row text-center">
-        <div class="col-md-4">
+<div class="container" style="margin-top: 75px;">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h3>Total Peserta Mendaftar</h3>
+            <h1 style="color: #4eae49;">{{ $pesertas }}</h1>
+        </div>
+        <div class="col-md-6">
             <div class="row">
-                <div class="col-md-9 text-left">
-                    <h4>Jumlah Peserta Bayar</h4>
+                <div class="col-md-8">
+                    <h3>Membayar</h3>
                 </div>
-                <div class="col-md-3">
-                    <h4>{{ $jumlahpesertabayar}}</h4>
+                <div class="col-md-4">
+                    <h2>{{ $peserta_lunas }}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h3><span style="color: #ac2925; ">Belum </span>Membayar</h3>
+                </div>
+                <div class="col-md-4">
+                    <h2>{{ $peserta_belum_lunas }}</h2>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row text-center">
-        <div class="col-md-4">
-            <div class="row">
-                <div class="col-md-9 text-left">
-                    <h4>Total Pemasukan</h4>
-                </div>
-                <div class="col-md-3">
-                    <h4>{{ $totalharga}}</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    @foreach($pesertas as $peserta)
-    <div class="row text-center">
-        <div class="col-md-4">
-            <div class="row">
-                <div class="col-md-9 text-left">
-                    <h4>Jumlah Peserta</h4>
-                </div>
-                <div class="col-md-3">
-                    <h4>{{ count($peserta)}}</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    @endforeach
 
-
+</div>
 
 
 @endsection

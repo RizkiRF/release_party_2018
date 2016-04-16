@@ -29,28 +29,13 @@ class PesertaController extends Controller
     }
     public function report()
     {
-        $pesertas = Peserta::all();
-
-        $jumlahpesertabayar=0;
-        $jumlahpesertabelumbayar=0;
-
-        foreach($pesertas as $peserta){
-
-            if($peserta->status_bayar == 1){    
-
-                $jumlahpesertabayar++;
-            }else{
-                $jumlahpesertabelumbayar++;
-            }
-
-        }
-            
-        $totalharga = $jumlahpesertabayar * 45000;
-
-        return view('peserta.report')->withPesertas($pesertas)
-                                     ->withJumlahpesertabayar($jumlahpesertabayar)
-                                     ->withJumlahpesertabelumbayar($jumlahpesertabelumbayar)
-                                     ->withTotalharga($totalharga);
+        $peserta_lunas = Peserta::where('status_bayar', "1")->count();
+        $peserta_belum_lunas = Peserta::where('status_bayar', "0")->count();
+        $pesetas = Peserta::all()->count();
+        //dd($peserta_lunas . " " . $peserta_belum_lunas);
+        return view('peserta.report')->withPeserta_lunas($peserta_lunas)
+                                     ->withPeserta_belum_lunas($peserta_belum_lunas)
+                                     ->withPesertas($pesetas);
     }
 
     /**

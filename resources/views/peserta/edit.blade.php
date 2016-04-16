@@ -1,12 +1,16 @@
-@extends('app')
+@extends('app-dashboard')
 
-@section('title')
-
+@section('header')
+    <style type="text/css">
+        .reveal-menu-hidden{
+            top: 0;
+        }
+    </style>
 @endsection
-
 @section('content')
 
-    Homepage RP
+    <div class="container" style="margin-top: 75px;">
+
     <br/>
     @if(Session::has('pesan'))
         <div class="alert alert-success alert-dismissible" role="alert">
@@ -109,5 +113,6 @@
         </div>
 
     </form>
+    </div>
 
 @endsection
