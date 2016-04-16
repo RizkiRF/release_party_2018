@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     @yield('meta')
     <meta name="author" content="Diky Arga">
-    <meta name="description" content="Release Party TealinuxOS Sebuah kegiatan peluncuran yang diadakan oleh Doscom (Dinus Open Source Community) untuk merayakan peluncuran TeaLinuxOS versi 8. Release Party telah menjadi suatu tradisi tahunan doscom untuk menarik pengguna baru atau masyarakat yang potensial guna meningkatkan publikasi TeaLinuxOS.">
-    <meta name="keywords" content="release, tealinuxos, doscom, udinus, open-source ">
+    <meta name="description" content="Release Party TealinuxOS Sebuah kegiatan peluncuran yang diadakan oleh Doscom (Dinus Open Source Community) untuk merayakan peluncuran TeaLinuxOS versi 8. Release Party telah menjadi suatu tradisi tahunan doscom untuk menarik pengguna baru atau masyarakat yang potensial guna meningkatkan publikasi TeaLinuxOS."/>
+    <meta name="keywords" content="release, tealinuxos, doscom, udinus, open-source "/>
     <meta property="og:title" content="Seminar Nasional Release Party TeaLinux OS 8" />
     <meta property="og:description" content="Release Party TealinuxOS Sebuah kegiatan peluncuran yang diadakan oleh Doscom (Dinus Open Source Community) untuk merayakan peluncuran TeaLinuxOS versi 8. Release Party telah menjadi suatu tradisi tahunan doscom untuk menarik pengguna baru atau masyarakat yang potensial guna meningkatkan publikasi TeaLinuxOS." />
     <style media="screen">
@@ -43,7 +43,7 @@
 
 
     <!--[if lt IE 9]>
-    <script src="{{asset('js/ie/respond.min.js')}}"></script>
+    <!--<script src="{{asset('js/ie/respond.min.js')}}"></script>-->
     <![endif]-->
 
     <script src="{{asset ('js/modernizr.min.js')}}"></script>
