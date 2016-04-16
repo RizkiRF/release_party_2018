@@ -141,6 +141,7 @@ return [
         SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Dingo\Api\Provider\LaravelServiceProvider::class,
+        Irazasyed\LaravelGAMP\LaravelGAMPServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -203,6 +204,7 @@ return [
         'HTML'      => Illuminate\Html\HtmlFacade::class,
         'QrCode'    => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'GAMP'  => Irazasyed\LaravelGAMP\Facades\GAMP::class,
 
     ],
 
