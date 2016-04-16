@@ -43,17 +43,18 @@ Route::post('tiket', 'PesertaController@get_tiket');
 Route::get('test-terimakasih', function(){
     $nama = 'Diky Test';
     $email = "diky@test.com";
-   return view('terimakasih')->withNamapeserta($nama)->withEmail($email);
+    $kode_tiket = "XYZ";
+   return view('terimakasih')->withNamapeserta($nama)->withEmail($email)->withKode_tiket($kode_tiket);
 });
 
-Route::get('send-email', function(){
-  Mail::send('emails.test',
-   ['testVar' => 'Namamu, iya kamu'],
-   function($message) {
-             $message->to('sekretariat@doscom.org')
-                     ->subject('Test email dari Laravel');
-   });
-});
+//Route::get('send-email', function(){
+//  Mail::send('emails.test',
+//   ['testVar' => 'Namamu, iya kamu'],
+//   function($message) {
+//             $message->to('sekretariat@doscom.org')
+//                     ->subject('Test email dari Laravel');
+//   });
+//});
 
 Route::get('test-view-email', function(){
   $nama = "diky arga";
@@ -62,7 +63,7 @@ Route::get('test-view-email', function(){
   $no_hp = "08317373617";
   $status = "mahasiswa";
   $dvd = "64";
-  return view('emails.test')->withNama($nama)->withKode_tiket($kode_tiket)->withNo_hp($no_hp)->withEmail($email)->withStatus($status)->withDvd($dvd);
+  return view('emails.after-register')->withNama($nama)->withKode_tiket($kode_tiket)->withNo_hp($no_hp)->withEmail($email)->withStatus($status)->withDvd($dvd);
 });
 
 Route::get('contact', 'ContactController@showForm');

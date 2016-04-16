@@ -242,9 +242,10 @@
                                           <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Kode Tiketmu</td>
                                       </tr>
                                         <tr>
-                                            <td align="center" style="font-size: 25px; font-family: Helvetica, Arial, sans-serif; color: #333333; padding-top: 30px;" class="padding-copy">{{$kode_tiket}}</td>
+                                            <td align="center" style="font-size: 30px; font-family: Helvetica, Arial, sans-serif; color: #4EAE49;; padding-top: 30px;" class="padding-copy">{{$kode_tiket}}</td>
                                         </tr>
                                         <tr>
+                                            <img src="{!!$message->embedData(QrCode::format('png')->size(300)->generate($kode_tiket), 'QrCode.png', 'image/png')!!}">
                                             <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Simpan QR-Code ini sebagai tiket masuk saat acara nanti.</td>
                                         </tr>
                                     </table>
@@ -276,7 +277,7 @@
                     <td align="left" style="padding: 0 0 10px 0px; font-size: 20px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2">segera lakukan pembayaran dengan salah satu metode pembayaran berikut ini : </td>
                 </tr>
                 <tr>
-                    <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide"><a href="https://litmus.com/community" target="_blank"><img src="img/litmus-logo.jpg" alt="ilustrasi uang cash" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;"></a></td>
+                    <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide"><a href="" target="_blank"><img src="{{asset ('images/cod.png')}}" alt="ilustrasi uang cash" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;"></a></td>
                     <td style="padding: 40px 0 0 0;" class="no-padding">
                         <!-- ARTICLE -->
                         <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -301,7 +302,7 @@
                                                         <td align="center" style="padding: 0;" class="padding-copy">
                                                             <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                                                 <tr>
-                                                                    <td align="center"><a href="https://litmus.com/community" target="_blank" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #F6BB42; border-top: 10px solid #F6BB42; border-bottom: 10px solid #F6BB42; border-left: 20px solid #F6BB42; border-right: 20px solid #F6BB42; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" class="mobile-button">Buka Google Maps &rarr;</a></td>
+                                                                    <td align="center"><a href="https://www.google.co.id/maps/place/Kantin+Udinus/@-6.980809,110.4071595,17z/data=!3m1!4b1!4m2!3m1!1s0x2e708b4c1c405183:0x3943842b992e87fb?hl=id" target="_blank" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #F6BB42; border-top: 10px solid #F6BB42; border-bottom: 10px solid #F6BB42; border-left: 20px solid #F6BB42; border-right: 20px solid #F6BB42; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" class="mobile-button">Buka Google Maps &rarr;</a></td>
                                                                 </tr>
                                                             </table>
                                                         </td>
@@ -316,7 +317,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide"><a href="http://templates.mailchimp.com" target="_blank"><img src="img/mailchimp-logo.jpg" alt="ilustrasi atm" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;"></a></td>
+                    <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide"><a href="" target="_blank"><img src="{{asset ('images/atm.png')}}" alt="ilustrasi atm" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;"></a></td>
                     <td style="padding: 40px 0 0 0;" class="no-padding">
                         <!-- ARTICLE -->
                         <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -327,10 +328,10 @@
                                  <td align="left" style="padding: 10px 0 15px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Lakukan pembayaran ke :</td>
                             </tr>
                             <tr>
-                                 <td align="left" style="padding: 10px 0 15px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Bank BRI - Nomor Rekening : xxx-xxx-xxx - Atas nama : ASDF GHJKL</td>
+                                 <td align="left" style="padding: 10px 0 15px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Bank BRI - Nomor Rekening : 0545 0101 0939 506 - Atas nama : Salamuddin Pranayan</td>
                             </tr>
                             <tr>
-                                 <td align="left" style="padding: 10px 0 15px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Bank BNI - Nomor Rekening : xxx-xxx-xxx - Atas nama : QWER TYUIOP</td>
+                                 <td align="left" style="padding: 10px 0 15px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Bank Danamon - Nomor Rekening : 003 550 806 685 - Atas nama : Diky Arga Anggara</td>
                             </tr>
                             <tr>
                                  <td align="left" style="padding: 10px 0 15px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Sesudah transfer, segera lakukan konfirmasi dengan klik tombol dibawah </td>
@@ -346,7 +347,7 @@
                                                         <td align="center" style="padding: 0;" class="padding-copy">
                                                             <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                                                 <tr>
-                                                                    <td align="center"><a href="http://templates.mailchimp.com" target="_blank" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #5D9CEC; border-top: 10px solid #5D9CEC; border-bottom: 10px solid #5D9CEC; border-left: 20px solid #5D9CEC; border-right: 20px solid #5D9CEC; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" class="mobile-button">Konfirmasi Pembayaran &rarr;</a></td>
+                                                                    <td align="center"><a href="http://tealinuxos.org/release/konfirmasi" target="_blank" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #5D9CEC; border-top: 10px solid #5D9CEC; border-bottom: 10px solid #5D9CEC; border-left: 20px solid #5D9CEC; border-right: 20px solid #5D9CEC; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" class="mobile-button">Konfirmasi Pembayaran &rarr;</a></td>
                                                                 </tr>
                                                             </table>
                                                         </td>
@@ -367,10 +368,16 @@
                     <td align="left" style="padding: 0 0 10px 0px; font-size: 20px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2">Jangan sungkan bertanya, silahkan hubungi kami melalui : </td>
                 </tr>
                 <tr>
-                    <td align="left" style="padding: 0 0 10px 0px; font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2"><b>08XX-XXXX-XXX</b> - QWERT YIUIO</td>
+                    <td align="left" style="padding: 0 0 10px 0px; font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2"><b>089675657864</b> - Salamuddin</td>
                 </tr>
                 <tr>
-                    <td align="left" style="padding: 0 0 10px 0px; font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2"><b>08XX-XXXX-XXX</b> - ZXCV BNMKL</td>
+                    <td align="left" style="padding: 0 0 10px 0px; font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2"><b>085729100499</b> - Bona Deny</td>
+                </tr>
+                <tr>
+                    <td align="left" style="padding: 0 0 10px 0px; font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2"><b>085727676696</b> - Priyo</td>
+                </tr>
+                <tr>
+                    <td align="left" style="padding: 0 0 10px 0px; font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2"><b>Email </b> - <a href="mailto:sekretariat@doscom.org?Subject=Release%20Party" target="_top">sekretariat@doscom.org</a></td>
                 </tr>
 
             </table>
