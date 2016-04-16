@@ -11,7 +11,8 @@
         "laravel/framework": "5.1.*",
         "simplesoftwareio/simple-qrcode": "~1",
         "barryvdh/laravel-debugbar": "^2.2",
-        "dingo/api": "1.0.x@dev"
+        "dingo/api": "1.0.x@dev",
+        "irazasyed/laravel-gamp": "^1.1"
 
     },
     "require-dev": {
