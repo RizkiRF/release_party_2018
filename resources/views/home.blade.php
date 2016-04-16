@@ -327,7 +327,7 @@
                                     <li>DVD Exclusive TeaLinux OS 8</li>
                                     <li>Snack + Tea Break</li>
                                     <li>Ilmu + Pengalaman</li>
-                                    <li>Doorprize <br>berupa Smart Watch</li>
+                                    <li>Doorprize <br>berupa Smart Watch *</li>
                                 </ul>
 
                             </h6>

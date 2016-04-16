@@ -119,11 +119,11 @@
 
 <footer>
     <div class="social-icons">
-        <a href="#" class="wow zoomIn"> <i class="fa fa-twitter"></i> </a>
-        <a href="#" class="wow zoomIn" data-wow-delay="0.2s"> <i class="fa fa-facebook"></i> </a>
-        <a href="#" class="wow zoomIn" data-wow-delay="0.4s"> <i class="fa fa-linkedin"></i> </a>
+        <a href="#" class=""> <i class="fa fa-twitter"></i> </a>
+        <a href="#" class=""> <i class="fa fa-facebook"></i> </a>
+        <a href="#" class=""> <i class="fa fa-linkedin"></i> </a>
     </div>
-    <p> <small class="text-muted">@doscomedia 2016</small>
+    <p> <small class="text-muted"><a href="http://doscom.org">Doscom | Dinus Open Source Community</a>  - 2016</small>
     </p>
 </footer>
 <a href="#top" class="back_to_top"><img src="{{asset ('images/back_to_top.png')}}" alt="back to top">
