@@ -2,22 +2,7 @@
 <html lang="en">
 <head>
 <title>Pendaftaran Release Party TeaLinux OS 8</title>
-<!--
 
-    SALTED | A RESPONSIVE EMAIL TEMPLATE
-    =====================================
-
-    Based on code used and tested by Litmus (@litmusapp)
-    Originally developed by Kevin Mandeville (@KEVINgotbounce)
-    Cleaned up by Jason Rodriguez (@rodriguezcommaj)
-    Presented by A List Apart (@alistapart)
-
-    Email is surprisingly hard. While this has been thoroughly tested, your mileage may vary.
-    It's highly recommended that you test using a service like Litmus and your own devices.
-
-    Enjoy!
-
- -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <style type="text/css">
@@ -143,7 +128,7 @@
                         <td style="padding: 20px 0px 30px 0px;" class="logo">
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
-                                    <td bgcolor="#ffffff" width="100" align="left"><a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank"><img alt="Logo" src="https://coretandeny.files.wordpress.com/2014/12/doscom.png" width="78" height="78" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 16px;" border="0"></a></td>
+                                    <td bgcolor="#ffffff" width="100" align="left"><a href="http://doscom.org" target="_blank"><img alt="Logo" src="http://tealinuxos.org/release/images/logo-doscom-plus-text.png" width="78" height="78" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 16px;" border="0"></a></td>
                                     <td bgcolor="#ffffff" width="400" align="right" class="mobile-hide">
                                         <table border="0" cellpadding="0" cellspacing="0">
                                             <tr>
@@ -174,7 +159,7 @@
                                   <!-- COPY -->
                                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                       <tr>
-                                          <td align="center" bgcolor="#ffffff" valign="middle"><a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s1600/tealinuxos2.png" width="150" height="150" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 150px; height: 150px;" alt="Fluid images" border="0" class="img-max"></a></td>
+                                          <td align="center" bgcolor="#ffffff" valign="middle"><a href="http://tealinuxos.org" target="_blank"><img src="http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s1600/tealinuxos2.png" width="150" height="150" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 150px; height: 150px;" alt="Fluid images" border="0" class="img-max"></a></td>
                                       </tr>
 
                                       <tr>
@@ -278,7 +263,7 @@
                     <td align="left" style="padding: 0 0 10px 0px; font-size: 20px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2">segera lakukan pembayaran dengan salah satu metode pembayaran berikut ini : </td>
                 </tr>
                 <tr>
-                    <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide"><a href="" target="_blank"><img src="{{asset ('images/cod.png')}}" alt="ilustrasi uang cash" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;"></a></td>
+                    <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide"><a href="" target="_blank"><img src="http://tealinuxos.org/release/images/cod.png" alt="ilustrasi uang cash" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;"></a></td>
                     <td style="padding: 40px 0 0 0;" class="no-padding">
                         <!-- ARTICLE -->
                         <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -318,7 +303,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide"><a href="" target="_blank"><img src="{{asset ('images/atm.png')}}" alt="ilustrasi atm" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;"></a></td>
+                    <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide"><a href="" target="_blank"><img src="http://tealinuxos.org/release/images/atm.png" alt="ilustrasi atm" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;"></a></td>
                     <td style="padding: 40px 0 0 0;" class="no-padding">
                         <!-- ARTICLE -->
                         <table border="0" cellspacing="0" cellpadding="0" width="100%">

@@ -18,7 +18,7 @@
             </div>
             <div class="header_bottom-bg">
                 <a class="btn btn-default btn-xl wow zoomIn" data-wow-delay="0.3s" href="#daftar">DAFTAR SEKARANG</a>
-                <p class="cta_urgency wow fadeIn" data-wow-delay="0.5s"><small>Cepat, kursi terbatas</small>
+                <p class="cta_urgency wow fadeIn" data-wow-delay="0.5s"><small>Cepat, kuota terbatas</small>
                 </p>
             </div>
         </div>
@@ -28,9 +28,9 @@
 
     <section class="highlight">
         <div class="container">
-            <p class="lead text-center">Sebuah kegiatan peluncuran yang diadakan oleh Doscom (Dinus Open Source Community) untuk merayakan peluncuran TeaLinuxOS versi 8. Release Party telah menjadi suatu tradisi tahunan doscom untuk menarik pengguna baru atau masyarakat yang potensial guna meningkatkan publikasi TeaLinuxOS. </p>
+            <p class="lead text-center">Release Party TealinuxOS adalah acara yang diselenggarakan oleh Doscom (Dinus Open Source Community) untuk merayakan peluncuran TeaLinuxOS versi 8. Release Party telah menjadi suatu acara tahunan Doscom untuk menarik pengguna baru serta mengedukasi masyarakat tentang Open Source.  </p>
             <div class="countdown_wrap">
-                <h6 class="countdown_title text-center">Acara akan berlangsung pada</h6>
+                <h6 class="countdown_title text-center">Acara akan berlangsung dalam</h6>
 
                 <ul id="countdown" data-event-date="28 may 2016 08:00:00">
                     <li class="wow zoomIn" data-wow-delay="0s"> <span class="days">00</span>
@@ -165,7 +165,7 @@
                             </div>
 
                             <div class="timeline-content">
-                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Talk Show 3 Pembicara</h2>
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Talk Show dengan 3 Pembicara</h2>
                                 <span class="date wow flipInX" data-wow-delay="0.3s">10:45</span>
                             </div>
 
@@ -207,7 +207,7 @@
                             </div>
 
                             <div class="timeline-content">
-                                <h2 class="wow flipInX" data-wow-delay="0.3s">Penutup, pembagian Door Prize</h2>
+                                <h2 class="wow flipInX" data-wow-delay="0.3s">Penutup dan pembagian Door Prize</h2>
                                 <span class="date wow flipInX" data-wow-delay="0.3s">13:15</span>
                             </div>
 
@@ -421,7 +421,7 @@
                         <img src="images/lokasi.png" alt="location icon" class="wow zoomIn">
                         <h5>ALAMAT</h5>
                         <p>Gedung D Lantai 1
-                            <br> (Dekat Kantik Udinus)
+                            <br> (Dekat Kantin Udinus)
                             <br><b>Universitas Dian Nuswantoro</b>
                             <br>Jalan Nakula I No 1 - 15
                             <br><b>Semarang</b> 50131</p>
@@ -451,7 +451,7 @@
         <div class="container">
             <div class="section-title wow fadeInUp">
                 <h4>Sponsor Kami</h4>
-                <p>Acara ini terselenggara berkat dukungan berbagai pihak, Terimakasih!</p>
+                <p>Acara ini terselenggara berkat dukungan berbagai pihak, Terimakasih.</p>
             </div>
             <div class="sponsor-slider wow bounceIn">
                 <div><img src="{{asset ('images/sponsor/udinus.png')}}" class="img-responsive center-block" alt="sponsor udinus"> </div>
@@ -463,6 +463,11 @@
                 <div><img src="{{asset ('images/sponsor/clowor.png')}}" class="img-responsive center-block" alt="sponsor clowor"> </div>
                 <div><img src="{{asset ('images/sponsor/gnews.png')}}" class="img-responsive center-block" alt="sponsor gnews"> </div>
 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center"><a data-toggle="modal" data-target="#kerjasama-sponsorship" class="btn btn-outline" >Ingin jadi sponsor ?</a> </p>
             </div>
         </div>
 
@@ -484,14 +489,14 @@
                 </div>
                 <div class="col-md-6 wow fadeInRight" data-wow-duration="2s">
                     <h6 class="faq-title">Siapa penyelenggara acara ini ?</h6>
-                    <p>Acara ini di selenggarakan oleh<a href="http://doscom.org"> Doscom - Dinus Open Source Community</a> . Kami adalah komunitas open source di bidang perangkat lunak yang memilik visi untuk " Memasyarakatkan Open Source dan Meng-Open Source-kan Masyrakat " melalui berbagai kegitan seperti workshop, seminar dan sharing session, Kami juga meracik sebuah sistem operasi bernama TeaLinuxOS. </p>
+                    <p>Acara ini di selenggarakan oleh<a href="http://doscom.org"> Doscom - Dinus Open Source Community</a> . Kami adalah komunitas open source di bidang perangkat lunak yang memilik visi " Memasyarakatkan Open Source dan Meng-Open Source-kan Masyrakat " melalui berbagai kegitan seperti workshop, seminar dan sharing session, Kami juga meracik sebuah sistem operasi bernama TeaLinuxOS. </p>
                         <h6 class="faq-title">Bagaimana alur pendaftaran acara ini ?</h6>
                     <p>Pendaftaran acara ini dapat di lakukan melalui dua cara :
                     <ul>
                         <li>Datang langsung ke stand / camp kami di Gedung D Lantai 1 Universitas Dian Nuswantoro. <a target="_blank" href="https://www.google.co.id/maps/place/Televisi+Kampus+Universitas+Dian+Nuswantoro+(TVKU)/@-6.9811275,110.4059704,17z/data=!4m5!1m2!2m1!1sTVKU!3m1!1s0x2e708b4eab7880ab:0x40622c0d71e2ddb5?hl=id" >Buka Google Maps</a></li>
-                        <li>Melakukan pefaftaran secara Online lalu melakukan pembayaran via rekening bank. (Nomer rekening dan prosedur lengkap kami kirim via email setelah Anda mendaftar)</li>
+                        <li>Melakukan pendaftaran secara Online lalu melakukan pembayaran via rekening bank. (Nomor rekening dan prosedur lengkap kami kirim via email setelah Anda mendaftar)</li>
                         <ul>
-                            <li>Lakukan pembayaran ke nomer rekening kami</li>
+                            <li>Lakukan pembayaran ke nomor rekening kami</li>
                             <li>Konfirmasi pembayaran mu ke <a href="{{ url('/konfirmasi') }}">halaman konfirmasi </a> / kirim sms dengan format "Nama Peserta Nama bank pengirim Atas nama pengirim" </li>
                             <li>Tunggu maximal 1 x 24 Jam, untuk kami melakukan pengecekan lalu kami akan menghubungimu ( :</li>
                         </ul>
@@ -570,7 +575,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
                 </div>
             </div>
         </div>
@@ -588,12 +593,12 @@
                     <ul>
                         <li>Jual Beli Komputer Bekas</li>
                         <li>Penulis Buku Panduan Aplikasi Open Source</li>
-                        <li>Penulis Buku Panduan Aplikasi Open Source</li>
+
                         <li>Melayani Migrasi, Support Center dan Training Implementasi software open source</li>
                     </ul>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
                 </div>
             </div>
         </div>
@@ -611,7 +616,24 @@
                         seminar dan sharing session, Kami juga meracik sebuah sistem operasi bernama TeaLinuxOS.</center> </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal-->
+    <div id="kerjasama-sponsorship" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <center><h4 class="modal-title">Kerjasama Sponsorship</h4></center>
+                </div>
+                <div class="modal-body">
+                    <p><center>Terimakasih telah mendukung acara ini, untuk kerjasama sponsorship, silahkan hubungi kami di <b>0896 7565 7864</b> -  Salamuddin atau melalui email : <a href="mailto:sekretariat@doscom.org?Subject=Kerjasama%20Sponsorship" target="_top">sekretariat@doscom.org</a></center> </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
                 </div>
             </div>
         </div>
