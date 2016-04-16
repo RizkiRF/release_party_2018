@@ -1,4 +1,17 @@
-:P
+@extends('app')
+
+@section('header')
+	<style type="text/css">
+		.reveal-menu-hidden{
+			top: 0;
+		}
+	</style>
+@endsection
+@section('content')
+<div class="container" style="margin-top: 100px;">
+	<h1>:P - Kalo mau daftar jadi peserta <a href="{{ url('/') }} #daftar"> kesini </a> bos, kalo mau retas gak papa, terus laporin celahnya ke sini ya <a href="mailto:sekretariat@doscom.org?Subject=Release%20Party" target="_top">sekretariat@doscom.org</a>. Ada hadiah untuk kamu ( :</h1>
+</div>
+
 {{--@extends('app')--}}
 
 {{--@section('content')--}}
@@ -69,3 +82,4 @@
 	{{--</div>--}}
 {{--</div>--}}
 {{--@endsection--}}
+	@endsection
