@@ -25,7 +25,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-    <link href="{{ asset('css/plugins/animate.css') }}" rel="stylesheet">
+    {{--<link href="{{ asset('css/plugins/animate.css') }}" rel="stylesheet">--}}
     <link href="{{ asset('css/plugins/slick.css')}}" rel="stylesheet">
     {{--<link href="{{ asset('css/plugins/magnific-popup.css')}}" rel="stylesheet">--}}
     <link href="{{ asset('css/plugins/font-awesome.css')}}" rel="stylesheet">
@@ -130,7 +130,7 @@
 <script src="{{asset ('js/bootstrap.min.js')}}"></script>
 
 <script src="{{asset ('js/plugins/countdown.js')}}"></script>
-<script src="{{asset ('js/plugins/wow.js')}}"></script>
+{{--<script src="{{asset ('js/plugins/wow.js')}}"></script>--}}
 <script src="{{asset ('js/plugins/slick.js')}}"></script>
 {{--<script src="{{asset ('js/plugins/magnific-popup.js')}}"></script>--}}
 <script src="{{asset ('js/plugins/validate.js')}}"></script>
