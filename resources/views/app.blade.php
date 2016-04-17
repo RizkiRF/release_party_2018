@@ -20,7 +20,7 @@
             line-height: 1.6;
         }
     </style>
-    <link rel="shortcut icon" href="http://studio.tealinuxos.org/css/homepage/favicon.png">
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
 
     <title>Release Party TeaLinux OS 8</title>
 
