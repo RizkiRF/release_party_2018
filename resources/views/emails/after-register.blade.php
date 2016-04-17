@@ -128,7 +128,7 @@
                         <td style="padding: 20px 0px 30px 0px;" class="logo">
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
-                                    <td bgcolor="#ffffff" width="100" align="left"><a href="http://doscom.org" target="_blank"><img alt="Logo" src="http://tealinuxos.org/release/images/logo-doscom-plus-text.png" width="78" height="78" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 16px;" border="0"></a></td>
+                                    <td bgcolor="#ffffff" width="100" align="left"><a href="http://doscom.org" target="_blank"><img alt="Logo" src="http://tealinuxos.org/release/images/logo-doscom-plus-text.png" width="78" height="128" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 16px;" border="0"></a></td>
                                     <td bgcolor="#ffffff" width="400" align="right" class="mobile-hide">
                                         <table border="0" cellpadding="0" cellspacing="0">
                                             <tr>
@@ -231,9 +231,11 @@
                                         </tr>
                                         <tr>
                                             <img src="{!!$message->embedData(QrCode::format('png')->size(300)->generate($kode_tiket . $kunci_rahasia), 'QrCode.png', 'image/png')!!}">
-                                            <br>
+                                        </tr>
+                                        <tr>
                                             <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Simpan QR-Code ini sebagai tiket masuk saat acara nanti.</td>
                                         </tr>
+
                                     </table>
                                 </td>
                             </tr>
