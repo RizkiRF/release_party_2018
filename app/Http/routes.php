@@ -15,7 +15,7 @@
 Route::get('/', function(){
   return view('home');
 });
-Route::get('lo-lo-lo-lo-lo', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+
 
 $api = app('Dingo\Api\Routing\Router');
 
@@ -104,6 +104,7 @@ Route::group(['middleware' => ['auth']], function()
     // delete comment
     Route::post('comment/delete/{id}','CommentController@distroy');
 
+    Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
     //peserta----------------------------
 

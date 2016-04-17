@@ -76,6 +76,8 @@
                 </li>
                 <li><a href="{{ url('/peserta/report') }}">Report</a>
                 </li>
+                <li><a href="{{ url('/logs') }}">Logs</a>
+                </li>
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
