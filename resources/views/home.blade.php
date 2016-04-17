@@ -528,7 +528,7 @@
                 <div class="modal-body">
                     <p><b>Pengalaman Kerja :</b></p>
                     <ul>
-                        <li>Chief Operating Officer CLOUDKILAT(2014 ~ sekarang)</li>
+                        <li>Chief Operating Officer <a href="http://cloudkilat.com">CLOUDKILAT</a>  (2014 ~ sekarang)</li>
                         <li>Chief Linux PT. INFINSYS SYSTEM INDONESIA(2011 ~ Sekarang)</li>
                         <li>Staff Ahli Direktorat SIPLK bidang Open Source Software(2009 ~ 2011)</li>
                         <li>Koordinator IGOS Center Bekasi Kementrian Riset dan Teknologi(2009 ~ Sekarang)</li>
@@ -559,8 +559,8 @@
                 <div class="modal-body">
                     <p><b>Pengalaman Kerja :</b></p>
                     <ul>
-                        <li>Chief Technology Officer GNEWS - Social News Reader (2015 ~ sekarang)</li>
-                        <li>VP Engineering GDILab (2014 ~ Sekarang)</li>
+                        <li>Chief Technology Officer <a href="http://gnews.id">GNEWS - Social News Reader </a> (2015 ~ sekarang)</li>
+                        <li>VP Engineering <a href="http://gdilab.com">GDILab </a> (2014 ~ Sekarang)</li>
                         <li>Technical Director GDILAB (2013 ~ 2014)</li>
                         <li>Chief Executive Officer Blung Studio (2012 ~ 2013)</li>
                     </ul>
@@ -589,12 +589,17 @@
                     <center><h4 class="modal-title">Shokibi</h4></center>
                 </div>
                 <div class="modal-body">
+                    <p><b>Pengalaman Kera</b></p>
+                    <ul>
+                        <li>Owner & Founder Istana Media </li>
+                        <li>Penulis Buku Aplikasi Open Source</li>
+                        <li>Koordinator Tim Dokumentasi BlankOn Linux (2012 ~ Sekarang)</li>
+                        <li>Migrasi Pabrik Sepatu FANS (2014 ~ 2015)</li>
+                    </ul>
                     <p><b>Kegiatan :</b></p>
                     <ul>
-                        <li>Jual Beli Komputer Bekas</li>
-                        <li>Penulis Buku Panduan Aplikasi Open Source</li>
-
-                        <li>Melayani Migrasi, Support Center dan Training Implementasi software open source</li>
+                        <li>Support & Training Implementasi Aplikasi Open Source</li>
+                        <li>Menulis Panduan Aplikasi Open Source</li>
                     </ul>
                 </div>
                 <div class="modal-footer">
@@ -612,7 +617,7 @@
                     <center><h4 class="modal-title">Team Doscom</h4></center>
                 </div>
                 <div class="modal-body">
-                    <p><center>Kami adalah komunitas open source di bidang perangkat lunak yang memilik visi untuk " Memasyarakatkan Open Source dan Meng-Open Source-kan Masyrakat " melalui berbagai kegitan seperti workshop,
+                    <p><center>Kami adalah komunitas open source di bidang perangkat lunak yang memilik visi " Memasyarakatkan Open Source dan Meng-Open Source-kan Masyrakat " melalui berbagai kegitan seperti workshop,
                         seminar dan sharing session, Kami juga meracik sebuah sistem operasi bernama TeaLinuxOS.</center> </p>
                 </div>
                 <div class="modal-footer">
