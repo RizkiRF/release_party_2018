@@ -88,7 +88,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="speaker-info wow fadeIn" data-wow-delay="0.2s">
-                            <img src="{{asset ('images/doscom.png')}}" alt="avatar" class="img-responsive center-block">
+                            <img src="{{asset ('images/foto-team-doscom.png')}}" alt="avatar" class="img-responsive center-block">
                             <p>Team Doscom</p>
                             <span><b>Developer</b> TeaLinuxOS</span>
                             <br/>

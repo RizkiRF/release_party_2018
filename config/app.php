@@ -142,7 +142,9 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Dingo\Api\Provider\LaravelServiceProvider::class,
         Irazasyed\LaravelGAMP\LaravelGAMPServiceProvider::class,
+        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
         /*
+         *
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,

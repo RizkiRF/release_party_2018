@@ -12,7 +12,8 @@
         "simplesoftwareio/simple-qrcode": "~1",
         "barryvdh/laravel-debugbar": "^2.2",
         "dingo/api": "1.0.x@dev",
-        "irazasyed/laravel-gamp": "^1.1"
+        "irazasyed/laravel-gamp": "^1.1",
+        "rap2hpoutre/laravel-log-viewer": "^0.6.0"
 
     },
     "require-dev": {

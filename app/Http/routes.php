@@ -15,6 +15,7 @@
 Route::get('/', function(){
   return view('home');
 });
+Route::get('lo-lo-lo-lo-lo', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
 $api = app('Dingo\Api\Routing\Router');
 
