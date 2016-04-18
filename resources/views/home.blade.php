@@ -667,7 +667,7 @@
 
 
     $('#instansi').remove();
-    $('.instansi').append('<div class="form-group"><input id="instansi" class="form-control" name="instansi" type="text" placeholder=" ' + instansi + '"  /></div>');
+    $('.instansi').append('<div class="form-group"><input id="instansi" class="form-control" name="instansi" type="text" placeholder=" ' + instansi + '"  required /></div>');
   });
 </script>
 @endsection
