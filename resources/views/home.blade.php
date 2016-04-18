@@ -332,7 +332,7 @@
                                 </ul>
 
                             </h6>
-                            * bagi peserta yang <beruntung></beruntung>
+                            * bagi peserta yang beruntung
 
                         </div>
                     </div>
@@ -343,7 +343,7 @@
                         <img src="{{asset ('images/tiket.png')}}" alt="The Gleneagles Hotel" style="margin: 30px auto;">
                         <div class="caption">
                             <p class="caption-text">HTM</p>
-                            <h6 class="caption-title">Rp. 50.000,-</h6>
+                            <h6 class="caption-title">Rp. 45.000,-</h6>
 
                         </div>
                     </div>
@@ -356,7 +356,7 @@
     <div class="container" id="daftar">
         <div class="section-title">
             <h5>DAFTAR SEKARANG</h5>
-            <p>Jadi saksi perayaan di rilisnya TeaLinuxOS versi baru - 8.</p>
+            <p>Jadi saksi perayaan di rilisnya TeaLinuxOS versi terbaru.</p>
         </div>
         <div class="contact-form bottom-space-xl wow fadeInUp">
             <form action="{{ url('terimakasih')}}" id="" method="POST">
@@ -463,6 +463,9 @@
                 <div><img src="{{asset ('images/sponsor/rri.png')}}" class="img-responsive center-block" alt="sponsor rri"> </div>
                 <div><img src="{{asset ('images/sponsor/clowor.png')}}" class="img-responsive center-block" alt="sponsor clowor"> </div>
                 <div><img src="{{asset ('images/sponsor/gnews.png')}}" class="img-responsive center-block" alt="sponsor gnews"> </div>
+                <div><img src="{{asset ('images/sponsor/bank-jateng.png')}}" class="img-responsive center-block" alt="sponsor Bank Jateng"> </div>
+                <div><img src="{{asset ('images/sponsor/cloudkilat.png')}}" class="img-responsive center-block" alt="sponsor Cloud Kilat"> </div>
+                <div><img src="{{asset ('images/sponsor/moon-shard.png')}}" class="img-responsive center-block" alt="sponsor Moon Shard"> </div>
 
             </div>
         </div>
