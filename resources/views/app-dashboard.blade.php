@@ -76,6 +76,8 @@
                 </li>
                 <li><a href="{{ url('/peserta/report') }}">Report</a>
                 </li>
+                <li><a href="{{ url('/peserta/konfirmasi') }}">Konfirmasi</a>
+                </li>
                 <li><a href="{{ url('/logs') }}">Logs</a>
                 </li>
 

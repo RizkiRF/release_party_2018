@@ -112,7 +112,7 @@
                         <li class="dropdown-header">Sesudah bayar</li>
                         <li><a href="{{{ url('/konfirmasi') }}}">Konfirmasi Pembayaran</a>
                         </li>
-                        <li><a href="{{{ url('/tiket') }}}">Cetak Tiket</a>
+                        <li><a href="{{{ url('/tiket') }}}">Dapatkan Tiket</a>
                         </li>
 
                         </li>
@@ -143,7 +143,7 @@
 
 <script src="{{asset ('js/bootstrap.min.js')}}"></script>
 
-<script src="{{asset ('js/plugins/countdown.js')}}"></script>
+
 {{--<script src="{{asset ('js/plugins/wow.js')}}"></script>--}}
 <script src="{{asset ('js/plugins/slick.js')}}"></script>
 {{--<script src="{{asset ('js/plugins/magnific-popup.js')}}"></script>--}}
@@ -157,14 +157,14 @@
 <!-- <script src="js/plugins/google-map.js"></script>
 <script src="js/plugins/directions.js"></script> -->
 
-
+@yield('footer')
 
 
 {{--<script src="{{asset ('js/includes/contact_form.js')}}"></script>--}}
 
 <script src="{{ asset('js/main.js') }}"></script>
 
-@yield('footer')
+
 
 
 </html>

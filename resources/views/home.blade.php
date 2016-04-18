@@ -79,7 +79,7 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="speaker-info wow fadeIn" data-wow-delay="0.2s">
                             <img src="{{asset ('images/pakshokibi.png')}}" alt="avatar" class="img-responsive center-block">
-                            <p>Shokibi</p>
+                            <p>Sokibi</p>
                             <span><b>Penulis</b> Buku Open Source</span>
                             <br/>
                             <br/>
@@ -142,7 +142,7 @@
 
                             <div class="timeline-content">
                                 <h2 class="wow flipInX" data-wow-delay="0.3s"> Materi Open Source Di Bidang Multimedia dan Design</h2>
-                                <p class="wow flipInX" data-wow-delay="0.3s">oleh Sokhibi</p>
+                                <p class="wow flipInX" data-wow-delay="0.3s">oleh Sokibi</p>
                                 <span class="date wow flipInX" data-wow-delay="0.3s">09:15 </span>
                             </div>
 
@@ -312,7 +312,7 @@
                         <div class="caption">
                             <p class="caption-text">LOKASI</p>
                             <h6 class="caption-title">Aula Gedung E Lantai 3<br> Universitas Dian Nuswantoro</h6>
-                            <p class="text-center"><a target="_blank" href="https://www.google.co.id/maps/place/Televisi+Kampus+Universitas+Dian+Nuswantoro+(TVKU)/@-6.9811275,110.4059704,17z/data=!4m5!1m2!2m1!1sTVKU!3m1!1s0x2e708b4eab7880ab:0x40622c0d71e2ddb5?hl=id" class="btn btn-outline" role="button">Buka Google Maps</a> </p>
+                            <p class="text-center"><a target="_blank" href="https://www.google.co.id/maps/place/Televisi+Kampus+Universitas+Dian+Nuswantoro+(TVKU)/@-6.9811275,110.4059704,17z/data=!4m5!1m2!2m1!1sTVKU!3m1!1s0x2e708b4eab7880ab:0x40622c0d71e2ddb5?hl=id" class="btn btn-outline" role="button">Lihat Google Maps</a> </p>
                         </div>
                     </div>
                 </div>
@@ -381,7 +381,7 @@
                             <label class="">Status</label>
 
                             <select id="opsi-status" class="form-control" name="status_peserta" required="required">
-                                <option >-- Pilih --</option>
+                                <option value="">-- Pilih --</option>
                                 <option value="mahasiswa">Mahasiswa</option>
                                 <option value="pelajar">Pelajar</option>
                                 <option value="umum">Umum</option>
@@ -397,7 +397,7 @@
                             <label class=""> DVD TeaLinux OS 8</label>
 
                             <select class="form-control" name="dvd" required="required">
-                                <option >--Pilih--</option>
+                                <option value="">--Pilih--</option>
                                 <option value="32">32 Bit</option>
                                 <option value="64">64 Bit</option>
 
@@ -494,7 +494,7 @@
                         <h6 class="faq-title">Bagaimana alur pendaftaran acara ini ?</h6>
                     <p>Pendaftaran acara ini dapat di lakukan melalui dua cara :
                     <ul>
-                        <li>Datang langsung ke stand / camp kami di Gedung D Lantai 1 Universitas Dian Nuswantoro. <a target="_blank" href="https://www.google.co.id/maps/place/Televisi+Kampus+Universitas+Dian+Nuswantoro+(TVKU)/@-6.9811275,110.4059704,17z/data=!4m5!1m2!2m1!1sTVKU!3m1!1s0x2e708b4eab7880ab:0x40622c0d71e2ddb5?hl=id" >Buka Google Maps</a></li>
+                        <li>Datang langsung ke stand / camp kami di Gedung D Lantai 1 Universitas Dian Nuswantoro. <a target="_blank" href="https://www.google.co.id/maps/place/Televisi+Kampus+Universitas+Dian+Nuswantoro+(TVKU)/@-6.9811275,110.4059704,17z/data=!4m5!1m2!2m1!1sTVKU!3m1!1s0x2e708b4eab7880ab:0x40622c0d71e2ddb5?hl=id" >Lihat Google Maps</a></li>
                         <li>Melakukan pendaftaran secara Online lalu melakukan pembayaran via rekening bank. (Nomor rekening dan prosedur lengkap kami kirim via email setelah Anda mendaftar)</li>
                         <ul>
                             <li>Lakukan pembayaran ke nomor rekening kami</li>
@@ -587,7 +587,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <center><h4 class="modal-title">Shokibi</h4></center>
+                    <center><h4 class="modal-title">Sokibi</h4></center>
                 </div>
                 <div class="modal-body">
                     <p><b>Pengalaman Kera</b></p>
@@ -648,6 +648,7 @@
 @endsection
 
 @section('footer')
+    <script src="{{asset ('js/plugins/countdown.js')}}"></script>
 <script type="text/javascript">
   $('#opsi-status').change(function(){
 

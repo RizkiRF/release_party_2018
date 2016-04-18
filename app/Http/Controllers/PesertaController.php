@@ -167,10 +167,10 @@ class PesertaController extends Controller
         if($peserta->status_bayar == 1){
           $kode_tiket_qr_code = $peserta->kode_tiket . $peserta->kunci_rahasia;
           //Session::flash('sukses','Kode cocok, cukup tunjukan QR-code ini untuk saat masuk acara nanti.'); //<--FLASH MESSAGE
-          return view('peserta.tiket-cocok')->withKode_tiket_qr_code($kode_tiket_qr_code)->withStatus(1);
+          return view('peserta.tiket-cocok')->withKode_tiket_qr_code($kode_tiket_qr_code)->withStatus(1)->withNama($peserta->nama)->withEmail($peserta->email);
 
         } else {
-          return view('peserta.tiket-cocok')->withKode_tiket_qr_code('belum-bayar')->withStatus(0);
+          return view('peserta.tiket-cocok')->withKode_tiket_qr_code('belum-bayar')->withStatus(0)->withNama($peserta->nama)->withEmail($peserta->email);
         }
 
       } else {

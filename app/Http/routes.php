@@ -31,10 +31,12 @@ $api->version('v1', function ($api) {
 Route::post('terimakasih','PesertaController@store');
 
 // konfirmasi
-Route::get('konfirmasi', 'PesertaController@show_konfirmasi');
+//Route::get('konfirmasi', 'PesertaController@show_konfirmasi');
 
-Route::post('konfirmasi', 'PesertaController@konfirmasi');
+Route::get('konfirmasi', 'KonfirmasiController@create');
+Route::post('konfirmasi', 'KonfirmasiController@store');
 
+//Route::post('konfirmasi', 'PesertaController@konfirmasi');
 Route::post('cek-kode', 'PesertaController@cek_kode');
 
 Route::get('tiket', 'PesertaController@tiket');
@@ -85,6 +87,12 @@ Route::group(['middleware' => ['auth']], function()
     Route::get('/peserta/edit/{id}','PesertaController@edit');
     Route::post('/peserta/edit','PesertaController@update');
     Route::get('/peserta/report','PesertaController@report');
+
+    // konfirmasi
+    Route::get('/peserta/konfirmasi', 'KonfirmasiController@index');
+    Route::get('/peserta/konfirmasi/edit/{id}', 'KonfirmasiController@edit');
+    Route::post('/peserta/konfirmasi/edit', 'KonfirmasiController@update');
+    Route::get('/peserta/konfirmasi/delete/{id}', 'KonfirmasiController@destroy');
     // show new post form
     Route::get('new-post','PostController@create');
     // save new post

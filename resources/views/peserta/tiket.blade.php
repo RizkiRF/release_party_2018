@@ -20,7 +20,7 @@
 @if(Session::has('gagal'))
     <div class="alert alert-danger alert-dismissible" role="alert">
        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <span class="glyphicon glyphicon-ok"></span><em> {!! session('gagal') !!}</em></div>
+      <span class="glyphicon glyphicon-remove"></span><em> {!! session('gagal') !!}</em></div>
 @endif
 
 
@@ -36,7 +36,7 @@
 <div class="form-group">
     {!! Form::label('kode_tiket', 'Kode Tiket', ['class' => 'col-md-3 control-label']) !!}
     <div class="col-md-6">
-    {!! Form::text('kode_tiket', null, array('placeholder'=>'Kode Tiketmu', 'class' => 'form-control', 'required' => 'true', 'id' => 'input-cek-kode')) !!}
+    {!! Form::text('kode_tiket', null, array('placeholder'=>'Kode Tiketmu', 'class' => 'form-control', 'required' => 'true', 'id' => 'input-cek-kode', 'onKeyUP' => 'this.value = this.value.toUpperCase()')) !!}
     <div id="pesan-cek-kode">
     </div>
   </div>
@@ -45,9 +45,17 @@
 
 <div class="form-group">
   <div class="col-md-12 col-md-offset-3">
-    {!! Form::submit('Konfirmasi', array('class' => 'btn btn-success')) !!}
+    {!! Form::submit('Dapatkan Tiket', array('class' => 'btn btn-success')) !!}
   </div>
 </div>
 {!! Form::close() !!}
     </div>
 @endsection
+
+@section('footer')
+    <script>
+        $('input[type=text]').val (function () {
+            return this.value.toUpperCase();
+        })
+    </script>
+    @endsection
