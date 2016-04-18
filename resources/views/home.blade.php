@@ -323,15 +323,16 @@
                             <p class="caption-text">FASILITAS</p>
                             <h6 class="caption-title" style="text-align: left; ">
                                 <ul>
-                                    <li>Sertifikat</li>
+                                    <li>Sertifikat Nasional</li>
                                     <li>DVD Exclusive TeaLinux OS 8</li>
                                     <li>Snack + Tea Break</li>
+                                    <li>Makan Siang</li>
                                     <li>Ilmu + Pengalaman</li>
                                     <li>Doorprize <br>berupa Smart Watch *</li>
                                 </ul>
 
                             </h6>
-                            * bagi peserta yang beruntung
+                            * bagi peserta yang <beruntung></beruntung>
 
                         </div>
                     </div>
@@ -342,7 +343,7 @@
                         <img src="{{asset ('images/tiket.png')}}" alt="The Gleneagles Hotel" style="margin: 30px auto;">
                         <div class="caption">
                             <p class="caption-text">HTM</p>
-                            <h6 class="caption-title">Rp. 45.000,-</h6>
+                            <h6 class="caption-title">Rp. 50.000,-</h6>
 
                         </div>
                     </div>
