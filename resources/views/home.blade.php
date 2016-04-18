@@ -455,17 +455,17 @@
                 <p>Acara ini terselenggara berkat dukungan berbagai pihak, Terimakasih.</p>
             </div>
             <div class="sponsor-slider wow bounceIn">
-                <div><img src="{{asset ('images/sponsor/udinus.png')}}" class="img-responsive center-block" alt="sponsor udinus"> </div>
-                <div><img src="{{asset ('images/sponsor/dinustek.png')}}" class="img-responsive center-block" alt="sponsor dinustek"> </div>
-                <div><img src="{{asset ('images/sponsor/sosro.png')}}" class="img-responsive center-block" alt="sponsor sosro"> </div>
-                <div><img src="{{asset ('images/sponsor/qwords.png')}}" class="img-responsive center-block" alt="sponsor qwords"> </div>
-                <div><img src="{{asset ('images/sponsor/tvku.png')}}" class="img-responsive center-block" alt="sponsor tvku"> </div>
-                <div><img src="{{asset ('images/sponsor/rri.png')}}" class="img-responsive center-block" alt="sponsor rri"> </div>
-                <div><img src="{{asset ('images/sponsor/clowor.png')}}" class="img-responsive center-block" alt="sponsor clowor"> </div>
-                <div><img src="{{asset ('images/sponsor/gnews.png')}}" class="img-responsive center-block" alt="sponsor gnews"> </div>
-                <div><img src="{{asset ('images/sponsor/bank-jateng.png')}}" class="img-responsive center-block" alt="sponsor Bank Jateng"> </div>
-                <div><img src="{{asset ('images/sponsor/cloudkilat.png')}}" class="img-responsive center-block" alt="sponsor Cloud Kilat"> </div>
-                <div><img src="{{asset ('images/sponsor/moon-shard.png')}}" class="img-responsive center-block" alt="sponsor Moon Shard"> </div>
+                <div><a target="_blank" href="http://dinus.ac.id"> <img src="{{asset ('images/sponsor/udinus.png')}}" class="img-responsive center-block" alt="sponsor udinus"> </a></div>
+                <div><a target="_blank" href="http://dinustek.com"><img src="{{asset ('images/sponsor/dinustek.png')}}" class="img-responsive center-block" alt="sponsor dinustek"></a>  </div>
+                <div><a target="_blank" href="http://www.sosro.com/"><img src="{{asset ('images/sponsor/sosro.png')}}" class="img-responsive center-block" alt="sponsor sosro"> </a> </div>
+                <div><a target="_blank" href="http://www.qwords.co.id/"><img src="{{asset ('images/sponsor/qwords.png')}}" class="img-responsive center-block" alt="sponsor qwords"></a>  </div>
+                <div><a target="_blank" href="http://tvku.tv/"><img src="{{asset ('images/sponsor/tvku.png')}}" class="img-responsive center-block" alt="sponsor tvku"></a>  </div>
+                <div><a target="_blank" href="http://www.rri.co.id/home.html"><img src="{{asset ('images/sponsor/rri.png')}}" class="img-responsive center-block" alt="sponsor rri"> </a> </div>
+                <div><a target="_blank" href="http://www.clowordistro.com/"><img src="{{asset ('images/sponsor/clowor.png')}}" class="img-responsive center-block" alt="sponsor clowor"></a>  </div>
+                <div><a target="_blank" href="http://gnews.id/"><img src="{{asset ('images/sponsor/gnews.png')}}" class="img-responsive center-block" alt="sponsor gnews"></a>  </div>
+                <div><a target="_blank" href="http://bankjateng.co.id/"><img src="{{asset ('images/sponsor/bank-jateng.png')}}" class="img-responsive center-block" alt="sponsor Bank Jateng"></a>  </div>
+                <div><a target="_blank" href="http://www.cloudkilat.com/"><img src="{{asset ('images/sponsor/cloudkilat.png')}}" class="img-responsive center-block" alt="sponsor Cloud Kilat"> </a> </div>
+                <div><a target="_blank" href="http://moonshardstudio.com/"><img src="{{asset ('images/sponsor/moon-shard.png')}}" class="img-responsive center-block" alt="sponsor Moon Shard"></a>  </div>
 
             </div>
         </div>
