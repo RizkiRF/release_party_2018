@@ -230,7 +230,7 @@
                                             <td align="center" style="font-size: 30px; font-family: Helvetica, Arial, sans-serif; color: #4EAE49;; padding-top: 30px;" class="padding-copy">{{$kode_tiket}}</td>
                                         </tr>
                                         <tr>
-                                            <img src="{!!$message->embedData(QrCode::format('png')->size(300)->generate($kode_tiket . $kunci_rahasia), 'QrCode.png', 'image/png')!!}">
+                                            <img src="{!!$message->embedData(QrCode::format('png')->errorCorrection('H')->size(300)->merge('http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s80-c/tealinuxos2.png', .2, true)->generate($kode_tiket . $kunci_rahasia), 'QrCode.png', 'image/png')!!}">
                                         </tr>
                                         <tr>
                                             <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Simpan QR-Code ini sebagai tiket masuk saat acara nanti.</td>

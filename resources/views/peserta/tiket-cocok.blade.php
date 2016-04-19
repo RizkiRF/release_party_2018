@@ -83,7 +83,7 @@
 <script type="text/javascript">
 
 function unduh(){
-  download("data:image/png;base64,{!! base64_encode(QrCode::format('png')->size(300)->generate($kode_tiket_qr_code)) !!} ", "QR-Code-Release-Party-TeaLinuxOS-8.png", "image/png");
+  download("data:image/png;base64,{!! base64_encode(QrCode::format('png')->errorCorrection('H')->size(300)->generate($kode_tiket_qr_code)) !!} ", "QR-Code-Release-Party-TeaLinuxOS-8.png " , "image/png");
 }
 </script>
  </div>

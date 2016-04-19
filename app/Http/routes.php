@@ -50,6 +50,13 @@ Route::get('test-terimakasih', function(){
    return view('terimakasih')->withNamapeserta($nama)->withEmail($email)->withKode_tiket($kode_tiket);
 });
 
+Route::get('test-qr-code', function(){
+    $nama = 'Diky Test';
+    $email = "diky@test.com";
+    $kode_tiket = "XYZ";
+    return view('test.qrcode')->withNamapeserta($nama)->withEmail($email)->withKode_tiket($kode_tiket);
+});
+
 //Route::get('send-email', function(){
 //  Mail::send('emails.test',
 //   ['testVar' => 'Namamu, iya kamu'],

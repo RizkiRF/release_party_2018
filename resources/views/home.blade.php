@@ -70,7 +70,7 @@
                         <div class="speaker-info wow fadeIn" data-wow-delay="0.1s">
                             <img src="{{asset ('images/masas.png')}}" alt="avatar" class="img-responsive center-block">
                             <p>Masas Dani</p>
-                            <span><b>CTO </b> Gnews.id</span>
+                            <span><b>CTO </b> GNEWS.id</span>
                             <br>
                             <br/>
                             <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#pembicara2">Lihat Profil</button>
