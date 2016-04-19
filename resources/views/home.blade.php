@@ -60,7 +60,7 @@
                         <div class="speaker-info wow fadeIn" data-wow-delay="0s">
                             <img src="{{asset ('images/pakanjar.png')}}" alt="avatar" class="img-responsive center-block">
                             <p>Anjar Hardiena</p>
-                            <span><b>CEO</b> CloudKilat.com</span>
+                            <span><b>COO</b> CloudKilat.com</span>
                             <br/>
                             <br/>
                             <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#pembicara1">Lihat Profil</button>
