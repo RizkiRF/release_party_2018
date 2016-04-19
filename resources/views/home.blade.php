@@ -593,7 +593,7 @@
                     <center><h4 class="modal-title">Sokibi</h4></center>
                 </div>
                 <div class="modal-body">
-                    <p><b>Pengalaman Kera</b></p>
+                    <p><b>Pengalaman Kerja</b></p>
                     <ul>
                         <li>Owner & Founder Istana Media </li>
                         <li>Penulis Buku Aplikasi Open Source</li>

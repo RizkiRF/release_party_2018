@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d89a728d-e5a9-4f40-8bdd-1d6150822cfa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/test/qrcode.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/emails/after-register.blade.php" afterPath="$PROJECT_DIR$/resources/views/emails/after-register.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/peserta/tiket-cocok.blade.php" afterPath="$PROJECT_DIR$/resources/views/peserta/tiket-cocok.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/test/qrcode.blade.php" afterPath="$PROJECT_DIR$/resources/views/test/qrcode.blade.php" />
     </list>
     <ignored path="rp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.33223686">
-              <caret line="72" column="51" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="51" />
+              <caret line="595" column="41" selection-start-line="595" selection-start-column="41" selection-end-line="595" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -52,12 +49,12 @@
       <file leaf-file-name="qrcode.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/test/qrcode.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3333334">
-              <caret line="2" column="107" selection-start-line="2" selection-start-column="107" selection-end-line="2" selection-end-column="107" />
+            <state vertical-scroll-proportion="-2.6666667">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
               <folding>
-                <marker date="1461039925717" expanded="true" signature="199:424" placeholder="..." />
-                <marker date="1461039925717" expanded="true" signature="214:422" placeholder="..." />
-                <marker date="1461039925717" expanded="true" signature="396:421" placeholder="..." />
+                <marker date="1461043141029" expanded="true" signature="199:431" placeholder="..." />
+                <marker date="1461043141029" expanded="true" signature="214:429" placeholder="..." />
+                <marker date="1461043141029" expanded="true" signature="396:428" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -152,9 +149,9 @@
         <option value="$PROJECT_DIR$/resources/views/konfirmasi/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/app-dashboard.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/resources/views/test/qrcode.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/peserta/tiket-cocok.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/after-register.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/test/qrcode.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
       </list>
     </option>
@@ -1073,18 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/test/qrcode.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3333334">
-          <caret line="2" column="107" selection-start-line="2" selection-start-column="107" selection-end-line="2" selection-end-column="107" />
-          <folding>
-            <marker date="1461039925717" expanded="true" signature="199:424" placeholder="..." />
-            <marker date="1461039925717" expanded="true" signature="214:422" placeholder="..." />
-            <marker date="1461039925717" expanded="true" signature="396:421" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/emails/after-register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.6666665">
@@ -1097,10 +1082,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/test/qrcode.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <marker date="1461043141029" expanded="true" signature="199:431" placeholder="..." />
+            <marker date="1461043141029" expanded="true" signature="214:429" placeholder="..." />
+            <marker date="1461043141029" expanded="true" signature="396:428" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33223686">
-          <caret line="72" column="51" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="51" />
+          <caret line="595" column="41" selection-start-line="595" selection-start-column="41" selection-end-line="595" selection-end-column="41" />
           <folding />
         </state>
       </provider>
