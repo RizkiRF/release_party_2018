@@ -24,14 +24,14 @@
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <input type="hidden" name="peserta_id" value="{{ $peserta->id }}{{ old('peserta') }}">
         <div class="form-group has-info">
-            <label for="inputEmail" class="col-md-2 control-label"><i class="glyphicon glyphicon-user"></i> Nama</label>
+            <label for="inputNama" class="col-md-2 control-label"><i class="glyphicon glyphicon-user"></i> Nama</label>
             <div class="col-md-9">
                 <input  name="nama" class="form-control" placeholder="Nama" type="text" value="@if(!old('nama')){{$peserta->nama}}@endif{{ old('nama') }}" required="required">
             </div>
         </div>
 
         <div class="form-group has-info">
-            <label for="inputEmail" class="col-md-2 control-label"><i class=" glyphicon glyphicon-earphone"></i> No. Hp</label>
+            <label for="inputNo_hp" class="col-md-2 control-label"><i class=" glyphicon glyphicon-earphone"></i> No. Hp</label>
             <div class="col-md-9">
                 <input class="form-control" name="no_hp" placeholder="No. Hp" type="text" value="@if(!old('no_hp')){{$peserta->no_hp}}@endif{{ old('no_hp') }}" required="required">
             </div>
@@ -42,6 +42,7 @@
                 <input  name="email" class="form-control" placeholder="Email" type="email" value="@if(!old('email')){{$peserta->email}}@endif{{ old('email') }}" required="required">
             </div>
         </div>
+
         <div class="form-group has-info">
             <label class="col-md-2 control-label"><i class="glyphicon glyphicon-user"></i> Status</label>
             <div class="col-md-9">
@@ -51,6 +52,12 @@
                     <option value="pelajar "{{$peserta->status =='pelajar'? "selected" :""}}>Pelajar</option>
                     <option value="umum" {{ $peserta->status == 'umum' ? "selected" : "" }}>Umum</option>
                 </select>
+            </div>
+        </div>
+        <div class="form-group has-info">
+            <label for="inputInstansi" class="col-md-2 control-label"><i class="glyphicon glyphicon-envelope"></i> Instansi</label>
+            <div class="col-md-9">
+                <input  name="instansi" class="form-control" placeholder="Email" type="text" value="@if(!old('instansi')){{$peserta->instansi}}@endif{{ old('instansi') }}" required="required">
             </div>
         </div>
         <div class="form-group has-info">

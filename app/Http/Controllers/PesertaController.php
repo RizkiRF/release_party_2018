@@ -222,10 +222,11 @@ class PesertaController extends Controller
         $peserta->no_hp = $request->input('no_hp');
         $peserta->dvd = $request->input('dvd');
         $peserta->status = $request->input('status');
+        $peserta->instansi = $request->input('instansi');
         $peserta->status_bayar = $request->input('status_bayar');
         $peserta->email_terkirim = $request->input('email_terkirim');
         $peserta->sms_terkirim = $request->input('sms_terkirim');
-        Session::flash('pesan', $peserta->nama . ' Berhasi update data'); //<--FLASH MESSAGE
+        Session::flash('pesan', ' Berhasi update data'. $peserta->nama ); //<--FLASH MESSAGE
 
         $peserta->save();
         return redirect('peserta/edit/'.$peserta->id);
