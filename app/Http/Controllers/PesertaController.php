@@ -20,7 +20,11 @@ class PesertaController extends Controller
     public function nomerhp()
     {
         $pesertas = Peserta::all();
-        return view('peserta.nomerhp')->withPesertas($pesertas);
+        $peserta_lunas = Peserta::where('status_bayar', "1")->get();
+        $peserta_belum_lunas = Peserta::where('status_bayar', "0")->get();
+        return view('peserta.nomerhp')->withPesertas($pesertas)
+                                      ->withPesertalunas($peserta_lunas)
+                                       ->withPesertabelumlunas($peserta_belum_lunas);
     }
     /**
      * Display a listing of the resource.
