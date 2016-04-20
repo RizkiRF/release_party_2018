@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     @yield('meta')
+
     <meta name="author" content="Doscom - Dinus Open Source Community">
     <meta name="description" content="Release Party TealinuxOS adalah acara yang diselenggarakan oleh Doscom (Dinus Open Source Community) untuk merayakan peluncuran TeaLinuxOS versi 8. Release Party telah menjadi suatu acara tahunan Doscom untuk menarik pengguna baru serta mengedukasi masyarakat tentang Open Source.  "/>
     <meta name="keywords" content="release, tealinuxos, doscom, udinus, open-source "/>
@@ -15,6 +16,7 @@
     <meta property="og:image" content="http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s1600/tealinuxos2.png" />
     <meta property="og:title" content="Seminar Nasional Release Party TeaLinux OS 8" />
     <meta property="og:description" content="Release Party TealinuxOS adalah acara yang diselenggarakan oleh Doscom (Dinus Open Source Community) untuk merayakan peluncuran TeaLinuxOS versi 8. Release Party telah menjadi suatu acara tahunan Doscom untuk menarik pengguna baru serta mengedukasi masyarakat tentang Open Source. " />
+    <meta name="google-site-verification" content="tZVzzHhQESU12CLeTKXl41YWjMyvAwwc_rgwxZcVK2A" />
     <style media="screen">
         .caption-title{
             line-height: 1.6;
