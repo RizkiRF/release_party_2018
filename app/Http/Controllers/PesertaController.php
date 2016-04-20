@@ -26,6 +26,30 @@ class PesertaController extends Controller
                                       ->withPesertalunas($peserta_lunas)
                                        ->withPesertabelumlunas($peserta_belum_lunas);
     }
+
+    public function kirim_sms_lunas($id)
+    {
+        $peserta = Peserta::find($id);
+        $peserta->sms_terkirim = 1;
+        $peserta->save();
+        return redirect('peserta/edit/'.$peserta->id);
+        //dd($peserta);
+    }
+
+    public function kirim_email_lunas($id)
+    {
+        $peserta = Peserta::find($id);
+        $data = $peserta->toArray();
+        Mail::queue('emails.lunas', $data, function($message) use ($data){
+            $message->to($data['email'])
+                ->subject('Konfirmasi Pembayaran SemNas Release Party TeaLinux OS 8 - ' . $data['nama']);
+            Log::info('email Pelunasan terkirim ke ' . $data['email'] . ' dengan nama peserta : ' . $data['nama']);
+        });
+        $peserta->email_terkirim = 1;
+        $peserta->save();
+        return redirect('peserta/edit/'.$peserta->id);
+        //dd($peserta);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -233,9 +257,8 @@ class PesertaController extends Controller
         $peserta->status = $request->input('status');
         $peserta->instansi = $request->input('instansi');
         $peserta->status_bayar = $request->input('status_bayar');
-        $peserta->email_terkirim = $request->input('email_terkirim');
-        $peserta->sms_terkirim = $request->input('sms_terkirim');
-        Session::flash('pesan', ' Berhasi update data'. $peserta->nama ); //<--FLASH MESSAGE
+
+        Session::flash('pesan', ' Berhasi update data '. $peserta->nama ); //<--FLASH MESSAGE
 
         $peserta->save();
         return redirect('peserta/edit/'.$peserta->id);

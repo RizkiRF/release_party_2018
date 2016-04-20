@@ -84,37 +84,44 @@
 
             </div>
         </div>
-
+        @if($peserta->status_bayar == 1)
         <div class="form-group">
-        <label  class="col-md-2 control-label">Status Email</label>
+        <label  class="col-md-2 control-label">Status Email Lunas</label>
         <div class="col-md-9">
-            <select class="form-control" name="email_terkirim" required="required">
 
-                <option value="0" {{ $peserta->email_terkirim == 0 ? "selected" : "" }} >Belum Dikirim</option>
-                <option value="1" {{ $peserta->email_terkirim == 1 ? "selected" : "" }} >Sudah Dikirim</option>
+            @if($peserta->email_terkirim == 0)
+                <a href="{{ url('peserta/kirim-email-lunas/'. $peserta->id) }}" class="btn btn-success" role="button">Kirim Email Pelunasan</a>
 
-            </select>
+            @else
+                Email Pelunasan Terkirim
+
+            @endif
+
 
         </div>
         </div>
-
+        @endif
+        @if($peserta->status_bayar == 1)
         <div class="form-group">
-        <label  class="col-md-2 control-label">Status Sms</label>
+        <label  class="col-md-2 control-label">Status Sms Lunas</label>
         <div class="col-md-9">
-            <select class="form-control" name="sms_terkirim" required="required">
-                <option >--Pilih--</option>
-                <option value="0" {{ $peserta->sms_terkirim == 0 ? "selected" : "" }} >Belum Dikirim</option>
-                <option value="1" {{ $peserta->sms_terkirim == 1 ? "selected" : "" }} >Sudah Dikirim</option>
-
-            </select>
+            @if($peserta->sms_terkirim == 0)
+                <p>Kirim ke : {{ $peserta->no_hp }}</p>
+                <p>Pesan : </p>
+                <p>Terimakasih, {{ $peserta->nama }}. kami dari Doscom selaku penyelenggara Seminar Nasional Release Party TeaLinux OS 8. Pembayaran kamu telah telah kami terima, saat acara nanti cukup tunjukan QR-Code yg telah kami kirim ke email mu. Terimakasih.</p>
+                <a href="{{ url('peserta/kirim-sms-lunas/'. $peserta->id) }}" class="btn btn-success" role="button">Sudah Kirim SMS - Manual :D</a>
+            @else
+                SMS Pelunasan Terkirim
+            @endif
 
         </div>
         </div>
-
+        @endif
+        <br>
         <div class="form-group">
             <div class="col-md-10 col-md-offset-5">
-                <button type="submit" class="btn btn-primary">Perbaharui</button>
-                <a href="{{  url('peserta/delete/'.$peserta->id.'?_token='.csrf_token()) }}" class="btn btn-danger">Hapus</a>
+                <button type="submit" class="btn btn-primary btn-lg">Perbaharui</button>
+                <a href="{{  url('peserta/delete/'.$peserta->id.'?_token='.csrf_token()) }}" class="btn btn-danger btn-lg">Hapus</a>
 
             </div>
         </div>

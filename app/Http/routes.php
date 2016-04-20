@@ -108,6 +108,13 @@ Route::group(['middleware' => ['auth']], function()
     Route::post('/peserta/edit','PesertaController@update');
     Route::get('/peserta/report','PesertaController@report');
 
+    // kirim email
+    Route::get('/peserta/kirim-email-lunas/{id}', 'PesertaController@kirim_email_lunas');
+
+    // kirim sms
+
+    Route::get('/peserta/kirim-sms-lunas/{id}', 'PesertaController@kirim_sms_lunas');
+
     Route::get('all-peserta-nomer-hp', 'PesertaController@nomerhp');
 
     // konfirmasi
