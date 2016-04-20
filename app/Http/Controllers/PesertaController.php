@@ -17,6 +17,11 @@ use Session;
 
 class PesertaController extends Controller
 {
+    public function nomerhp()
+    {
+        $pesertas = Peserta::all();
+        return view('peserta.nomerhp')->withPesertas($pesertas);
+    }
     /**
      * Display a listing of the resource.
      *

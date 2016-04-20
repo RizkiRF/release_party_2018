@@ -75,6 +75,19 @@ Route::get('test-view-email', function(){
   $dvd = "64";
   return view('emails.after-register')->withNama($nama)->withKode_tiket($kode_tiket)->withNo_hp($no_hp)->withEmail($email)->withStatus($status)->withDvd($dvd);
 });
+
+
+
+Route::get('test-view-email-lunas', function(){
+    $nama = "diky arga";
+    $email = "dikyarga.id@gmail.com";
+    $kode_tiket = "code";
+    $no_hp = "08317373617";
+    $status = "mahasiswa";
+    $kunci_rahasia = "RHS";
+    $dvd = "64";
+    return view('emails.lunas')->withNama($nama)->withKode_tiket($kode_tiket)->withNo_hp($no_hp)->withEmail($email)->withStatus($status)->withDvd($dvd)->withKunci_rahasia($kunci_rahasia);
+});
 //
 //Route::get('contact', 'ContactController@showForm');
 //Route::post('contact', 'ContactController@sendContactInfo');
@@ -94,6 +107,8 @@ Route::group(['middleware' => ['auth']], function()
     Route::get('/peserta/edit/{id}','PesertaController@edit');
     Route::post('/peserta/edit','PesertaController@update');
     Route::get('/peserta/report','PesertaController@report');
+
+    Route::get('all-peserta-nomer-hp', 'PesertaController@nomerhp');
 
     // konfirmasi
     Route::get('/peserta/konfirmasi', 'KonfirmasiController@index');
