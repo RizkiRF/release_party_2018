@@ -23,8 +23,8 @@ $api->version('v1', function ($api) {
     $api->get('/', function() {
         return ['test' => true];
     });
-    $api->get('/peserta', 'App\Http\Controllers\api\cekController@index');
-    $api->get('/peserta/{id}', 'App\Http\Controllers\api\cekController@show');
+    $api->get('/peserta-tlos', 'App\Http\Controllers\api\cekController@index');
+    $api->get('/peserta-tlos/{id}', 'App\Http\Controllers\api\cekController@show');
     $api->post('/peserta/cek', 'App\Http\Controllers\api\cekController@store');
 });
 
