@@ -61,7 +61,7 @@
     array(
         'url' => 'konfirmasi',
         'class' => 'form',
-        'novalidate' => 'novalidate',
+
         'class' => 'form-horizontal',
         'id' => 'form-konfirmasi',
         'files' => true)) !!}
@@ -78,7 +78,7 @@
 <div class="form-group">
     {!! Form::label('gambar_bukti','Upload bukti transfer', ['class' => 'col-md-3 control-label']) !!}
     <div class="col-md-6">
-      {!! Form::file('image', null, array('required' => 'true')) !!}
+      {!! Form::file('image', array('required' => 'true') ) !!}
   </div>
 </div>
 
