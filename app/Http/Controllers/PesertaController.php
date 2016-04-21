@@ -43,7 +43,7 @@ class PesertaController extends Controller
         Mail::queue('emails.lunas', $data, function($message) use ($data){
             $message->to($data['email'])
                 ->subject('Konfirmasi Pembayaran SemNas Release Party TeaLinux OS 8 - ' . $data['nama']);
-            Log::info('email Pelunasan terkirim ke ' . $data['email'] . ' dengan nama peserta : ' . $data['nama']);
+            Log::info('email PELUNASAN terkirim ke ' . $data['email'] . ' dengan nama peserta : ' . $data['nama']);
         });
         $peserta->email_terkirim = 1;
         $peserta->save();
@@ -121,7 +121,7 @@ class PesertaController extends Controller
 
       $peserta->save();
 
-      Log::info('akan kirim email ke ' . $peserta->email);
+      Log::info('akan [ Setelah pendaftaran ]kirim email ke ' . $peserta->email);
       //$this->dispatch(new SendThanksEmail($data));
 
       Mail::queue('emails.after-register', $data, function($message) use ($data){

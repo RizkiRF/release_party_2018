@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Konfirmasi;
 use Session;
+use Log;
 
 class KonfirmasiController extends Controller
 {
@@ -53,6 +54,8 @@ class KonfirmasiController extends Controller
         $request->file('image')->move(
             base_path() . '/public/images/uploads/', $imageName
         );
+
+        Log::info('Ada konfirmasi pembayaran masuk dari ' . $konfirmasi->atas_nama_pengirim . ' , segera CEK!' );
         return view('peserta.sesudah_konfirmasi');
     }
 
