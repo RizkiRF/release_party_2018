@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d89a728d-e5a9-4f40-8bdd-1d6150822cfa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/emails/after-register.blade.php" afterPath="$PROJECT_DIR$/resources/views/emails/after-register.blade.php" />
     </list>
     <ignored path="rp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,22 +27,22 @@
       <file leaf-file-name="after-register.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/emails/after-register.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.6666665">
-              <caret line="260" column="250" selection-start-line="260" selection-start-column="250" selection-end-line="260" selection-end-column="250" />
+            <state vertical-scroll-proportion="-6.0">
+              <caret line="228" column="320" selection-start-line="228" selection-start-column="44" selection-end-line="228" selection-end-column="320" />
               <folding>
-                <marker date="1461228997435" expanded="true" signature="12128:12386" placeholder="..." />
-                <marker date="1461228997435" expanded="true" signature="12148:12385" placeholder="..." />
-                <marker date="1461228997435" expanded="true" signature="12329:12357" placeholder="..." />
+                <marker date="1461250810092" expanded="true" signature="12124:12382" placeholder="..." />
+                <marker date="1461250810092" expanded="true" signature="12144:12381" placeholder="..." />
+                <marker date="1461250810092" expanded="true" signature="12325:12353" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016_04_21_214333_ganti_unik_phone.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016_04_21_214333_ganti_unik_phone.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2016_04_21_214333_ganti_unik_phone.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5928144">
-              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+            <state vertical-scroll-proportion="-7.3333335">
+              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -88,6 +88,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="lunas.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/emails/lunas.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.37724552">
+              <caret line="181" column="24" selection-start-line="181" selection-start-column="24" selection-end-line="181" selection-end-column="24" />
+              <folding>
+                <marker date="1461163959377" expanded="true" signature="8264:8522" placeholder="..." />
+                <marker date="1461163959377" expanded="true" signature="8284:8521" placeholder="..." />
+                <marker date="1461163959377" expanded="true" signature="8465:8493" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="2016_04_05_035435_tambah_kolom_nama_gambar_atas_nama_status_masuk.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2016_04_05_035435_tambah_kolom_nama_gambar_atas_nama_status_masuk.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -113,16 +127,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-2.6666667">
               <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -163,8 +167,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/PesertaController.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/lunas.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/resources/views/emails/after-register.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_04_21_214333_ganti_unik_phone.php" />
+        <option value="$PROJECT_DIR$/resources/views/emails/after-register.blade.php" />
       </list>
     </option>
   </component>
@@ -592,7 +596,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="694" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25567323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -601,7 +605,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -890,14 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/emails/lunas.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="181" column="24" selection-start-line="181" selection-start-column="24" selection-end-line="181" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -919,18 +915,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/emails/after-register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.6666665">
-          <caret line="260" column="250" selection-start-line="260" selection-start-column="250" selection-end-line="260" selection-end-column="250" />
-          <folding>
-            <marker date="1461228997435" expanded="true" signature="12128:12386" placeholder="..." />
-            <marker date="1461228997435" expanded="true" signature="12148:12385" placeholder="..." />
-            <marker date="1461228997435" expanded="true" signature="12329:12357" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -992,9 +976,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2016_04_21_214333_ganti_unik_phone.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5928144">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        <state vertical-scroll-proportion="-7.3333335">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/emails/after-register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="228" column="320" selection-start-line="228" selection-start-column="44" selection-end-line="228" selection-end-column="320" />
+          <folding>
+            <marker date="1461250810092" expanded="true" signature="12124:12382" placeholder="..." />
+            <marker date="1461250810092" expanded="true" signature="12144:12381" placeholder="..." />
+            <marker date="1461250810092" expanded="true" signature="12325:12353" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/emails/lunas.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37724552">
+          <caret line="181" column="24" selection-start-line="181" selection-start-column="24" selection-end-line="181" selection-end-column="24" />
+          <folding>
+            <marker date="1461163959377" expanded="true" signature="8264:8522" placeholder="..." />
+            <marker date="1461163959377" expanded="true" signature="8284:8521" placeholder="..." />
+            <marker date="1461163959377" expanded="true" signature="8465:8493" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
