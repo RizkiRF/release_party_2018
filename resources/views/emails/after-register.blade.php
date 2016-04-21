@@ -206,10 +206,6 @@
                                                       <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                           <tr>
                                                               <td>
-
-
-
-
                                                               </td>
                                                             </tr>
                                                         </table>
@@ -230,7 +226,7 @@
                                             <td align="center" style="font-size: 30px; font-family: Helvetica, Arial, sans-serif; color: #4EAE49;; padding-top: 30px;" class="padding-copy">{{$kode_tiket}}</td>
                                         </tr>
                                         <tr>
-                                            <img src="{!!$message->embedData(QrCode::format('png')->errorCorrection('H')->size(300)->merge('http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s80-c/tealinuxos2.png', .2, true)->generate($kode_tiket . $kunci_rahasia), 'QrCode.png', 'image/png')!!}">
+                                            {{--<img src="{!!$message->embedData(QrCode::format('png')->errorCorrection('H')->size(300)->merge('http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s80-c/tealinuxos2.png', .2, true)->generate($kode_tiket . $kunci_rahasia), 'QrCode.png', 'image/png')!!}">--}}
                                         </tr>
                                         <tr>
                                             <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Simpan QR-Code ini sebagai tiket masuk saat acara nanti.</td>
@@ -262,7 +258,7 @@
                     <td align="left" style="padding: 0 0 10px 0px; font-size: 25px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2">Selanjutnya, </td>
                 </tr>
                 <tr>
-                    <td align="left" style="padding: 0 0 10px 0px; font-size: 20px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2">segera lakukan pembayaran dengan salah satu metode pembayaran berikut ini : </td>
+                    <td align="left" style="padding: 0 0 10px 0px; font-size: 20px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2">segera lakukan pembayaran sejumlah <b>Rp. 45.000</b>,-dengan salah satu metode pembayaran berikut ini : </td>
                 </tr>
                 <tr>
                     <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide"><a href="" target="_blank"><img src="http://tealinuxos.org/release/images/cod.png" alt="ilustrasi uang cash" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;"></a></td>
