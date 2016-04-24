@@ -71,6 +71,40 @@ class PesertaController extends Controller
                                      ->withPesertas($pesetas);
     }
 
+    public function chart()
+    {
+        $peserta_lunas = Peserta::where('status_bayar', "1")->count();
+        $peserta_belum_lunas = Peserta::where('status_bayar', "0")->count();
+
+        $graph["chart"] = array("type" => "pie",
+                                "plotBackgroundColor" => "#f2f2f2",
+                                "plotBorderWidth" => null,
+                                "plotShadow" => false);
+
+        $graph["title"] = array("text" => "Pendaftar");
+        $graph["tooltip"] = array("pointFormat" => "{series.name}: <b>{point.percentage:.1f}%</b>");
+        $graph["plotOptions"] = array("pie" => array("allowPointSelect" => true,
+                                                     "cursor" => true,
+                                                     "dataLabels"=> array("enabled" => false,
+                                                                            "format" => '<b>{point.name}</b>: {point.percentage:.1f} %',
+                                                                            "style" => array("color" => "(Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'"),
+                                                                            "connectorColor" => 'silver'),
+                                                     ));
+
+
+
+        $graph["series"] = [
+            array("name" => "Brands",
+            "data" => [
+                array("name" => "mendaftar", "y" => 2.4, "color" => "#d5d5d5"),
+                array("name" => "mendaftar", "y" => 0.2, "color" => "#5c5c5c"),
+                array("name" => "membayar", "y" => 97.2, "color" => "#39c892"),
+            ])
+        ];
+        return view('peserta.chart', compact('graph'));
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *

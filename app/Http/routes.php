@@ -57,6 +57,8 @@ Route::get('test-qr-code', function(){
     return view('test.qrcode')->withNamapeserta($nama)->withEmail($email)->withKode_tiket($kode_tiket);
 });
 
+Route::get('test-chart', 'PesertaController@chart');
+
 //Route::get('send-email', function(){
 //  Mail::send('emails.test',
 //   ['testVar' => 'Namamu, iya kamu'],

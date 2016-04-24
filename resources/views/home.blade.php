@@ -58,7 +58,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="speaker-info wow fadeIn" data-wow-delay="0s">
-                            <img src="{{asset ('images/pakanjar.png')}}" alt="avatar" class="img-responsive center-block">
+                            <img src="{{asset ('images/pembicara/anjar-herdiana-coo-cloudkilat.jpeg')}}" alt="avatar" class="img-responsive center-block">
                             <p>Anjar Hardiena</p>
                             <span><b>COO</b> CloudKilat.com</span>
                             <br/>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="speaker-info wow fadeIn" data-wow-delay="0.1s">
-                            <img src="{{asset ('images/masas.png')}}" alt="avatar" class="img-responsive center-block">
+                            <img src="{{asset ('images/pembicara/masas-dani-cto-gnews-id.jpeg')}}" alt="avatar" class="img-responsive center-block">
                             <p>Masas Dani</p>
                             <span><b>CTO </b> GNEWS.id</span>
                             <br>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="speaker-info wow fadeIn" data-wow-delay="0.2s">
-                            <img src="{{asset ('images/pakshokibi.png')}}" alt="avatar" class="img-responsive center-block">
+                            <img src="{{asset ('images/pembicara/sokibi-penulis-buku-desain-grafis-dengan-opensource.jpeg')}}" alt="avatar" class="img-responsive center-block">
                             <p>Sokibi</p>
                             <span><b>Penulis</b> Buku Open Source</span>
                             <br/>
@@ -461,11 +461,13 @@
                 <div><a target="_blank" href="http://www.qwords.co.id/"><img src="{{asset ('images/sponsor/qwords.png')}}" class="img-responsive center-block" alt="sponsor qwords"></a>  </div>
                 <div><a target="_blank" href="http://tvku.tv/"><img src="{{asset ('images/sponsor/tvku.png')}}" class="img-responsive center-block" alt="sponsor tvku"></a>  </div>
                 <div><a target="_blank" href="http://www.rri.co.id/home.html"><img src="{{asset ('images/sponsor/rri.png')}}" class="img-responsive center-block" alt="sponsor rri"> </a> </div>
-                <div><a target="_blank" href="http://www.clowordistro.com/"><img src="{{asset ('images/sponsor/clowor.png')}}" class="img-responsive center-block" alt="sponsor clowor"></a>  </div>
+                <div><a target="_blank" href="http://www.clowordistro.com/"><img src="{{asset ('images/sponsor/new-clowor-logo.png')}}" class="img-responsive center-block" alt="sponsor clowor"></a>  </div>
                 <div><a target="_blank" href="http://gnews.id/"><img src="{{asset ('images/sponsor/gnews.png')}}" class="img-responsive center-block" alt="sponsor gnews"></a>  </div>
                 <div><a target="_blank" href="http://bankjateng.co.id/"><img src="{{asset ('images/sponsor/bank-jateng.png')}}" class="img-responsive center-block" alt="sponsor Bank Jateng"></a>  </div>
                 <div><a target="_blank" href="http://www.cloudkilat.com/"><img src="{{asset ('images/sponsor/cloudkilat.png')}}" class="img-responsive center-block" alt="sponsor Cloud Kilat"> </a> </div>
                 <div><a target="_blank" href="http://moonshardstudio.com/"><img src="{{asset ('images/sponsor/moon-shard.png')}}" class="img-responsive center-block" alt="sponsor Moon Shard"></a>  </div>
+                <div><a target="_blank" href="http://webstudio.web.id/"><img src="{{asset ('images/sponsor/web-studio-logo.png')}}" class="img-responsive center-block" alt="sponsor Web Studio"></a>  </div>
+                <div><a target="_blank" href="http://tanibox.com/"><img src="{{asset ('images/sponsor/logo-tanibox.png')}}" class="img-responsive center-block" alt="sponsor Tani Box"></a>  </div>
 
             </div>
         </div>
