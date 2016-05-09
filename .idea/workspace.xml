@@ -4,6 +4,7 @@
     <list default="true" id="d89a728d-e5a9-4f40-8bdd-1d6150822cfa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/emails/after-register.blade.php" afterPath="$PROJECT_DIR$/resources/views/emails/after-register.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/emails/lunas.blade.php" afterPath="$PROJECT_DIR$/resources/views/emails/lunas.blade.php" />
     </list>
     <ignored path="rp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,9 +60,26 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="31.333334">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+            <state vertical-scroll-proportion="-4.6666665">
+              <caret line="82" column="33" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="33" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lunas.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/emails/lunas.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.78507465">
+              <caret line="181" column="330" selection-start-line="181" selection-start-column="54" selection-end-line="181" selection-end-column="330" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#b#0;n#td#0;n#tr#5;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#6;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1462764293763" expanded="true" signature="8264:8522" placeholder="..." />
+                <marker date="1462764293763" expanded="true" signature="8284:8521" placeholder="..." />
+                <marker date="1462764293763" expanded="true" signature="8465:8493" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,20 +116,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="after-register.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="after-register.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/emails/after-register.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32537314">
-              <caret line="228" column="320" selection-start-line="228" selection-start-column="44" selection-end-line="228" selection-end-column="320" />
+            <state vertical-scroll-proportion="-1.7407408">
+              <caret line="365" column="13" selection-start-line="365" selection-start-column="13" selection-end-line="367" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#8;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#10;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#b#0;n#td#0;n#tr#10;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#11;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1462763403518" expanded="true" signature="12114:12372" placeholder="..." />
-                <marker date="1462763403518" expanded="true" signature="12134:12371" placeholder="..." />
-                <marker date="1462763403518" expanded="true" signature="12315:12343" placeholder="..." />
+                <marker date="1462764212931" expanded="true" signature="12114:12372" placeholder="..." />
+                <marker date="1462764212931" expanded="true" signature="12134:12371" placeholder="..." />
+                <marker date="1462764212931" expanded="true" signature="12315:12343" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -180,7 +198,6 @@
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/resources/views/peserta/nomerhp.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/peserta/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/emails/lunas.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_04_21_214333_ganti_unik_phone.php" />
         <option value="$PROJECT_DIR$/resources/views/peserta/konfirmasi.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/KonfirmasiController.php" />
@@ -190,6 +207,7 @@
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/after-register.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/emails/lunas.blade.php" />
       </list>
     </option>
   </component>
@@ -951,13 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/emails/lunas.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="181" column="24" selection-start-line="181" selection-start-column="24" selection-end-line="181" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/konfirmasi/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1049,25 +1060,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="31.333334">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        <state vertical-scroll-proportion="-4.6666665">
+          <caret line="82" column="33" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/emails/after-register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32537314">
-          <caret line="228" column="320" selection-start-line="228" selection-start-column="44" selection-end-line="228" selection-end-column="320" />
+        <state vertical-scroll-proportion="-1.7407408">
+          <caret line="365" column="13" selection-start-line="365" selection-start-column="13" selection-end-line="367" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#8;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#10;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#b#0;n#td#0;n#tr#10;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#11;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1462763403518" expanded="true" signature="12114:12372" placeholder="..." />
-            <marker date="1462763403518" expanded="true" signature="12134:12371" placeholder="..." />
-            <marker date="1462763403518" expanded="true" signature="12315:12343" placeholder="..." />
+            <marker date="1462764212931" expanded="true" signature="12114:12372" placeholder="..." />
+            <marker date="1462764212931" expanded="true" signature="12134:12371" placeholder="..." />
+            <marker date="1462764212931" expanded="true" signature="12315:12343" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/emails/lunas.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78507465">
+          <caret line="181" column="330" selection-start-line="181" selection-start-column="54" selection-end-line="181" selection-end-column="330" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#b#0;n#td#0;n#tr#5;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#6;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1462764293763" expanded="true" signature="8264:8522" placeholder="..." />
+            <marker date="1462764293763" expanded="true" signature="8284:8521" placeholder="..." />
+            <marker date="1462764293763" expanded="true" signature="8465:8493" placeholder="..." />
           </folding>
         </state>
       </provider>

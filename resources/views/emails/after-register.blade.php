@@ -379,7 +379,7 @@
                         <a href="https://www.addthis.com/bookmark.php?source=tbx32nj-1.0&v=300&url=http%3A%2F%2Ftealinuxos.org%2Frelease%2F&pubid=ra-572ff5bda2aff3c7&ct=1&title=Seminar%20Nasional%20Release%20Party%20TeaLinux%20OS%208&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/addthis.png" border="0" alt="Addthis"/></a>
 
                     </td>
-                    <!-- Go to www.addthis.com/dashboard to generate a new set of sharing buttons -->
+
 
 
                 </tr>
