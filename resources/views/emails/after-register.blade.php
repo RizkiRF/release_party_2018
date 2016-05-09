@@ -184,7 +184,7 @@
                                           <td align="left" style="padding: 5px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Status : <b> {{ $status }} </b></td>
                                       </tr>
                                       <tr>
-                                          <td align="left" style="padding: 5px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="">DVD : <b> {{ $dvd }} Bit</b></td>
+                                          <td align="left" style="padding: 5px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;">DVD : <b> {{ $dvd }} Bit</b></td>
                                       </tr>
                                       <tr>
                                           <td align="center" style="padding: 5px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">--------------------------------------------------------------------------------------------</b></td>
@@ -223,10 +223,10 @@
                                           <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Kode Tiketmu</td>
                                       </tr>
                                         <tr>
-                                            <td align="center" style="font-size: 30px; font-family: Helvetica, Arial, sans-serif; color: #4EAE49;; padding-top: 30px;" class="padding-copy">{{$kode_tiket}}</td>
+                                            <td align="center" style="font-size: 30px; font-family: Helvetica, Arial, sans-serif; color: #4EAE49; padding-top: 30px;" class="padding-copy">{{$kode_tiket}}</td>
                                         </tr>
                                         <tr>
-                                            <img src="{!!$message->embedData(QrCode::format('png')->errorCorrection('H')->size(300)->merge('http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s80-c/tealinuxos2.png', .2, true)->generate($kode_tiket . $kunci_rahasia), 'QrCode.png', 'image/png')!!}">
+                                            {{--<img src="{!!$message->embedData(QrCode::format('png')->errorCorrection('H')->size(300)->merge('http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s80-c/tealinuxos2.png', .2, true)->generate($kode_tiket . $kunci_rahasia), 'QrCode.png', 'image/png')!!}">--}}
                                         </tr>
                                         <tr>
                                             <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Simpan QR-Code ini sebagai tiket masuk saat acara nanti.</td>
@@ -362,6 +362,26 @@
                 </tr>
                 <tr>
                     <td align="left" style="padding: 0 0 10px 0px; font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2"><b>Email </b> - <a href="mailto:sekretariat@doscom.org?Subject=Release%20Party" target="_top">sekretariat@doscom.org</a></td>
+                </tr>
+                <tr>
+                    <td align="center" style="padding: 30px 10px 10px 10px; font-size: 21px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #4EAE49;" class="padding-copy" colspan="2"><b>Bagikan informasi acara ini dan raih kesempatan <span style="color: rgba(4, 22, 21, 0.87);">mendapatkan SmartBand </span></b> </td>
+                </tr>
+                <tr>
+                    <td align="center" style="padding: 0 0 10px 0px; font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2">
+                        <a href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=http%3A%2F%2Ftealinuxos.org%2Frelease%2F&pubid=ra-572ff5bda2aff3c7&ct=1&title=Seminar%20Nasional%20Release%20Party%20TeaLinux%20OS%208&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/facebook.png" border="0" alt="Facebook"/></a>
+
+                        <a href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=http%3A%2F%2Ftealinuxos.org%2Frelease%2F&pubid=ra-572ff5bda2aff3c7&ct=1&title=Seminar%20Nasional%20Release%20Party%20TeaLinux%20OS%208&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/twitter.png" border="0" alt="Twitter"/></a>
+                        <a href="https://api.addthis.com/oexchange/0.8/forward/whatsapp/offer?url=http%3A%2F%2Ftealinuxos.org%2Frelease%2F&pubid=ra-572ff5bda2aff3c7&ct=1&title=Seminar%20Nasional%20Release%20Party%20TeaLinux%20OS%208&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/whatsapp.png" border="0" alt="WhatsApp"/></a>
+                        <a href="https://api.addthis.com/oexchange/0.8/forward/lineme/offer?url=http%3A%2F%2Ftealinuxos.org%2Frelease%2F&pubid=ra-572ff5bda2aff3c7&ct=1&title=Seminar%20Nasional%20Release%20Party%20TeaLinux%20OS%208&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/lineme.png" border="0" alt="LINE"/></a>
+                        <a href="https://api.addthis.com/oexchange/0.8/forward/telegram/offer?url=http%3A%2F%2Ftealinuxos.org%2Frelease%2F&pubid=ra-572ff5bda2aff3c7&ct=1&title=Seminar%20Nasional%20Release%20Party%20TeaLinux%20OS%208&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/telegram.png" border="0" alt="Telegram"/></a>
+                        <a href="https://api.addthis.com/oexchange/0.8/forward/google_plusone_share/offer?url=http%3A%2F%2Ftealinuxos.org%2Frelease%2F&pubid=ra-572ff5bda2aff3c7&ct=1&title=Seminar%20Nasional%20Release%20Party%20TeaLinux%20OS%208&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/google_plusone_share.png" border="0" alt="Google+"/></a>
+                        <a href="https://api.addthis.com/oexchange/0.8/forward/email/offer?url=http%3A%2F%2Ftealinuxos.org%2Frelease%2F&pubid=ra-572ff5bda2aff3c7&ct=1&title=Seminar%20Nasional%20Release%20Party%20TeaLinux%20OS%208&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/email.png" border="0" alt="Email"/></a>
+                        <a href="https://www.addthis.com/bookmark.php?source=tbx32nj-1.0&v=300&url=http%3A%2F%2Ftealinuxos.org%2Frelease%2F&pubid=ra-572ff5bda2aff3c7&ct=1&title=Seminar%20Nasional%20Release%20Party%20TeaLinux%20OS%208&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/addthis.png" border="0" alt="Addthis"/></a>
+
+                    </td>
+                    <!-- Go to www.addthis.com/dashboard to generate a new set of sharing buttons -->
+
+
                 </tr>
 
             </table>
