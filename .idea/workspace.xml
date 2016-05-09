@@ -101,17 +101,17 @@
       <file leaf-file-name="after-register.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/emails/after-register.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70149255">
-              <caret line="373" column="248" selection-start-line="373" selection-start-column="248" selection-end-line="373" selection-end-column="248" />
+            <state vertical-scroll-proportion="0.32537314">
+              <caret line="228" column="320" selection-start-line="228" selection-start-column="44" selection-end-line="228" selection-end-column="320" />
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#8;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#10;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#b#0;n#td#0;n#tr#10;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#11;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1462763328238" expanded="true" signature="12118:12376" placeholder="..." />
-                <marker date="1462763328238" expanded="true" signature="12138:12375" placeholder="..." />
-                <marker date="1462763328238" expanded="true" signature="12319:12347" placeholder="..." />
+                <marker date="1462763403518" expanded="true" signature="12114:12372" placeholder="..." />
+                <marker date="1462763403518" expanded="true" signature="12134:12371" placeholder="..." />
+                <marker date="1462763403518" expanded="true" signature="12315:12343" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -1057,17 +1057,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/emails/after-register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70149255">
-          <caret line="373" column="248" selection-start-line="373" selection-start-column="248" selection-end-line="373" selection-end-column="248" />
+        <state vertical-scroll-proportion="0.32537314">
+          <caret line="228" column="320" selection-start-line="228" selection-start-column="44" selection-end-line="228" selection-end-column="320" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#8;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#10;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#b#0;n#td#0;n#tr#10;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#11;n#table#0;n#td#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1462763328238" expanded="true" signature="12118:12376" placeholder="..." />
-            <marker date="1462763328238" expanded="true" signature="12138:12375" placeholder="..." />
-            <marker date="1462763328238" expanded="true" signature="12319:12347" placeholder="..." />
+            <marker date="1462763403518" expanded="true" signature="12114:12372" placeholder="..." />
+            <marker date="1462763403518" expanded="true" signature="12134:12371" placeholder="..." />
+            <marker date="1462763403518" expanded="true" signature="12315:12343" placeholder="..." />
           </folding>
         </state>
       </provider>
