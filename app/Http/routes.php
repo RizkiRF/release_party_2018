@@ -25,7 +25,7 @@ $api->version('v1', function ($api) {
     });
     $api->get('/peserta-tlos', 'App\Http\Controllers\api\cekController@index');
     $api->get('/peserta-tlos/{id}', 'App\Http\Controllers\api\cekController@show');
-    $api->post('/peserta/cek', 'App\Http\Controllers\api\cekController@store');
+    $api->post('/peserta-tlos/cek', 'App\Http\Controllers\api\cekController@store');
 });
 
 Route::post('terimakasih','PesertaController@store');
