@@ -80,7 +80,9 @@ Table Peserta
     <script src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#example').DataTable();
+            $('#example').DataTable({
+                "order": [[ 0, "desc" ]]
+            });
         } );
     </script>
 
