@@ -30,7 +30,7 @@ Table Peserta
                 <th>No Hp</th>
                 <th>Email</th>
                 <th>Kode Tiket</th>
-                <th>Status</th>
+                <th>Instansi</th>
                 <th>DVD</th>
                 <th>Status Bayar</th>
                 <th>Email Terkirim</th>
@@ -48,7 +48,7 @@ Table Peserta
                     <td>{{$peserta->no_hp}}</td>
                     <td>{{$peserta->email}}</td>
                     <td>{{$peserta->kode_tiket}}</td>
-                    <td>{{$peserta->status}}</td>
+                    <td>{{$peserta->instansi}}</td>
                     <td>{{$peserta->dvd}}</td>
                     <td>
                     @if($peserta->status_bayar == 0)

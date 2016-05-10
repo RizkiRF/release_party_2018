@@ -13,12 +13,14 @@
     <div class="row">
         <div class="col-md-6 text-center">
             <h3>Total Peserta Mendaftar</h3>
-            <div id="container" style="width:100%; height:400px;"></div>
-
+            <div id="peserta" style="width:100%; height:400px;"></div>
         </div>
-
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h3>Total Peserta Mendaftar</h3>
+                <div id="peserta" style="width:100%; height:400px;"></div>
+            </div>
 </div>
-
 
 @endsection
 
@@ -27,8 +29,11 @@
     <script>
         $( document ).ready(function() {
 
-            $('#container').highcharts(
+            $('#peserta').highcharts(
                 {!! json_encode($graph) !!}
+            );
+            $('#container').highcharts(
+                    {!! json_encode($graph) !!}
             );
         });
 

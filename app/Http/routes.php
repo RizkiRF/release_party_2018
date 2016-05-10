@@ -57,7 +57,7 @@ Route::get('test-qr-code', function(){
     return view('test.qrcode')->withNamapeserta($nama)->withEmail($email)->withKode_tiket($kode_tiket);
 });
 
-Route::get('test-chart', 'PesertaController@chart');
+
 
 //Route::get('send-email', function(){
 //  Mail::send('emails.test',
@@ -110,6 +110,7 @@ Route::group(['middleware' => ['auth']], function()
     Route::post('/peserta/edit','PesertaController@update');
     Route::get('/peserta/report','PesertaController@report');
 
+    Route::get('test-chart', 'PesertaController@chart');
     // kirim email
     Route::get('/peserta/kirim-email-lunas/{id}', 'PesertaController@kirim_email_lunas');
 
