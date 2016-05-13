@@ -4,7 +4,6 @@
     <list default="true" id="d89a728d-e5a9-4f40-8bdd-1d6150822cfa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/test/qrcode.blade.php" afterPath="$PROJECT_DIR$/resources/views/test/qrcode.blade.php" />
     </list>
     <ignored path="rp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,7 +69,7 @@
       <file leaf-file-name="qrcode.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/test/qrcode.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3333334">
+            <state vertical-scroll-proportion="0.0">
               <caret line="2" column="259" selection-start-line="2" selection-start-column="259" selection-end-line="2" selection-end-column="259" />
               <folding>
                 <marker date="1463110345566" expanded="true" signature="199:423" placeholder="..." />
@@ -140,9 +139,11 @@
       <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32238805">
-              <caret line="359" column="143" selection-start-line="359" selection-start-column="143" selection-end-line="359" selection-end-column="143" />
-              <folding />
+            <state vertical-scroll-proportion="0.58208954">
+              <caret line="360" column="44" selection-start-line="360" selection-start-column="44" selection-end-line="360" selection-end-column="44" />
+              <folding>
+                <element signature="e#18018#18041#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -256,7 +257,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -585,6 +585,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -647,7 +648,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30438066" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3089124" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -975,7 +976,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/test/qrcode.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3333334">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="259" selection-start-line="2" selection-start-column="259" selection-end-line="2" selection-end-column="259" />
           <folding>
             <marker date="1463110345566" expanded="true" signature="199:423" placeholder="..." />
@@ -1053,9 +1054,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32238805">
-          <caret line="359" column="143" selection-start-line="359" selection-start-column="143" selection-end-line="359" selection-end-column="143" />
-          <folding />
+        <state vertical-scroll-proportion="0.58208954">
+          <caret line="360" column="44" selection-start-line="360" selection-start-column="44" selection-end-line="360" selection-end-column="44" />
+          <folding>
+            <element signature="e#18018#18041#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

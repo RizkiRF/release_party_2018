@@ -357,7 +357,8 @@
         <div class="section-title">
             <h5>DAFTAR SEKARANG</h5>
             {{--<p>Jadi saksi perayaan di rilisnya TeaLinuxOS versi terbaru.</p>--}}
-            <h6>Maaf, pendaftaran telah kami tutup, karena kuota peserta telah terpenuhi. Jika ada pertanyaan, silahkan hubungi kontak dibawah. Terimakasih (: </h6>
+            <h6>Maaf, pendaftaran telah kami tutup, karena kuota peserta telah terpenuhi. <br/>
+                <span style="color: #4eae49;">Bagi anda yang telah mendaftar namun belum membayar, silahkan segera lakukan pemeyaran </span><br/>Jika ada pertanyaan, silahkan hubungi kontak dibawah. Terimakasih (: </h6>
         </div>
         {{--<div class="contact-form bottom-space-xl wow fadeInUp">--}}
             {{--<form action="{{ url('terimakasih')}}" id="" method="POST">--}}
