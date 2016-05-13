@@ -43,6 +43,10 @@ Route::get('tiket', 'PesertaController@tiket');
 
 Route::post('tiket', 'PesertaController@get_tiket');
 
+// list peserta
+
+Route::get('peserta', 'PesertaController@list_peserta');
+
 Route::get('test-terimakasih', function(){
     $nama = 'Diky Test';
     $email = "diky@test.com";

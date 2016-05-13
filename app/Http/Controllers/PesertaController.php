@@ -17,6 +17,12 @@ use Session;
 
 class PesertaController extends Controller
 {
+    public  function list_peserta()
+    {
+        $pesertas = Peserta::all();
+
+        return view('peserta.list')->withPesertas($pesertas);
+    }
     public function nomerhp()
     {
         $pesertas = Peserta::all();
