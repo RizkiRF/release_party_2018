@@ -23,16 +23,17 @@ Table Peserta
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <span class="glyphicon glyphicon-ok"></span> <em> {!! session('pesan') !!}</em></div>
         @endif
+        <div class="text-center">
+            <h5>List Peserta</h5>
+            <h6>Bila belum tercantum, segera hubungi kontak person kami atau datang ke stand pendaftaran</h6>
+
+        </div>
 
         <table id="example" class="table table-striped " width="100%" cellspacing="0" >
             <thead>
             <tr>
                 <th>No</th>
                 <th>Nama</th>
-
-                <th>Instansi</th>
-
-                <th>Status Bayar</th>
 
             </tr>
             </thead>
@@ -44,15 +45,6 @@ Table Peserta
                     <td>{{$no}}</td>
                     <td>{{$peserta->nama}}</td>
 
-                    <td>{{$peserta->instansi}}</td>
-
-                    <td>
-                    @if($peserta->status_bayar == 0)
-                        <span style="color:red;font-weight: bold;">Belum Lunas</span>
-                    @else
-                        <span style="color:limegreen;">Lunas</span>
-                    @endif
-                    </td>
 
                 </tr>
                 <?php $no++ ?>

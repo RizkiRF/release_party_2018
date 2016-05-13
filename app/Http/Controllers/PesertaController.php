@@ -19,8 +19,8 @@ class PesertaController extends Controller
 {
     public  function list_peserta()
     {
-        $pesertas = Peserta::all();
-
+        $pesertas = Peserta::where('status_bayar', 1)->get();
+        //dd($pesertas);
         return view('peserta.list')->withPesertas($pesertas);
     }
     public function nomerhp()
