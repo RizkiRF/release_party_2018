@@ -45,7 +45,7 @@ Route::post('tiket', 'PesertaController@get_tiket');
 
 // list peserta
 
-Route::get('peserta', 'PesertaController@list_peserta');
+Route::get('list-peserta', 'PesertaController@list_peserta');
 
 Route::get('test-terimakasih', function(){
     $nama = 'Diky Test';
