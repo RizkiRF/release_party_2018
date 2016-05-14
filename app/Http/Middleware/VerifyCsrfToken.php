@@ -12,6 +12,7 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
-        'api/peserta/cek',
+        'api/peserta-tlos/cek',
+        'api/peserta-tlos/masuk',
     ];
 }

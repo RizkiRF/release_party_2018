@@ -50,24 +50,33 @@ class cekController extends BaseController
         if($peserta->kunci_rahasia == $kunci_rahasia){
             return $this->response->array(['status' => 1,
                                            'pesan' => 'Cocok',
-                                           'id' => $peserta->id,
+                                           'user_id' => $peserta->id,
                                            'nama' => $peserta->nama,
+                                            'instansi' => $peserta->instansi,
+                                            'no_hp' => $peserta->no_hp,
+                                            'email' => $peserta->email,
+                                            'sudah_masuk' => $peserta->sudah_masuk,
                                            ]);
         } else {
           return $this->response->array(['status' => 2,
                                          'pesan' => 'kode tiket benar, secret key salah']);
         }
-
-
-
       }
       else
       {
           return $this->response->array(['status' => 0,
                                          'pesan' => 'kode salah!']);
       }
+    }
 
+    public function masuk(Request $request)
+    {
+        $user_id = $request->input('user_id');
+        $peserta = Peserta::find($user_id);
 
+        $peserta->sudah_masuk = 1;
+        $peserta->save();
+        return $this->response->array(['status' => $peserta]);
 
     }
 
