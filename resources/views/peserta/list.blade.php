@@ -41,10 +41,8 @@ Table Peserta
             <?php $no = 1 ?>
             @foreach($pesertas as $peserta)
                 <tr>
-
                     <td>{{$no}}</td>
                     <td>{{$peserta->nama}}</td>
-
 
                 </tr>
                 <?php $no++ ?>

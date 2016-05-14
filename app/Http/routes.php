@@ -17,6 +17,8 @@ Route::get('/', function(){
 });
 
 
+
+
 $api = app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
@@ -107,6 +109,9 @@ Route::controllers([
 // check for logged in user
 Route::group(['middleware' => ['auth']], function()
 {
+    Route::get('/daftar-internal', function(){
+        return view('home-internal');
+    });
     //peserta all
     Route::get('/peserta/all','PesertaController@index');
     Route::get('/peserta/delete/{id}','PesertaController@destroy');
