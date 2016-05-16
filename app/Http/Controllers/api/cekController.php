@@ -48,7 +48,7 @@ class cekController extends BaseController
         $peserta = Peserta::where('kode_tiket', '=', $kode_tiket)->firstOrFail();
 
         if($peserta->kunci_rahasia == $kunci_rahasia){
-            return $this->response->array(['status' => $peserta]);
+            return $this->response->array([$peserta]);
         } else {
           return $this->response->array(['status' => 2,
                                          'pesan' => 'kode tiket benar, secret key salah']);
@@ -68,7 +68,7 @@ class cekController extends BaseController
 
         $peserta->sudah_masuk = 1;
         $peserta->save();
-        return $this->response->array(['status' => $peserta]);
+        return $this->response->array([$peserta]);
 
     }
 
