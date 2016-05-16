@@ -48,15 +48,7 @@ class cekController extends BaseController
         $peserta = Peserta::where('kode_tiket', '=', $kode_tiket)->firstOrFail();
 
         if($peserta->kunci_rahasia == $kunci_rahasia){
-            return $this->response->array(['status' => 1,
-                                           'pesan' => 'Cocok',
-                                           'user_id' => $peserta->id,
-                                           'nama' => $peserta->nama,
-                                            'instansi' => $peserta->instansi,
-                                            'no_hp' => $peserta->no_hp,
-                                            'email' => $peserta->email,
-                                            'sudah_masuk' => $peserta->sudah_masuk,
-                                           ]);
+            return $this->response->array(['status' => $peserta]);
         } else {
           return $this->response->array(['status' => 2,
                                          'pesan' => 'kode tiket benar, secret key salah']);
