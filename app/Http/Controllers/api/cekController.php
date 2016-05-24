@@ -46,20 +46,30 @@ class cekController extends BaseController
       if (Peserta::where('kode_tiket', '=', $kode_tiket)->exists()) {
 
         $peserta = Peserta::where('kode_tiket', '=', $kode_tiket)->firstOrFail();
+          if($peserta->status_bayar == 1 )
+          {
+              $status_bayar = "LUNAS";
+          } else
+          {
+              $status_bayar = "BELUM BAYAR";
+          }
 
         if($peserta->kunci_rahasia == $kunci_rahasia){
             return $this->response->array(['status' => 1,
                                             'pesan' => 'Cocok',
+                                            'status_bayar' => $status_bayar,
                                             'user_id' => $peserta->id,
                                             'nama' => $peserta->nama,
                                             'instansi' => $peserta->instansi,
                                             'no_hp' => $peserta->no_hp,
                                             'email' => $peserta->email,
                                             'sudah_masuk' => $peserta->sudah_masuk,
+
                                         ]);
         } else {
           return $this->response->array(['status' => 2,
                                          'pesan' => 'kode tiket benar, secret key salah',
+              'status_bayar' => $status_bayar,
               'user_id' => $peserta->id,
               'nama' => $peserta->nama,
               'instansi' => $peserta->instansi,
@@ -72,6 +82,7 @@ class cekController extends BaseController
       {
           return $this->response->array(['status' => 0,
                                          'pesan' => 'kode salah!',
+              'status_bayar' => $status_bayar,
               'user_id' => $peserta->id,
               'nama' => $peserta->nama,
               'instansi' => $peserta->instansi,
@@ -88,8 +99,16 @@ class cekController extends BaseController
 
         $peserta->sudah_masuk = 1;
         $peserta->save();
+        if($peserta->status_bayar == 1 )
+        {
+            $status_bayar = "LUNAS";
+        } else
+        {
+            $status_bayar = "BELUM BAYAR";
+        }
         return $this->response->array(['status' => 1,
             'pesan' => $peserta->nama . ' berhasil masuk',
+            'status_bayar' => $status_bayar,
             'user_id' => $peserta->id,
             'nama' => $peserta->nama,
             'instansi' => $peserta->instansi,
@@ -107,9 +126,18 @@ class cekController extends BaseController
         $peserta = Peserta::find($user_id);
 
         $peserta->sudah_masuk = 0;
+
         $peserta->save();
+        if($peserta->status_bayar == 1 )
+        {
+            $status_bayar = "LUNAS";
+        } else
+        {
+            $status_bayar = "BELUM BAYAR";
+        }
         return $this->response->array(['status' => 1,
             'pesan' => $peserta->nama . ' batal masuk',
+            'status_bayar' => $status_bayar,
             'user_id' => $peserta->id,
             'nama' => $peserta->nama,
             'instansi' => $peserta->instansi,
