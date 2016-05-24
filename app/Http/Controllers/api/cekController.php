@@ -64,6 +64,7 @@ class cekController extends BaseController
                                             'no_hp' => $peserta->no_hp,
                                             'email' => $peserta->email,
                                             'sudah_masuk' => $peserta->sudah_masuk,
+                'dvd' => $peserta->dvd,
 
                                         ]);
         } else {
@@ -75,7 +76,8 @@ class cekController extends BaseController
               'instansi' => $peserta->instansi,
               'no_hp' => $peserta->no_hp,
               'email' => $peserta->email,
-              'sudah_masuk' => $peserta->sudah_masuk,]);
+              'sudah_masuk' => $peserta->sudah_masuk,
+              'dvd' => $peserta->dvd,]);
         }
       }
       else
@@ -88,7 +90,8 @@ class cekController extends BaseController
               'instansi' => $peserta->instansi,
               'no_hp' => $peserta->no_hp,
               'email' => $peserta->email,
-              'sudah_masuk' => $peserta->sudah_masuk,]);
+              'sudah_masuk' => $peserta->sudah_masuk,
+              'dvd' => $peserta->dvd,]);
       }
     }
 
@@ -115,6 +118,7 @@ class cekController extends BaseController
             'no_hp' => $peserta->no_hp,
             'email' => $peserta->email,
             'sudah_masuk' => $peserta->sudah_masuk,
+            'dvd' => $peserta->dvd,
         ]);
 
     }
@@ -144,6 +148,7 @@ class cekController extends BaseController
             'no_hp' => $peserta->no_hp,
             'email' => $peserta->email,
             'sudah_masuk' => $peserta->sudah_masuk,
+            'dvd' => $peserta->dvd,
         ]);
 
     }
