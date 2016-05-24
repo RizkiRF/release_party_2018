@@ -100,6 +100,26 @@ class cekController extends BaseController
 
     }
 
+    public function batalmasuk(Request $request)
+    {
+        $user_id = $request->input('user_id');
+
+        $peserta = Peserta::find($user_id);
+
+        $peserta->sudah_masuk = 0;
+        $peserta->save();
+        return $this->response->array(['status' => 1,
+            'pesan' => $peserta->nama . ' batal masuk',
+            'user_id' => $peserta->id,
+            'nama' => $peserta->nama,
+            'instansi' => $peserta->instansi,
+            'no_hp' => $peserta->no_hp,
+            'email' => $peserta->email,
+            'sudah_masuk' => $peserta->sudah_masuk,
+        ]);
+
+    }
+
     /**
      * Display the specified resource.
      *

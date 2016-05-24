@@ -35,6 +35,7 @@ $api->version('v1', function ($api) {
 
     // sudah masuk
     $api->post('/peserta-tlos/masuk', 'App\Http\Controllers\api\cekController@masuk');
+    $api->post('/peserta-tlos/batalmasuk', 'App\Http\Controllers\api\cekController@batalmasuk');
 });
 
 Route::post('terimakasih','PesertaController@store');
