@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d89a728d-e5a9-4f40-8bdd-1d6150822cfa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/api/cekController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/cekController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/peserta/nomerhp.blade.php" afterPath="$PROJECT_DIR$/resources/views/peserta/nomerhp.blade.php" />
     </list>
     <ignored path="rp.iws" />
@@ -121,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/peserta/nomerhp.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.5714286">
-              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -1044,7 +1042,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/peserta/nomerhp.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5714286">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding />
         </state>
       </provider>
