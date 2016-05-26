@@ -34,6 +34,6 @@
 <br>
 <h1>Lunas</h1>
 @foreach($pesertalunas as $peserta)
-    {{ $peserta->nama }}
+    {{ $peserta->no_hp }}
     <br>
 @endforeach

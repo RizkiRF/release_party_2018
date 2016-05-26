@@ -64,7 +64,7 @@ class cekController extends BaseController
                                             'no_hp' => $peserta->no_hp,
                                             'email' => $peserta->email,
                                             'sudah_masuk' => $peserta->sudah_masuk,
-                'dvd' => $peserta->dvd,
+                                                'dvd' => $peserta->dvd,
 
                                         ]);
         } else {
