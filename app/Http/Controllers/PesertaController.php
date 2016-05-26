@@ -70,11 +70,17 @@ class PesertaController extends Controller
     {
         $peserta_lunas = Peserta::where('status_bayar', "1")->count();
         $peserta_belum_lunas = Peserta::where('status_bayar', "0")->count();
+
+        $tigadua = $peserta_belum_lunas = Peserta::where('dvd', 32)->count();
+        $enamempat = $peserta_belum_lunas = Peserta::where('dvd', 64)->count();
         $pesetas = Peserta::all()->count();
+
         //dd($peserta_lunas . " " . $peserta_belum_lunas);
         return view('peserta.report')->withPeserta_lunas($peserta_lunas)
                                      ->withPeserta_belum_lunas($peserta_belum_lunas)
-                                     ->withPesertas($pesetas);
+                                     ->withPesertas($pesetas)
+            ->withTigadua($tigadua)
+            ->withEnamempat($enamempat);
     }
 
     public function chart()

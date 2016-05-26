@@ -33,6 +33,29 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h3>DVD</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <h4>32 Bit</h4>
+                    </div>
+                    <div class="row">
+                        <h4 style="color: #4eae49; ">{{ $tigadua }}</h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <h4>64 Bit</h4>
+                    </div>
+                    <div class="row">
+                        <h4 style="color: #4eae49; ">{{ $enamempat }}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 
