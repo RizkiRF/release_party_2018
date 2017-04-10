@@ -11,9 +11,9 @@
                 </div>
             </div>
             <h3 class="headline-support wow fadeInDown">Seminar Nasional dan Release Party TeaLinux OS {{getenv('TEALINUXOS_VERSION')}}</h3>
-            <h1 class="headline wow fadeInDown" data-wow-delay="0.1s">Open Source Everywhere </h1>
+            <h1 class="headline wow fadeInDown" data-wow-delay="0.1s">Open Source dan Kehidupan </h1>
             <div class="when_where wow fadeIn" data-wow-delay="0.4s">
-                <p class="event_when">28 Mei 2016</p>
+                <p class="event_when">13 Mei 2017</p>
                 <p class="event_where"><b>Semarang</b>, Indonesia</p>
             </div>
             <div class="header_bottom-bg">
@@ -230,7 +230,7 @@
         <div class="container">
             <div class="section-title">
                 <h4>GALERI</h4>
-                <p>Dokumentasi release party Tealinux OS versi 7 (tahun lalu)</p>
+                <p>Dokumentasi release party Tealinux OS versi 8 (tahun lalu)</p>
 
             </div>
             <div class="nav-center bottom-space-lg">
@@ -356,65 +356,70 @@
     <div class="container" id="daftar">
         <div class="section-title">
             <h5>DAFTAR SEKARANG</h5>
-            {{--<p>Jadi saksi perayaan di rilisnya TeaLinuxOS versi terbaru.</p>--}}
-            <h6>Maaf, pendaftaran telah kami tutup, karena kuota peserta telah terpenuhi. <br/>
-                <span style="color: #4eae49;">Bagi anda yang telah mendaftar namun belum membayar, silahkan segera lakukan pembayaran. </span><br/>Jika ada pertanyaan, silahkan hubungi kontak dibawah. Terimakasih (: </h6>
+            <p>Jadi saksi perayaan di rilisnya TeaLinuxOS versi terbaru.</p>
+            {{-- bila sudah tutup --}}
+            {{-- <h6>Maaf, pendaftaran telah kami tutup, karena kuota peserta telah terpenuhi. <br/>
+                <span style="color: #4eae49;">Bagi anda yang telah mendaftar namun belum membayar, silahkan segera lakukan pembayaran. </span><br/>Jika ada pertanyaan, silahkan hubungi kontak dibawah. Terimakasih (: </h6> --}}
         </div>
-        {{--<div class="contact-form bottom-space-xl wow fadeInUp">--}}
-            {{--<form action="{{ url('terimakasih')}}" id="" method="POST">--}}
-                {{--<input type="hidden" name="_token" value="{{ csrf_token() }}">--}}
-                {{--<div class="row">--}}
-                    {{--<div class="col-md-6 col-md-offset-3">--}}
 
-                        {{--<div class="form-group">--}}
-                            {{--<label>Nama</label>--}}
-                            {{--<input type="text" class="form-control" name="nama" placeholder="Nama Lengkap Anda ( pastikan benar karena akan kami cetak di sertifikat )"  value="{{ old('nama') }}"required>--}}
-                        {{--</div>--}}
-                        {{--<div class="form-group">--}}
-                            {{--<label>Nomor HP</label>--}}
-                            {{--<input type="text" class="form-control" name="no_hp" value="{{ old('no_hp') }}" placeholder="Nomor HP yang dapat dihubungi" required>--}}
-                        {{--</div>--}}
-                        {{--<div class="form-group">--}}
-                            {{--<label>Email</label>--}}
-                            {{--<input type="email" class="form-control" name="email" value="{{old('email')}}" placeholder="Alamat Email" required>--}}
-                        {{--</div>--}}
+        {{-- pendaftaran masih buka --}}
+        <div class="contact-form bottom-space-xl wow fadeInUp">
+            <form action="{{ url('terimakasih')}}" id="" method="POST">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
 
-                        {{--<div class="form-group has-info">--}}
-                            {{--<label class="">Status</label>--}}
+                        <div class="form-group">
+                            <label>Nama</label>
+                            <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap Anda ( pastikan benar karena akan kami cetak di sertifikat )"  value="{{ old('nama') }}"required>
+                        </div>
+                        <div class="form-group">
+                            <label>Nomor HP</label>
+                            <input type="text" class="form-control" name="no_hp" value="{{ old('no_hp') }}" placeholder="Nomor HP yang dapat dihubungi" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" name="email" value="{{old('email')}}" placeholder="Alamat Email" required>
+                        </div>
 
-                            {{--<select id="opsi-status" class="form-control" name="status_peserta" required="required">--}}
-                                {{--<option value="">-- Pilih --</option>--}}
-                                {{--<option value="mahasiswa">Mahasiswa</option>--}}
-                                {{--<option value="pelajar">Pelajar</option>--}}
-                                {{--<option value="umum">Umum</option>--}}
-                            {{--</select>--}}
+                        <div class="form-group has-info">
+                            <label class="">Status</label>
+
+                            <select id="opsi-status" class="form-control" name="status_peserta" required="required">
+                                <option value="">-- Pilih --</option>
+                                <option value="mahasiswa">Mahasiswa</option>
+                                <option value="pelajar">Pelajar</option>
+                                <option value="umum">Umum</option>
+                            </select>
 
 
-                        {{--</div>--}}
-                        {{--<div class="instansi">--}}
+                        </div>
+                        <div class="instansi">
 
-                        {{--</div>--}}
+                        </div>
 
-                        {{--<div class="form-group has-info">--}}
-                            {{--<label class=""> DVD TeaLinux OS 8</label>--}}
+                        <div class="form-group has-info">
+                            <label class=""> DVD TeaLinux OS 8</label>
 
-                            {{--<select class="form-control" name="dvd" required="required">--}}
-                                {{--<option value="">--Pilih--</option>--}}
-                                {{--<option value="32">32 Bit</option>--}}
-                                {{--<option value="64">64 Bit</option>--}}
+                            <select class="form-control" name="dvd" required="required">
+                                <option value="">--Pilih--</option>
+                                <option value="32">32 Bit</option>
+                                <option value="64">64 Bit</option>
 
-                            {{--</select>--}}
+                            </select>
 
-                        {{--</div>--}}
+                        </div>
 
-                        {{--<div class="text-center top-space">--}}
-                            {{--<button type="submit" class="btn btn-success btn-block btn-lg" >Daftar</button>--}}
+                        <div class="text-center top-space">
+                            <button type="submit" class="btn btn-success btn-block btn-lg" >Daftar</button>
 
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</form>--}}
-        {{--</div>--}}
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
     </div>
     <div class="highlight" id="kontak">
         <div class="container">
