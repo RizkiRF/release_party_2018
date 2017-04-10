@@ -179,8 +179,8 @@ Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
 // Daftar
-//Route::post('auth/register', 'Auth\AuthController@postRegister');
-//Route::get('auth/register', 'Auth\AuthController@getRegister');
-Route::get('auth/register', function(){
-    return ":P";
-});
+Route::post('auth/register', 'Auth\AuthController@postRegister');
+Route::get('auth/register', 'Auth\AuthController@getRegister');
+// Route::get('auth/register', function(){
+//     return ":P";
+// });
