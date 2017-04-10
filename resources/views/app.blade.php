@@ -8,14 +8,14 @@
     @yield('meta')
 
     <meta name="author" content="Doscom - Dinus Open Source Community">
-    <meta name="description" content="Release Party TealinuxOS adalah acara yang diselenggarakan oleh Doscom (Dinus Open Source Community) untuk merayakan peluncuran TeaLinuxOS versi 8. Release Party telah menjadi suatu acara tahunan Doscom untuk menarik pengguna baru serta mengedukasi masyarakat tentang Open Source.  "/>
+    <meta name="description" content="Release Party TealinuxOS adalah acara yang diselenggarakan oleh Doscom (Dinus Open Source Community) untuk merayakan peluncuran TeaLinuxOS versi {{getenv('TEALINUXOS_VERSION')}}. Release Party telah menjadi suatu acara tahunan Doscom untuk menarik pengguna baru serta mengedukasi masyarakat tentang Open Source.  "/>
     <meta name="keywords" content="release, tealinuxos, doscom, udinus, open-source "/>
-    <meta property="og:title" content="Seminar Nasional Release Party TeaLinux OS 8" />
-    <meta property="og:site_name" content="Seminar Nasional Release Party TeaLinux OS 8"/>
+    <meta property="og:title" content="Seminar Nasional Release Party TeaLinuxOS {{getenv('TEALINUXOS_VERSION')}}" />
+    <meta property="og:site_name" content="Seminar Nasional Release Party TeaLinuxOS {{getenv('TEALINUXOS_VERSION')}}"/>
 
     <meta property="og:image" content="http://4.bp.blogspot.com/-EbQ1M6OD5mE/VVVAR3XpSbI/AAAAAAAAAPQ/t2pdqljMomU/s1600/tealinuxos2.png" />
-    <meta property="og:title" content="Seminar Nasional Release Party TeaLinux OS 8" />
-    <meta property="og:description" content="Release Party TealinuxOS adalah acara yang diselenggarakan oleh Doscom (Dinus Open Source Community) untuk merayakan peluncuran TeaLinuxOS versi 8. Release Party telah menjadi suatu acara tahunan Doscom untuk menarik pengguna baru serta mengedukasi masyarakat tentang Open Source. " />
+    <meta property="og:title" content="Seminar Nasional Release Party TeaLinux OS {{getenv('TEALINUXOS_VERSION')}}" />
+    <meta property="og:description" content="Release Party TealinuxOS adalah acara yang diselenggarakan oleh Doscom (Dinus Open Source Community) untuk merayakan peluncuran TeaLinuxOS versi {{getenv('TEALINUXOS_VERSION')}}. Release Party telah menjadi suatu acara tahunan Doscom untuk menarik pengguna baru serta mengedukasi masyarakat tentang Open Source. " />
     <meta name="google-site-verification" content="tZVzzHhQESU12CLeTKXl41YWjMyvAwwc_rgwxZcVK2A" />
     <style media="screen">
         .caption-title{
@@ -24,7 +24,7 @@
     </style>
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
 
-    <title>Release Party TeaLinux OS 8</title>
+    <title>Release Party TeaLinux OS {{getenv('TEALINUXOS_VERSION')}}</title>
 
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 

@@ -46,7 +46,7 @@
                         </div>
 
                         <div class="form-group has-info">
-                            <label class=""> DVD TeaLinux OS 8</label>
+                            <label class=""> DVD TeaLinux OS {{getenv('TEALINUXOS_VERSION')}}</label>
 
                             <select class="form-control" name="dvd" required="required">
                                 <option value="">--Pilih--</option>

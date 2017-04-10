@@ -10,7 +10,7 @@
                     </a>
                 </div>
             </div>
-            <h3 class="headline-support wow fadeInDown">Seminar Nasional dan Release Party TeaLinux OS 8</h3>
+            <h3 class="headline-support wow fadeInDown">Seminar Nasional dan Release Party TeaLinux OS {{getenv('TEALINUXOS_VERSION')}}</h3>
             <h1 class="headline wow fadeInDown" data-wow-delay="0.1s">Open Source Everywhere </h1>
             <div class="when_where wow fadeIn" data-wow-delay="0.4s">
                 <p class="event_when">28 Mei 2016</p>
@@ -28,11 +28,11 @@
 
     <section class="highlight">
         <div class="container">
-            <p class="lead text-center">Release Party TealinuxOS adalah acara yang diselenggarakan oleh Doscom (Dinus Open Source Community) untuk merayakan peluncuran TeaLinuxOS versi 8. Release Party telah menjadi suatu acara tahunan Doscom untuk menarik pengguna baru serta mengedukasi masyarakat tentang Open Source.  </p>
+            <p class="lead text-center">Release Party TealinuxOS adalah acara yang diselenggarakan oleh Doscom (Dinus Open Source Community) untuk merayakan peluncuran TeaLinuxOS versi {{getenv('TEALINUXOS_VERSION')}}. Release Party telah menjadi suatu acara tahunan Doscom untuk menarik pengguna baru serta mengedukasi masyarakat tentang Open Source.  </p>
             <div class="countdown_wrap">
                 <h6 class="countdown_title text-center">Acara akan berlangsung dalam</h6>
 
-                <ul id="countdown" data-event-date="28 may 2016 08:00:00">
+                <ul id="countdown" data-event-date="13 may 2017 08:00:00">
                     <li class="wow zoomIn" data-wow-delay="0s"> <span class="days">00</span>
                         <p class="timeRefDays">Hari</p>
                     </li>
@@ -187,7 +187,7 @@
                             </div>
 
                             <div class="timeline-content">
-                                <h2 class="wow flipInX" data-wow-delay="0.3s">Release Party Tea LInux OS ke-8</h2>
+                                <h2 class="wow flipInX" data-wow-delay="0.3s">Release Party Tea LInux OS ke-{{getenv('TEALINUXOS_VERSION')}}</h2>
                                 <span class="date wow flipInX" data-wow-delay="0.3s">12:00</span>
                             </div>
 
@@ -197,7 +197,7 @@
                             </div>
 
                             <div class="timeline-content">
-                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Try Tea Linux OS 8</h2>
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Try Tea Linux OS {{getenv('TEALINUXOS_VERSION')}}</h2>
                                 <span class="date wow flipInX" data-wow-delay="0.3s">13:00 </span>
                             </div>
 
@@ -324,7 +324,7 @@
                             <h6 class="caption-title" style="text-align: left; ">
                                 <ul>
                                     <li>Sertifikat Nasional</li>
-                                    <li>DVD Exclusive TeaLinux OS 8</li>
+                                    <li>DVD Exclusive TeaLinux OS {{getenv('TEALINUXOS_VERSION')}}</li>
                                     <li>Snack + Tea Break</li>
                                     <li>Makan Siang</li>
                                     <li>Ilmu + Pengalaman</li>
@@ -517,7 +517,7 @@
     <section class="footer-action">
         <div class="container">
             <h4 class="headline-support wow fadeInDown">Ayo gabung dalam perayaan rilis produk anak bangsa</h4>
-            <h2 class="headline wow fadeInDown" data-wow-delay="0.1s">TeaLinuxOS 8</h2>
+            <h2 class="headline wow fadeInDown" data-wow-delay="0.1s">TeaLinuxOS {{getenv('TEALINUXOS_VERSION')}}</h2>
             <div class="footer_bottom-bg">
                 <a class="btn btn-success btn-xl wow zoomIn" data-wow-delay="0.3s" href="#daftar">DAFTAR SEKARANG</a>
             </div>

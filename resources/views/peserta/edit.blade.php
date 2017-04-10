@@ -108,7 +108,7 @@
             @if($peserta->sms_terkirim == 0)
                 <p>Kirim ke : {{ $peserta->no_hp }}</p>
                 <p>Pesan : </p>
-                <p>Terimakasih, {{ $peserta->nama }}. kami dari Doscom selaku penyelenggara Seminar Nasional Release Party TeaLinux OS 8. Pembayaran kamu telah telah kami terima, saat acara nanti cukup tunjukan QR-Code yg telah kami kirim ke email mu. Terimakasih.</p>
+                <p>Terimakasih, {{ $peserta->nama }}. kami dari Doscom selaku penyelenggara Seminar Nasional Release Party TeaLinux OS {{getenv('TEALINUXOS_VERSION')}}. Pembayaran kamu telah telah kami terima, saat acara nanti cukup tunjukan QR-Code yg telah kami kirim ke email mu. Terimakasih.</p>
                 <a href="{{ url('peserta/kirim-sms-lunas/'. $peserta->id) }}" class="btn btn-success" role="button">Sudah Kirim SMS - Manual :D</a>
             @else
                 SMS Pelunasan Terkirim

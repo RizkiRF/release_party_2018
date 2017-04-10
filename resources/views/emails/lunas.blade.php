@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<title>Terimakasih Telah Melunasi Pembayaran Release Party TeaLinux OS 8</title>
+<title>Terimakasih Telah Melunasi Pembayaran Release Party TeaLinux OS {{getenv('TEALINUXOS_VERSION')}}</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
@@ -166,7 +166,7 @@
                                         <td align="center" style="font-size: 30px; font-family: Helvetica, Arial, sans-serif; color: #333333; padding-top: 5px;" class="padding-copy">Terimakasih, {{ $nama }}</td>
                                     </tr>
                                       <tr>
-                                          <td align="center" style="font-size: 22px; font-family: Helvetica, Arial, sans-serif; color: #333333; padding-top: 30px;" class="padding-copy">Telah melunasi pembayaran untuk acara Seminar Nasional dan Release Party TeaLinuxOS 8</td>
+                                          <td align="center" style="font-size: 22px; font-family: Helvetica, Arial, sans-serif; color: #333333; padding-top: 30px;" class="padding-copy">Telah melunasi pembayaran untuk acara Seminar Nasional dan Release Party TeaLinuxOS {{getenv('TEALINUXOS_VERSION')}}</td>
                                       </tr>
                                       <tr>
                                           <td>

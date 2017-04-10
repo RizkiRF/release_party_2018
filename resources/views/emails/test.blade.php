@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Pendaftaran Release Party TeaLinux OS 8</title>
+<title>Pendaftaran Release Party TeaLinux OS {{getenv('TEALINUXOS_VERSION')}}</title>
 <!--
 
     SALTED | A RESPONSIVE EMAIL TEMPLATE
@@ -181,7 +181,7 @@
                                         <td align="center" style="font-size: 30px; font-family: Helvetica, Arial, sans-serif; color: #333333; padding-top: 5px;" class="padding-copy">Terimakasih!</td>
                                     </tr>
                                       <tr>
-                                          <td align="center" style="font-size: 22px; font-family: Helvetica, Arial, sans-serif; color: #333333; padding-top: 30px;" class="padding-copy">Telah mendaftar Seminar Nasional dan Release Party TeaLinuxOS 8</td>
+                                          <td align="center" style="font-size: 22px; font-family: Helvetica, Arial, sans-serif; color: #333333; padding-top: 30px;" class="padding-copy">Telah mendaftar Seminar Nasional dan Release Party TeaLinuxOS {{getenv('TEALINUXOS_VERSION')}}</td>
                                       </tr>
                                       <tr>
                                           <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Berikut detail informasi mu :</td>
